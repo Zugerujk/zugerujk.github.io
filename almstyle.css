@@ -1,3 +1,15 @@
 body {
-    background-image:url('images/Alm.png');
+    background-color: rgb(56 29 146);
 }
+
+img {
+    height: 400px;
+    width: auto;
+}
+
+p {
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: azure;
+    size: 40px;
+}
+
