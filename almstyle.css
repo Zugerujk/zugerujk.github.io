@@ -13,7 +13,7 @@ body {
 p {
     font-family: 'Hanken Grotesk', sans-serif;
     color: whitesmoke;
-    font-size: 16px;
+    font-size: 18px;
     padding-left: 5px;
     /* border: 1px solid;   */
     overflow: hidden;
@@ -104,6 +104,52 @@ p {
     line-height: 12px;
 }
 
+.blog_feed_entry {
+    border: 12px solid #1f0042;
+    display:flex;
+    /* border-radius: 10px; */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #322357;
+    text-indent:10px;
+    font-size: 30px;
+    flex-direction: row;
+}
+
+.blog_feed_entry_link {
+    text-indent:5px;
+    font-size: 34px;
+    line-height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 10px;
+    border-right: 5px dashed #1f0042;
+}
+
+.blog_feed_entry_end_cont {
+    flex-grow: 1;
+    line-height: 88px;
+    text-indent: 5px;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align:right
+}
+
+.blog_entry {
+    border: 12px solid #1f0042;
+    /* border-radius: 10px; */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
+    background-color: #322357;
+    text-indent:10px;
+    font-size: 34px;
+}
 
 /* Unique IDs for the main sections */
 #the_header {
@@ -130,7 +176,7 @@ p {
 }
 
 #the_body {
-    height: 500px;
+    height: auto;
     width: 850px;
     margin: auto;
     border: 13px solid #1f0042;
@@ -156,6 +202,7 @@ p {
 }
 
 /* All the rest of the Unique IDs*/
+/* Important shit, on most pages*/
 #zugerujknet_title {
     font-size: 60px;
     line-height: 120px;
@@ -179,4 +226,13 @@ p {
     flex-direction: column;
     font-size: 16px;
     color: whitesmoke;
+}
+
+/*Less important stuff*/
+#newsfeed_archive_link {
+    font-size: 12px;
+    text-align: right;
+    text-indent: 3px;
+    width:auto;
+    margin-left:auto;
 }
