@@ -151,6 +151,10 @@ p {
     font-size: 34px;
 }
 
+.caption {
+    margin-top: 0px;
+}
+
 /* Unique IDs for the main sections */
 #the_header {
     height: 120px;
