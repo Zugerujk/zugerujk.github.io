@@ -1,3 +1,35 @@
+/*
+    HEADER STUFF
+*/
+let createHeaderRight = function() {
+    const header_element_right = document.createElement("div");
+    header_element_right.setAttribute("class", "right");
+    header_element_right.setAttribute("id", "header_right_02")
+
+    return header_element_right;
+}
+
+let createHeader = function() {
+    const headerElement = document.getElementById("the_header");
+    // Create Zugerujk.net left area
+    let zugerujknet_title_text = "Zugerujk.net 😎"
+    const header_element_left = document.createElement("div");
+    header_element_left.setAttribute("class", "left");
+    header_element_left.setAttribute("id", "zugerujknet_title");
+
+    const header_element_left_text = document.createTextNode(zugerujknet_title_text);
+    header_element_left.appendChild(header_element_left_text);
+    
+    header_element_right = createHeaderRight();
+    headerElement.append(header_element_left);
+    headerElement.append(header_element_right);
+}
+
+
+
+/*
+    NAVBAR STUFF
+*/
 let createNavbarElement = function(text = "blank", link = "") {
     let navbar_element;
     if (link == "") {  // A blocked navbar element
@@ -14,14 +46,14 @@ let createNavbarElement = function(text = "blank", link = "") {
     navbar_element.appendChild(navbar_element_text);
 
     return navbar_element;
-}
+};
 
 let createNavbarSpacer = function() {
     const navbar_spacer = document.createElement("div");
     navbar_spacer.setAttribute("class", "upper_navbar_spacer");
 
     return navbar_spacer;
-}
+};
 
 // To create a navbar (so cool, so easy!)
 const createNavbar = function(blocked_space_arg = "") {
@@ -64,17 +96,43 @@ const createNavbar = function(blocked_space_arg = "") {
     spacer4 = createNavbarSpacer();
 
     // Find the navbar div
-    const navbarElement = document.getElementById("the_navbar");
+    const navbarMasterElement = document.getElementById("the_navbar"); // Like the master emerald
 
     // Append city amirite
-    navbarElement.append(home_navbar_element);
-    navbarElement.append(spacer1);
-    navbarElement.append(blog_navbar_element);
-    navbarElement.append(spacer2);
-    navbarElement.append(projects_navbar_element);
-    navbarElement.append(spacer3);
-    navbarElement.append(gallery_navbar_element);
-    navbarElement.append(spacer4);
-    navbarElement.append(bio_navbar_element);
-
+    navbarMasterElement.append(home_navbar_element);
+    navbarMasterElement.append(spacer1);
+    navbarMasterElement.append(blog_navbar_element);
+    navbarMasterElement.append(spacer2);
+    navbarMasterElement.append(projects_navbar_element);
+    navbarMasterElement.append(spacer3);
+    navbarMasterElement.append(gallery_navbar_element);
+    navbarMasterElement.append(spacer4);
+    navbarMasterElement.append(bio_navbar_element);
 };
+
+
+
+/*
+    FOOTER STUFF
+*/
+const createFooter = function() {
+    let generic_footer_text = "All rights reserved, Me, 2023. v0.3";
+    
+    // Find the navbar div
+    const footerElement = document.getElementById("the_footer");
+    
+    const navbar_element_text = document.createTextNode(generic_footer_text);
+    footerElement.appendChild(navbar_element_text);
+    
+};
+
+
+
+/*
+    THE FULL LOAD
+*/
+const createElements = function() {
+    createHeader();
+    createNavbar();
+    createFooter();
+}
