@@ -1,10 +1,32 @@
 /*
+    SPACER STUFF
+*/
+let createVerticalSpacer = function() {
+    const new_vertical_spacer = document.createElement("div");
+    new_vertical_spacer.setAttribute("class", "generic_vertical_spacer");
+    return new_vertical_spacer;
+}
+
+
+
+/*
     HEADER STUFF
 */
+let determineHeaderSeed = function() {
+    let the_date = new Date();
+    let seconds_since_epoch = Math.round(the_date.getTime() / 1000);
+    let header_seed = Math.floor(seconds_since_epoch / 3600) % 8;
+    console.log(header_seed);
+    return header_seed;
+}
+
 let createHeaderRight = function() {
     const header_element_right = document.createElement("div");
     header_element_right.setAttribute("class", "right");
-    header_element_right.setAttribute("id", "header_right_02")
+    let header_number = determineHeaderSeed();
+
+
+    header_element_right.setAttribute("id", "header_right_02");
 
     return header_element_right;
 }
@@ -19,8 +41,9 @@ let createHeader = function() {
 
     const header_element_left_text = document.createTextNode(zugerujknet_title_text);
     header_element_left.appendChild(header_element_left_text);
-    
     header_element_right = createHeaderRight();
+
+    headerElement.before(createVerticalSpacer());
     headerElement.append(header_element_left);
     headerElement.append(header_element_right);
 }
@@ -122,6 +145,8 @@ const createFooter = function() {
     const footerElement = document.getElementById("the_footer");
     
     const navbar_element_text = document.createTextNode(generic_footer_text);
+    footerElement.after(createVerticalSpacer());
+    footerElement.after(createVerticalSpacer());
     footerElement.appendChild(navbar_element_text);
     
 };
@@ -131,8 +156,8 @@ const createFooter = function() {
 /*
     THE FULL LOAD
 */
-const createElements = function() {
+const createElements = function(navbar_blocked_space_arg="") {
     createHeader();
-    createNavbar();
+    createNavbar(blocked_space_arg=navbar_blocked_space_arg);
     createFooter();
 }

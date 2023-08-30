@@ -1,13 +1,27 @@
 /* The thing itself*/
-body {
+/* body {
     background-image:url('images/Alm.png');
-    /* background-size: cover; */
     background-color: #aeafe6;
+} */
+
+:root {
+    color-scheme: dark;
+}
+
+body {
+    background-image:url('images/gradient\ v3.png');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    position:relative;
+    min-height:100vh;
+    margin:0px;
+    padding:0px;
 }
 
 * {
     font-family: 'Hanken Grotesk', sans-serif;
-    color:whitesmoke
+    color:whitesmoke;
+    z-index: 2;
 }
 
 p {
@@ -155,6 +169,11 @@ p {
     margin-top: 0px;
 }
 
+.generic_vertical_spacer {
+    height:10px;
+    width:auto;
+}
+
 /* Unique IDs for the main sections */
 #the_header {
     height: 120px;
@@ -230,6 +249,36 @@ p {
     flex-direction: column;
     font-size: 16px;
     color: whitesmoke;
+}
+
+@keyframes example {
+    from {transform: rotate(30deg);}
+    to {transform: rotate(30deg) translate(302px);}
+}
+
+#background_triangles_container {
+    position:absolute;
+    overflow:hidden;
+    height:100%;
+    width:100%;
+    top:0;
+    z-index: -1;
+}
+
+#background_triangles {
+    content: "";
+    position:absolute;
+    width:300%;
+    height:250%;
+    top:-100%;
+    left:-100%;
+    z-index: -1;
+    background: url(images/Triangles\ v1.png) 0 0 repeat;
+    transform: rotate(30deg);
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /*Less important stuff*/
