@@ -24,9 +24,34 @@ let createHeaderRight = function() {
     const header_element_right = document.createElement("div");
     header_element_right.setAttribute("class", "right");
     let header_number = determineHeaderSeed();
+    
+    switch (header_number) {
+        case 0:
+            header_element_right.setAttribute("id", "header_right_00");
+            break;
+        case 1:
+            header_element_right.setAttribute("id", "header_right_01");
+            break;
+        case 2:
+            header_element_right.setAttribute("id", "header_right_02");
+            break;
+        case 3:
+            header_element_right.setAttribute("id", "header_right_03");
+            break;
+        case 4:
+            header_element_right.setAttribute("id", "header_right_04");
+            break;
+        case 5:
+            header_element_right.setAttribute("id", "header_right_05");
+            break;
+        case 6:
+            header_element_right.setAttribute("id", "header_right_06");
+            break;
+        case 7:
+            header_element_right.setAttribute("id", "header_right_07");
+            break;
 
-
-    header_element_right.setAttribute("id", "header_right_02");
+    }
 
     return header_element_right;
 }

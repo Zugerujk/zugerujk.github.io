@@ -234,9 +234,46 @@ p {
     color: whitesmoke
 }
 
+#header_right_00 {
+    background-image: url("images/Splashes/Splash00.png");
+    background-color: rgba(20, 8, 40, 1);
+}
+
+#header_right_01 {
+    background-image: url("images/Splashes/Splash01.png");
+    background-color: rgba(20, 8, 40, 1);
+}
+
 #header_right_02 {
     background-image: url("images/Splashes/Splash02.png");
+    background-color: rgba(20, 8, 40, 1);
 }
+
+#header_right_03 {
+    background-image: url("images/Splashes/Splash03.png");
+    background-color: rgba(20, 8, 40, 1);
+}
+
+#header_right_04 {
+    background-image: url("images/Splashes/Splash04.png");
+    background-color: rgba(20, 8, 40, 1);
+}
+
+#header_right_05 {
+    background-image: url("images/Splashes/Splash05.png");
+    background-color: rgba(20, 8, 40, 1);
+}
+
+#header_right_06 {
+    background-image: url("images/Splashes/Splash06.png");
+    background-color: rgba(20, 8, 40, 1);
+}
+
+#header_right_07 {
+    background-image: url("images/Splashes/Splash07.png");
+    background-color: rgba(20, 8, 40, 1);
+}
+
 
 #body_left {
     flex-direction: column;
