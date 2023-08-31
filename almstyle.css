@@ -234,6 +234,10 @@ p {
     color: whitesmoke
 }
 
+#header_right_secret {
+    background-image: url("images/splashes/SplashSecret.png");
+}
+
 #header_right_00 {
     background-image: url("images/Splashes/Splash00.png");
     background-color: rgba(20, 8, 40, 1);
@@ -273,7 +277,6 @@ p {
     background-image: url("images/Splashes/Splash07.png");
     background-color: rgba(20, 8, 40, 1);
 }
-
 
 #body_left {
     flex-direction: column;

@@ -12,11 +12,17 @@ let createVerticalSpacer = function() {
 /*
     HEADER STUFF
 */
+let changeHeaderToSecret = function() {
+    const headerElement = document.getElementsByClassName("right")[0];
+    console.log("Say hi to debug Alm 🥺");
+    headerElement.id = "header_right_secret";
+}
+
 let determineHeaderSeed = function() {
     let the_date = new Date();
     let seconds_since_epoch = Math.round(the_date.getTime() / 1000);
     let header_seed = Math.floor(seconds_since_epoch / 3600) % 8;
-    console.log(header_seed);
+    console.log("The header seed is " + header_seed + ".");
     return header_seed;
 }
 
@@ -52,6 +58,8 @@ let createHeaderRight = function() {
             break;
 
     }
+
+    header_element_right.setAttribute("onclick", "changeHeaderToSecret()");
 
     return header_element_right;
 }
@@ -164,7 +172,7 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2023. v0.3";
+    let generic_footer_text = "All rights reserved, Me, 2023. v0.4pre";
     
     // Find the navbar div
     const footerElement = document.getElementById("the_footer");
