@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image:url('images/gradient_v3_light.png ');
+    background-image:url('images/gradient_v3_dark.png ');
     background-repeat:no-repeat;
     background-size:100% 100%;
     position:relative;
@@ -313,26 +313,12 @@ p {
     top:-100%;
     left:-100%;
     z-index: -2;
-    background: url(images/triangles_v1_light.png) 0 0 repeat;
+    background: url(images/triangles_v1_dark.png) 0 0 repeat;
     transform: rotate(30deg);
     animation-name: example;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-}
-
-#background_triangles_overlay {
-    position:absolute;
-    overflow:hidden;
-    height:100%;
-    width:100%;
-    top:0;
-    z-index: -1;
-    background-image:url('images/gradient_v3_light_overlay.png');
-    opacity: 1;
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    mix-blend-mode: hue;
 }
 
 /*Less important stuff*/

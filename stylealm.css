@@ -1,21 +1,11 @@
 /* The thing itself*/
-/* body {
+body {
     background-image:url('images/Alm.png');
     background-color: #aeafe6;
-} */
-
-:root {
-    color-scheme: dark;
 }
 
-body {
-    background-image:url('images/gradient_v3_light.png ');
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    position:relative;
-    min-height:100vh;
-    margin:0px;
-    padding:0px;
+:root {
+    color-scheme: light;
 }
 
 * {
@@ -291,48 +281,26 @@ p {
     color: whitesmoke;
 }
 
-@keyframes example {
-    from {transform: rotate(30deg);}
-    to {transform: rotate(30deg) translate(302px);}
-}
-
 #background_triangles_container {
     position:absolute;
     overflow:hidden;
-    height:100%;
-    width:100%;
-    top:0;
+    height:0;
+    width:0;
     z-index: -2;
 }
 
 #background_triangles {
     content: "";
     position:absolute;
-    width:300%;
-    height:250%;
-    top:-100%;
-    left:-100%;
-    z-index: -2;
-    background: url(images/triangles_v1_light.png) 0 0 repeat;
-    transform: rotate(30deg);
-    animation-name: example;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    width:0;
+    height:0;
 }
 
 #background_triangles_overlay {
     position:absolute;
     overflow:hidden;
-    height:100%;
-    width:100%;
-    top:0;
-    z-index: -1;
-    background-image:url('images/gradient_v3_light_overlay.png');
-    opacity: 1;
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    mix-blend-mode: hue;
+    height:0;
+    width:0;
 }
 
 /*Less important stuff*/
