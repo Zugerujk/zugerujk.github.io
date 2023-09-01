@@ -13,41 +13,25 @@
     <body>
 
         <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
-        <div class="flex" id="the_header">
-            <div class="left" id="zugerujknet_title">
-                Zugerujk.net 😎
-            </div>
-            <div class="right" id="header_right">
-            </div>
-        </div>
+        <div class="flex" id="the_header"></div>
 
         <!-- The navbar, where you can choose between a bunch of pages -->
-        <div class="flex" id="the_navbar">
-            <a href="index.html" class="upper_navbar_element">
-                Home
-            </a>
-            <div class="upper_navbar_spacer"></div>
-            <div class="selected_upper_navbar_element">
-                Blog
-            </div>
-            <div class="upper_navbar_spacer"></div>
-            <div class="upper_navbar_element">
-                Projects
-            </div>
-            <div class="upper_navbar_spacer"></div>
-            <div class="upper_navbar_element">
-                Gallery
-            </div>
-            <div class="upper_navbar_spacer"></div>
-            <a href="bio.html" class="upper_navbar_element">
-                Bio / Contact
-            </a>
-        </div>
+        <div class="flex" id="the_navbar"></div>
 
         <!-- The body, where all the good stuff happens. -->
         <div class="flex" id="the_body">
             <div class="left" id="body_left">
                 Entries:
+                <div class="blog_feed_entry" id="entry005">
+                    <a href="blog/blog008.html" class="blog_feed_entry_link">
+                        < #008 
+                    </a>
+                    <div class="news_feed_entry_divider"></div>
+                    <img src="blog/blog-media/008logopikmin.png" alt="Pikmin" height="24px" width="auto" class="blog_feed_entry_image_as_text_left_margin"> <img src="blog/blog-media/008logo4.png" alt="4" height="24px" width="auto" class="blog_feed_entry_image_as_text">Holy Shit <img src="blog/blog-media/008pikminstanding.png" alt="Image of pikmin standing" height="24px" width="auto" class="blog_feed_entry_image_as_text_left_margin">
+                    <div class="blog_feed_entry_end_cont">
+                        8/31/23 8:49:13 PM CST
+                    </div>
+                </div>
                 <div class="blog_feed_entry" id="entry005">
                     <a href="blog/blog007.html" class="blog_feed_entry_link">
                         < #007 
@@ -129,8 +113,15 @@
         </div>
 
         <!-- The footer. Gotta have one!-->
-        <div id="the_footer">
-            All rights reserved, Me, 2023. v0.3
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="universal_cooooode.js" onload="createElements('blog')"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
         </div>
     </body>
 </html>

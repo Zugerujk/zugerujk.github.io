@@ -12,41 +12,27 @@
     </head>
     <body>
         <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
-        <div class="flex" id="the_header">
-            <div class="left" id="zugerujknet_title">
-                Zugerujk.net 😎
-            </div>
-            <div class="right" id="header_right">
-            </div>
-        </div>
+        <div class="flex" id="the_header"></div>
 
         <!-- The navbar, where you can choose between a bunch of pages -->
-        <div class="flex" id="the_navbar">
-            <a href="index.html" class="upper_navbar_element">
-                Home
-            </a>
-            <div class="upper_navbar_spacer"></div>
-            <a href="blog.html" class="upper_navbar_element">
-                Blog
-            </a>
-            <div class="upper_navbar_spacer"></div>
-            <div class="upper_navbar_element">
-                Projects
-            </div>
-            <div class="upper_navbar_spacer"></div>
-            <div class="upper_navbar_element">
-                Gallery
-            </div>
-            <div class="upper_navbar_spacer"></div>
-            <div class="upper_navbar_element">
-                Bio / Contact
-            </div>
-        </div>
+        <div class="flex" id="the_navbar"></div>
 
         <!-- The body, where all the good stuff happens. -->
         <div class="flex" id="the_body">
             <div class="left" id="body_left">
                 Newsfeed Archive:
+                <div class="news_feed_entry">
+                    Upcoming V2:
+                    <div class="news_feed_entry_divider"></div>
+                    <p>A motion toggle, a selector for the background, the Gallery, some little features I've been thinking up, and, uh, more general polish.</p>
+                    <div class="news_feed_entry_end">9/1/23 4:45:51 PM CST</div>
+                </div>
+                <div class="news_feed_entry">
+                    Version 0.4
+                    <div class="news_feed_entry_divider"></div>
+                    <p>This is the first BIG update, y'all. Everything except the gallery is in a presentable state. So, y'know, everything works now. And I made the background pretty! How exciting! I've still got a bunch of stuff in the works, so expect v0.5 or v0.6 to be another big one. Until then, I'll keep updating the blog (we're on blog008 now 🤩), and there'll probably be a few bells and whistles I add in.</p>
+                    <div class="news_feed_entry_end">9/1/23 4:43:54 PM CST</div>
+                </div>
                 <div class="news_feed_entry">
                     Blog works now, y'all.
                     <div class="news_feed_entry_divider"></div>
@@ -68,12 +54,24 @@
             </div>
             <div class="right" id="body_right">
                 Featured Archive:
+                <div class="featured_container">
+                    <img class="featured_thumbnail" src="blog/blog-media/008pikminstanding.png">
+                    <center><a href="https://zugerujk.net/blog/blog008"class="project_title">blog008</a>
+                    <div class="project_description">The blog post about Pikmin 4</div>
+                </div>
             </div>
         </div>
 
         <!-- The footer. Gotta have one!-->
-        <div id="the_footer">
-            All rights reserved, Me, 2023. v0.3
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="universal_cooooode.js" onload="createElements()"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
         </div>
     </body>
 </html>
