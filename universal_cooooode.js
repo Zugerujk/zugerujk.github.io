@@ -116,8 +116,8 @@ const createNavbar = function(blocked_space_arg = "") {
     // Establish the hyperlinks
     let home_link = "https://zugerujk.net/index.html";
     let blog_link = "https://zugerujk.net/blog.html";
-    let projects_link = "https://zugerujk.net/index.html";
-    let gallery_link = "https://zugerujk.net/index.html";
+    let projects_link = "https://zugerujk.net/projects.html";
+    let gallery_link = "https://zugerujk.net/gallery.html";
     let bio_link = "https://zugerujk.net/bio.html";
 
     switch(blocked_space_arg) {
