@@ -313,6 +313,7 @@ p {
 
 #header_right_secret {
     background-image: url("images/Splashes/SplashSecret.png");
+    background-color: rgba(20, 8, 40, 1);
 }
 
 #header_right_00 {
