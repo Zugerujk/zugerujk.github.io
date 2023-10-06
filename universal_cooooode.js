@@ -143,7 +143,7 @@ const createNavbar = function(blocked_space_arg = "") {
     blog_navbar_element = createNavbarElement("Blog", blog_link);
     projects_navbar_element = createNavbarElement("Projects", projects_link);
     gallery_navbar_element = createNavbarElement("Gallery", gallery_link);
-    bio_navbar_element = createNavbarElement("Bio / Contact", bio_link);
+    bio_navbar_element = createNavbarElement("About", bio_link);
 
     // Create the spacer
     spacer1 = createNavbarSpacer();
@@ -194,3 +194,5 @@ const createElements = function(navbar_blocked_space_arg="") {
     createNavbar(blocked_space_arg=navbar_blocked_space_arg);
     createFooter();
 }
+
+

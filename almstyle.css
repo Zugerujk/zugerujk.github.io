@@ -221,6 +221,7 @@ p {
     margin-bottom: 2px;
     margin-left: 12.5px;
     margin-right: 12.5px;
+    text-indent: 0px;
 }
 
 .project_title {
@@ -364,6 +365,7 @@ p {
 #header_right_07 {
     background-image: url("images/Splashes/Splash07.png");
     background-color: rgba(20, 8, 40, 1);
+    background-repeat:no-repeat
 }
 
 #body_left {
