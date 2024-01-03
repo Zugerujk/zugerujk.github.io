@@ -283,6 +283,7 @@ center {
 }
 
 #the_navbar {
+    position: relative;
     height: 40px;
     width: 850px;
     margin-left: auto;
@@ -291,6 +292,7 @@ center {
     border: 13px solid #1f0042;
     border-top: 5px solid #1f0042;
     border-bottom: 5px solid #1f0042;
+    overflow:visible;
 }
 
 #the_body {
@@ -305,6 +307,7 @@ center {
 }
 
 #the_footer {
+    position:relative;
     height: 100px;
     width: 846px;
     padding-right: 4px;
@@ -439,4 +442,30 @@ center {
     text-indent: 3px;
     width:auto;
     margin-left:auto;
+}
+
+#fuster_closed {
+    position: absolute;
+    height: 50px;
+    top: -5px;
+    left: 880px; /* 13 * 2 = 26  ->  26 + 50 = 76  ->  GIF has 3 transparent pixels on the right side  ->  73 */
+    width: 50px;
+    background-image:url('images/SiteAssets/Fuster\ Frame\ 1.png');
+}
+
+#fuster_open {
+    position: absolute;
+    height: 100px;
+    width:200px;
+    top: -18px;
+    left: 867px;
+    background-image:none;
+    background-color: rgba(20, 8, 40, 1);
+    border: 13px solid #1f0042;
+}
+
+#fuster_image {
+    height:50px;
+    width:50px;
+    background-image:url('images/SiteAssets/Fuster\ Open.gif');
 }
