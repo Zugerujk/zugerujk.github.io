@@ -201,7 +201,7 @@ const createElements = function(navbar_blocked_space_arg="") {
 
 const createFusterElement = function() {
     let fuster_element;
-    fuster_element = document.createElement("a");
+    fuster_element = document.createElement("div");
     fuster_element.setAttribute("class", "settings_icon");
     fuster_element.setAttribute("id", "fuster_closed");
     fuster_element.setAttribute("onclick", "fusterOpen()");
@@ -211,26 +211,38 @@ const createFusterElement = function() {
 let fusterOpen = function() {
     const fusterElement = document.getElementsByClassName("settings_icon")[0];
     console.log("Opening Fuster");
-    fusterElement.setAttribute("id", "fuster_open");
 
+    // Change fuster's div ID to appear vastly different
+    fusterElement.setAttribute("id", "fuster_open");
     fusterElement.setAttribute("onclick", "fusterClose()");
 
-
+    // Create an image of fuster within the div
     const fuster_image = document.createElement("div");
-    fuster_image.id = "fuster_image"
-
+    fuster_image.id = "fuster_image";
     fusterElement.append(fuster_image);
 
-    let wip_text = "\"Settings coming soon!\"";
-    fusterElement.append(wip_text);
+    // Add dialogue for fuster, found within the head of the document.
+    fuster_dialogue_div = document.createElement("p"); 
+    fuster_dialogue_div.setAttribute("id", "fuster_dialogue");
+    let fuster_dialogue = "\"Hi!\"";
+    try {
+        head_text = document.querySelector('meta[name="fuster-dialogue"]').content;
+        console.log(head_text);
+        fuster_dialogue = "\"" + head_text + "\""
+    }
+    catch {
+        console.log("Issue finding Fuster dialogue - may be null.")
+    }
+    fuster_dialogue_div.appendChild(document.createTextNode(fuster_dialogue));
+    fusterElement.append(fuster_dialogue_div);
 }
 
 let fusterClose = function() {
     const fusterElement = document.getElementsByClassName("settings_icon")[0];
     console.log("Resetting Fuster");
 
-    // Inelegant, but hey!
-    fusterElement.innerHTML = ''
+    // Inelegant, but hey! Completely wipes fuster, and manually resets him.
+    fusterElement.innerHTML = '';
     fuster_element.setAttribute("class", "settings_icon");
     fusterElement.setAttribute("id", "fuster_closed");
     fusterElement.setAttribute("onclick", "fusterOpen()");
