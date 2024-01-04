@@ -452,7 +452,7 @@ center {
     top: -5px;
     left: 880px; /* 13 * 2 = 26  ->  26 + 50 = 76  ->  GIF has 3 transparent pixels on the right side  ->  73 */
     width: 50px;
-    background-image:url('images/SiteAssets/Fuster\ Frame\ 1.png');
+    background-image:url('images/SiteAssets/Fuster/Fuster\ Idle.gif');
 }
 
 #fuster_open {
@@ -473,7 +473,7 @@ center {
 #fuster_image {
     height:50px;
     width:50px;
-    background-image:url('images/SiteAssets/Fuster\ Open.gif');
+    background-image:url('images/SiteAssets/Fuster/Fuster\ Open.gif');
 }
 
 #fuster_dialogue {
