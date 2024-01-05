@@ -337,41 +337,49 @@ center {
 #header_right_secret {
     background-image: url("images/Splashes/SplashSecret.png");
     background-color: rgba(20, 8, 40, 1);
+    background-repeat: no-repeat;
 }
 
 #header_right_00 {
     background-image: url("images/Splashes/Splash00.png");
     background-color: rgba(20, 8, 40, 1);
+    background-repeat: no-repeat;
 }
 
 #header_right_01 {
     background-image: url("images/Splashes/Splash01.png");
     background-color: rgba(20, 8, 40, 1);
+    background-repeat: no-repeat;
 }
 
 #header_right_02 {
     background-image: url("images/Splashes/Splash02.png");
     background-color: rgba(20, 8, 40, 1);
+    background-repeat: no-repeat;
 }
 
 #header_right_03 {
     background-image: url("images/Splashes/Splash03.png");
     background-color: rgba(20, 8, 40, 1);
+    background-repeat: no-repeat;
 }
 
 #header_right_04 {
     background-image: url("images/Splashes/Splash04.png");
     background-color: rgba(20, 8, 40, 1);
+    background-repeat: no-repeat;
 }
 
 #header_right_05 {
     background-image: url("images/Splashes/Splash05.png");
     background-color: rgba(20, 8, 40, 1);
+    background-repeat: no-repeat;
 }
 
 #header_right_06 {
     background-image: url("images/Splashes/Splash06.png");
     background-color: rgba(20, 8, 40, 1);
+    background-repeat: no-repeat;
 }
 
 #header_right_07 {
@@ -410,7 +418,7 @@ center {
 #background_triangles {
     content: "";
     position:absolute;
-    width:200%;
+    width:300%;
     height:200%;
     top:-70%;
     left:-70%;
