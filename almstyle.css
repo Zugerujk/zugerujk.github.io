@@ -419,7 +419,7 @@ center {
     content: "";
     position:absolute;
     width:300%;
-    height:200%;
+    height:300%;
     top:-70%;
     left:-70%;
     z-index: -2;
@@ -487,4 +487,5 @@ center {
 #fuster_dialogue {
     margin-top: 0px;
     font-size: 16px;
+    padding-right:5px;
 }
