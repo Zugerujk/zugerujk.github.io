@@ -208,8 +208,8 @@ const createFusterElement = function() {
     return fuster_element;
 }
 
-let fusterOpen = function() {
-    const fusterElement = document.getElementsByClassName("settings_icon")[0];
+const fusterOpen = function() {
+    let fusterElement = document.getElementsByClassName("settings_icon")[0];
     console.log("Opening Fuster");
 
     // Change fuster's div ID to appear vastly different
@@ -217,7 +217,7 @@ let fusterOpen = function() {
     fusterElement.setAttribute("onclick", "fusterClose()");
 
     // Create an image of fuster within the div
-    const fuster_image = document.createElement("div");
+    let fuster_image = document.createElement("div");
     fuster_image.id = "fuster_image";
     fusterElement.append(fuster_image);
 
@@ -237,13 +237,13 @@ let fusterOpen = function() {
     fusterElement.append(fuster_dialogue_div);
 }
 
-let fusterClose = function() {
-    const fusterElement = document.getElementsByClassName("settings_icon")[0];
+const fusterClose = function() {
+    let fusterElement = document.getElementsByClassName("settings_icon")[0];
     console.log("Resetting Fuster");
 
     // Inelegant, but hey! Completely wipes fuster, and manually resets him.
     fusterElement.innerHTML = '';
-    fuster_element.setAttribute("class", "settings_icon");
+    fusterElement.setAttribute("class", "settings_icon");
     fusterElement.setAttribute("id", "fuster_closed");
     fusterElement.setAttribute("onclick", "fusterOpen()");
 }
