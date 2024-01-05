@@ -145,25 +145,23 @@ const createNavbar = function(blocked_space_arg = "") {
     gallery_navbar_element = createNavbarElement("Gallery", gallery_link);
     bio_navbar_element = createNavbarElement("About", bio_link);
 
-    // Create the spacer
-    spacer1 = createNavbarSpacer();
-    spacer2 = createNavbarSpacer();
-    spacer3 = createNavbarSpacer();
-    spacer4 = createNavbarSpacer();
-
     // Find the navbar div
     const navbarMasterElement = document.getElementById("the_navbar"); // Like the master emerald
 
     // Append city amirite
     navbarMasterElement.append(home_navbar_element);
-    navbarMasterElement.append(spacer1);
+    navbarMasterElement.append(createNavbarSpacer());
     navbarMasterElement.append(blog_navbar_element);
-    navbarMasterElement.append(spacer2);
+    navbarMasterElement.append(createNavbarSpacer());
     navbarMasterElement.append(projects_navbar_element);
-    navbarMasterElement.append(spacer3);
+    navbarMasterElement.append(createNavbarSpacer());
     navbarMasterElement.append(gallery_navbar_element);
-    navbarMasterElement.append(spacer4);
+    navbarMasterElement.append(createNavbarSpacer());
     navbarMasterElement.append(bio_navbar_element);
+
+    fuster_element = createFusterElement();
+    navbarMasterElement.append(fuster_element);
+    
 };
 
 
@@ -172,16 +170,16 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2023. v0.5";
+    let generic_footer_text = "All rights reserved, Me, 2023. v0.6";
     
     // Find the navbar div
     const footerElement = document.getElementById("the_footer");
     
-    const navbar_element_text = document.createTextNode(generic_footer_text);
+    const footer_element_text = document.createTextNode(generic_footer_text);
     footerElement.after(createVerticalSpacer());
     footerElement.after(createVerticalSpacer());
-    footerElement.appendChild(navbar_element_text);
-    
+    footerElement.appendChild(footer_element_text);
+
 };
 
 
@@ -196,3 +194,56 @@ const createElements = function(navbar_blocked_space_arg="") {
 }
 
 
+
+/*
+    FUSTER STUFF
+*/
+
+const createFusterElement = function() {
+    let fuster_element;
+    fuster_element = document.createElement("div");
+    fuster_element.setAttribute("class", "settings_icon");
+    fuster_element.setAttribute("id", "fuster_closed");
+    fuster_element.setAttribute("onclick", "fusterOpen()");
+    return fuster_element;
+}
+
+let fusterOpen = function() {
+    const fusterElement = document.getElementsByClassName("settings_icon")[0];
+    console.log("Opening Fuster");
+
+    // Change fuster's div ID to appear vastly different
+    fusterElement.setAttribute("id", "fuster_open");
+    fusterElement.setAttribute("onclick", "fusterClose()");
+
+    // Create an image of fuster within the div
+    const fuster_image = document.createElement("div");
+    fuster_image.id = "fuster_image";
+    fusterElement.append(fuster_image);
+
+    // Add dialogue for fuster, found within the head of the document.
+    fuster_dialogue_div = document.createElement("p"); 
+    fuster_dialogue_div.setAttribute("id", "fuster_dialogue");
+    let fuster_dialogue = "\"Hi!\"";
+    try {
+        head_text = document.querySelector('meta[name="fuster-dialogue"]').content;
+        console.log(head_text);
+        fuster_dialogue = "\"" + head_text + "\""
+    }
+    catch {
+        console.log("Issue finding Fuster dialogue - may be null.")
+    }
+    fuster_dialogue_div.appendChild(document.createTextNode(fuster_dialogue));
+    fusterElement.append(fuster_dialogue_div);
+}
+
+let fusterClose = function() {
+    const fusterElement = document.getElementsByClassName("settings_icon")[0];
+    console.log("Resetting Fuster");
+
+    // Inelegant, but hey! Completely wipes fuster, and manually resets him.
+    fusterElement.innerHTML = '';
+    fuster_element.setAttribute("class", "settings_icon");
+    fusterElement.setAttribute("id", "fuster_closed");
+    fusterElement.setAttribute("onclick", "fusterOpen()");
+}
