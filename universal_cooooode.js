@@ -170,7 +170,7 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2023. v0.6";
+    let generic_footer_text = "All rights reserved, Me, 2023. v0.6.1";
     
     // Find the navbar div
     const footerElement = document.getElementById("the_footer");
