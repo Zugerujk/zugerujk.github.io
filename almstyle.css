@@ -420,8 +420,8 @@ center {
     position:absolute;
     width:300%;
     height:300%;
-    top:-70%;
-    left:-70%;
+    top:-100%;
+    left:-100%;
     z-index: -2;
     background: url(images/triangles_v1_light.png) 0 0 repeat;
     transform: rotate(30deg);
