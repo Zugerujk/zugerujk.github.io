@@ -1,20 +1,12 @@
-/* The thing itself*/
-/* body {
-    background-image:url('images/Alm.png');
-    background-color: #aeafe6;
-} */
-
 :root {
     color-scheme: dark;
 }
 
 body {
-    background-image:url('images/gradient_v3_light.png ');
+    background-image:url('images/SiteAssets/Background/gradient_v3_light.png');
     background-repeat:no-repeat;
-    /* background-size:100% 100%; */
     background-size: cover;
     position:relative;
-    /* width:auto; */
     min-height:100vh;
     max-width:100vw;
     margin:0px;
@@ -23,17 +15,44 @@ body {
 
 * {
     font-family: 'Hanken Grotesk', sans-serif;
-    color:whitesmoke;
+    color: whitesmoke;
     z-index: 2;
 }
 
 p {
-    font-family: 'Hanken Grotesk', sans-serif;
-    color: whitesmoke;
     font-size: 18px;
     padding-left: 5px;
-    /* border: 1px solid;   */
+    padding-right: 5px;
     overflow: hidden;
+    margin-block-start: 0.6em;
+    margin-block-end: 0.8em;
+}
+
+a {
+    text-decoration-thickness: 5%;
+}
+
+a:hover {
+    color: #9e9eff
+}
+
+h2 {
+    text-indent:5px;
+    font-size: 34px;
+    padding-left:5px;
+    font-weight: normal;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+h5 {
+    padding-top:0px;
+    padding-bottom:0px;
+    font-weight: normal;
+    font-size: 16px;
+    text-indent:5px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 center {
@@ -59,6 +78,7 @@ center {
     flex-grow: 1;
     border-left: 5px solid #1f0042;
     width: 200px;
+    max-width:200px;
     overflow:hidden;
     /* height: auto; */
 }
@@ -130,13 +150,10 @@ center {
 .blog_feed_entry {
     border: 12px solid #1f0042;
     display:flex;
-    /* border-radius: 10px; */
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 6px;
     margin-bottom: 14px;
-    /* height: 50px; */
-    /* line-height: 50px; */
     background-color: #322357;
     text-indent:10px;
     font-size: 30px;
@@ -167,12 +184,18 @@ center {
 .blog_feed_entry_link {
     text-indent:5px;
     font-size: 34px;
-    line-height: 56.5px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-decoration-skip-ink: none;
     font-family: 'Courier New', Courier, monospace;
     padding-right: 10px;
     border-right: 5px dashed #1f0042;
     min-width: 145px;
     text-align: center;
+}
+.blog_feed_entry_link:visited {
+    color: #9e9eff
 }
 
 .blog_feed_entry_end_cont {
@@ -288,6 +311,7 @@ center {
     position: relative;
     height: 40px;
     width: 850px;
+    max-width:850px;
     margin-left: auto;
     margin-right: auto;
     background-color: #1f0042;
@@ -401,7 +425,7 @@ center {
     color: whitesmoke;
 }
 
-@keyframes example {
+@keyframes triangles_animation {
     from {transform: rotate(30deg);}
     to {transform: rotate(30deg) translate(302px);}
 }
@@ -418,14 +442,14 @@ center {
 #background_triangles {
     content: "";
     position:absolute;
-    width:300%;
-    height:300%;
+    width:320%;
+    height:250%;
     top:-100%;
     left:-100%;
     z-index: -2;
-    background: url(images/triangles_v1_light.png) 0 0 repeat;
+    background: url(images/SiteAssets/Background/triangles_v1_light.png) 0 0 repeat;
     transform: rotate(30deg);
-    animation-name: example;
+    animation-name: triangles_animation;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -438,7 +462,7 @@ center {
     width:100%;
     top:0;
     z-index: -1;
-    background-image:url('images/gradient_v3_light_overlay.png');
+    background-image:url('images/SiteAssets/Background/gradient_v3_light_overlay.png');
     opacity: 1;
     background-repeat:no-repeat;
     background-size:100% 100%;
@@ -458,9 +482,10 @@ center {
     position: absolute;
     height: 50px;
     top: -5px;
-    left: 880px; /* 13 * 2 = 26  ->  26 + 50 = 76  ->  GIF has 3 transparent pixels on the right side  ->  73 */
+    left: 880px;
     width: 50px;
     background-image:url('images/SiteAssets/Fuster/Fuster\ Idle.gif');
+    cursor:pointer;
 }
 
 #fuster_open {
@@ -475,7 +500,7 @@ center {
     background-color: rgba(20, 8, 40, 1);
     border: 13px solid #1f0042;
     overflow:hidden;
-    
+    cursor:pointer;
 }
 
 #fuster_image {

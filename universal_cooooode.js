@@ -1,8 +1,8 @@
 /*
     SPACER STUFF
 */
-let createVerticalSpacer = function() {
-    const new_vertical_spacer = document.createElement("div");
+const createVerticalSpacer = function() {
+    let new_vertical_spacer = document.createElement("div");
     new_vertical_spacer.setAttribute("class", "generic_vertical_spacer");
     return new_vertical_spacer;
 }
@@ -12,13 +12,13 @@ let createVerticalSpacer = function() {
 /*
     HEADER STUFF
 */
-let changeHeaderToSecret = function() {
+const changeHeaderToSecret = function() {
     const headerElement = document.getElementsByClassName("right")[0];
     console.log("Say hi to debug Alm 🥺");
     headerElement.id = "header_right_secret";
 }
 
-let determineHeaderSeed = function() {
+const determineHeaderSeed = function() {
     let the_date = new Date();
     let seconds_since_epoch = Math.round(the_date.getTime() / 1000);
     let header_seed = Math.floor(seconds_since_epoch / 3600) % 8;
@@ -26,8 +26,8 @@ let determineHeaderSeed = function() {
     return header_seed;
 }
 
-let createHeaderRight = function() {
-    const header_element_right = document.createElement("div");
+const createHeaderRight = function() {
+    let header_element_right = document.createElement("div");
     header_element_right.setAttribute("class", "right");
     let header_number = determineHeaderSeed();
     
@@ -64,21 +64,21 @@ let createHeaderRight = function() {
     return header_element_right;
 }
 
-let createHeader = function() {
-    const headerElement = document.getElementById("the_header");
+const createHeader = function() {
+    let header_element = document.getElementById("the_header");
     // Create Zugerujk.net left area
     let zugerujknet_title_text = "Zugerujk.net 😎"
-    const header_element_left = document.createElement("div");
+    let header_element_left = document.createElement("div");
     header_element_left.setAttribute("class", "left");
     header_element_left.setAttribute("id", "zugerujknet_title");
 
-    const header_element_left_text = document.createTextNode(zugerujknet_title_text);
+    let header_element_left_text = document.createTextNode(zugerujknet_title_text);
     header_element_left.appendChild(header_element_left_text);
     header_element_right = createHeaderRight();
 
-    headerElement.before(createVerticalSpacer());
-    headerElement.append(header_element_left);
-    headerElement.append(header_element_right);
+    header_element.before(createVerticalSpacer());
+    header_element.append(header_element_left);
+    header_element.append(header_element_right);
 }
 
 
@@ -86,7 +86,7 @@ let createHeader = function() {
 /*
     NAVBAR STUFF
 */
-let createNavbarElement = function(text = "blank", link = "") {
+const createNavbarElement = function(text = "blank", link = "") {
     let navbar_element;
     if (link == "") {  // A blocked navbar element
         navbar_element = document.createElement("div");
@@ -104,8 +104,8 @@ let createNavbarElement = function(text = "blank", link = "") {
     return navbar_element;
 };
 
-let createNavbarSpacer = function() {
-    const navbar_spacer = document.createElement("div");
+const createNavbarSpacer = function() {
+    let navbar_spacer = document.createElement("div");
     navbar_spacer.setAttribute("class", "upper_navbar_spacer");
 
     return navbar_spacer;
@@ -146,21 +146,22 @@ const createNavbar = function(blocked_space_arg = "") {
     bio_navbar_element = createNavbarElement("About", bio_link);
 
     // Find the navbar div
-    const navbarMasterElement = document.getElementById("the_navbar"); // Like the master emerald
+    let navbar_master_element = document.getElementById("the_navbar"); // Like the master emerald
 
     // Append city amirite
-    navbarMasterElement.append(home_navbar_element);
-    navbarMasterElement.append(createNavbarSpacer());
-    navbarMasterElement.append(blog_navbar_element);
-    navbarMasterElement.append(createNavbarSpacer());
-    navbarMasterElement.append(projects_navbar_element);
-    navbarMasterElement.append(createNavbarSpacer());
-    navbarMasterElement.append(gallery_navbar_element);
-    navbarMasterElement.append(createNavbarSpacer());
-    navbarMasterElement.append(bio_navbar_element);
+    navbar_master_element.append(home_navbar_element);
+    navbar_master_element.append(createNavbarSpacer());
+    navbar_master_element.append(blog_navbar_element);
+    navbar_master_element.append(createNavbarSpacer());
+    navbar_master_element.append(projects_navbar_element);
+    navbar_master_element.append(createNavbarSpacer());
+    navbar_master_element.append(gallery_navbar_element);
+    navbar_master_element.append(createNavbarSpacer());
+    navbar_master_element.append(bio_navbar_element);
 
+    // Add Fuster
     fuster_element = createFusterElement();
-    navbarMasterElement.append(fuster_element);
+    navbar_master_element.append(fuster_element);
     
 };
 
@@ -173,12 +174,12 @@ const createFooter = function() {
     let generic_footer_text = "All rights reserved, Me, 2024. v0.6.1";
     
     // Find the navbar div
-    const footerElement = document.getElementById("the_footer");
+    let footer_element = document.getElementById("the_footer");
     
-    const footer_element_text = document.createTextNode(generic_footer_text);
-    footerElement.after(createVerticalSpacer());
-    footerElement.after(createVerticalSpacer());
-    footerElement.appendChild(footer_element_text);
+    let footer_element_text = document.createTextNode(generic_footer_text);
+    footer_element.after(createVerticalSpacer());
+    footer_element.after(createVerticalSpacer());
+    footer_element.appendChild(footer_element_text);
 
 };
 
@@ -209,17 +210,17 @@ const createFusterElement = function() {
 }
 
 const fusterOpen = function() {
-    let fusterElement = document.getElementsByClassName("settings_icon")[0];
+    let fuster_element = document.getElementsByClassName("settings_icon")[0];
     console.log("Opening Fuster");
 
     // Change fuster's div ID to appear vastly different
-    fusterElement.setAttribute("id", "fuster_open");
-    fusterElement.setAttribute("onclick", "fusterClose()");
+    fuster_element.setAttribute("id", "fuster_open");
+    fuster_element.setAttribute("onclick", "fusterClose()");
 
     // Create an image of fuster within the div
     let fuster_image = document.createElement("div");
     fuster_image.id = "fuster_image";
-    fusterElement.append(fuster_image);
+    fuster_element.append(fuster_image);
 
     // Add dialogue for fuster, found within the head of the document.
     fuster_dialogue_div = document.createElement("p"); 
@@ -234,16 +235,16 @@ const fusterOpen = function() {
         console.log("Issue finding Fuster dialogue - may be null.")
     }
     fuster_dialogue_div.appendChild(document.createTextNode(fuster_dialogue));
-    fusterElement.append(fuster_dialogue_div);
+    fuster_element.append(fuster_dialogue_div);
 }
 
 const fusterClose = function() {
-    let fusterElement = document.getElementsByClassName("settings_icon")[0];
+    let fuster_element = document.getElementsByClassName("settings_icon")[0];
     console.log("Resetting Fuster");
 
     // Inelegant, but hey! Completely wipes fuster, and manually resets him.
-    fusterElement.innerHTML = '';
-    fusterElement.setAttribute("class", "settings_icon");
-    fusterElement.setAttribute("id", "fuster_closed");
-    fusterElement.setAttribute("onclick", "fusterOpen()");
+    fuster_element.innerHTML = '';
+    fuster_element.setAttribute("class", "settings_icon");
+    fuster_element.setAttribute("id", "fuster_closed");
+    fuster_element.setAttribute("onclick", "fusterOpen()");
 }
