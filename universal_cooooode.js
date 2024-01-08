@@ -16,12 +16,13 @@ const changeHeaderToSecret = function() {
     const headerElement = document.getElementsByClassName("right")[0];
     console.log("Say hi to debug Alm 🥺");
     headerElement.id = "header_right_secret";
+    headerElement.title = "Art credit: Hidari";
 }
 
 const determineHeaderSeed = function() {
     let the_date = new Date();
     let seconds_since_epoch = Math.round(the_date.getTime() / 1000);
-    let header_seed = Math.floor(seconds_since_epoch / 3600) % 8;
+    let header_seed = Math.floor(seconds_since_epoch / 3600) % 9;
     console.log("The header seed is " + header_seed + ".");
     return header_seed;
 }
@@ -34,27 +35,39 @@ const createHeaderRight = function() {
     switch (header_number) {
         case 0:
             header_element_right.setAttribute("id", "header_right_00");
+            header_element_right.setAttribute("title", "Art credit: MAJYKKS");
             break;
         case 1:
             header_element_right.setAttribute("id", "header_right_01");
+            header_element_right.setAttribute("title", "Photo credit: GuardianGlimmer");
             break;
         case 2:
             header_element_right.setAttribute("id", "header_right_02");
+            header_element_right.setAttribute("title", "Art credit: Meronpan");
             break;
         case 3:
             header_element_right.setAttribute("id", "header_right_03");
+            header_element_right.setAttribute("title", "Art credit: f0nk (emirulz)");
             break;
         case 4:
             header_element_right.setAttribute("id", "header_right_04");
+            header_element_right.setAttribute("title", "Art credit: Lambchopper");
             break;
         case 5:
             header_element_right.setAttribute("id", "header_right_05");
+            header_element_right.setAttribute("title", "Art credit: Crank");
             break;
         case 6:
             header_element_right.setAttribute("id", "header_right_06");
+            header_element_right.setAttribute("title", "Art credit: Prince Annihilation");
             break;
         case 7:
             header_element_right.setAttribute("id", "header_right_07");
+            header_element_right.setAttribute("title", "Photo credit: Mark Glickman. Art credit: Hidari");
+            break;
+        case 8:
+            header_element_right.setAttribute("id", "header_right_08");
+            header_element_right.setAttribute("title", "Art credit: Crank");
             break;
 
     }
@@ -171,7 +184,7 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2024. v0.6.2";
+    let generic_footer_text = "All rights reserved, Me, 2024. v0.6.3";
     
     // Find the navbar div
     let footer_element = document.getElementById("the_footer");
