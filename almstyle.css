@@ -526,3 +526,7 @@ center {
     font-size: 16px;
     padding-right:5px;
 }
+
+.settingscheckbox {
+    padding-left: 5px;
+}
