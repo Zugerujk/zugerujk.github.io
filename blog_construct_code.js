@@ -35,6 +35,7 @@ var pageg3_hq = [
     "001",
 ];
 var pageg4_miscellany = [
+    "024",
     "023",
     "021",
     "019",
@@ -187,7 +188,13 @@ var page_listing = {
         title: "New coat",
         date: "1/12/24 11:52:58 PM CST",
         link: "https://zugerujk.net/blog/blog023",
-    }
+    },
+    "024": {
+        displaynum: "#024",
+        title: "Panera Bread Review January 2024",
+        date: "1/18/24 11:29:46 AM CST",
+        link: "https://zugerujk.net/blog/blog024",
+    },
 }
 
 // Populate all_pages variable
