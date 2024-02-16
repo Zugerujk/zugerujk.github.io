@@ -233,6 +233,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog026",
         var: "1",
     },
+    "027": {
+        displaynum: "#027",
+        title: "I will never stop mourning the loss of the human internet, of human art.",
+        date: "2/16/24 4:44:20 AM CST",
+        link: "https://zugerujk.net/blog/blog027",
+        var: "1",
+    }
 }
 
 // Populate all_pages variable
