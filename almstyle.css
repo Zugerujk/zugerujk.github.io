@@ -135,7 +135,8 @@ center {
 }
 
 .news_feed_entry_divider {
-    border-top: 5px dashed #1f0042;
+    border-top: 5px dashed;
+    border-color: inherit;
 }
 
 .news_feed_entry_end {
@@ -147,7 +148,7 @@ center {
     line-height: 12px;
 }
 
-.blog_feed_entry {
+.blog_feed_entry, .blog_feed_entry_var1 {
     border: 12px solid #1f0042;
     display:flex;
     margin-left: 20px;
@@ -158,6 +159,11 @@ center {
     text-indent:10px;
     font-size: 30px;
     flex-direction: row;
+}
+
+.blog_feed_entry_var1 {
+    border-color: #150042;
+    background-color: #1e374a;
 }
 
 .blog_feed_entry_content {
@@ -213,7 +219,7 @@ center {
     margin-block-end: 0em;
 }
 
-.blog_entry {
+.blog_entry, .blog_entry_var1 {
     border: 12px solid #1f0042;
     /* border-radius: 10px; */
     margin-left: 20px;
@@ -224,6 +230,11 @@ center {
     background-color: #322357;
     text-indent:10px;
     font-size: 34px;
+}
+
+.blog_entry_var1 {
+    border-color: #150042;
+    background-color: #1e374a;
 }
 
 .caption {

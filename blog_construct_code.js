@@ -56,144 +56,182 @@ var page_listing = {
         title: "My nephew says \"bruh\"",
         date: "7/10/23 4:42:18 PM CST",
         link: "https://zugerujk.net/blog/blog001",
+        var: "0",
     },
     "002": {
         displaynum: "#002",
         title: "I had to enter 45 captchas",
         date: "7/14/23 1:56:42 AM CST",
         link: "https://zugerujk.net/blog/blog002",
+        var: "0",
     },
     "003": {
         displaynum: "#003",
         title: "Minnesota Roadtrip 2023 😎",
         date: "7/18/23 4:30:37 AM CST",
         link: "https://zugerujk.net/blog/blog003",
+        var: "0",
     },
     "004": {
         displaynum: "#004",
         title: "On love",
         date: "8/1/23 6:17:14 AM CST",
         link: "https://zugerujk.net/blog/blog004",
+        var: "0",
     },
     "005": {
         displaynum: "#005",
         title: "A robot phone call 😱⁉️",
         date: "8/11/23 9:44:13 PM CST",
         link: "https://zugerujk.net/blog/blog005",
+        var: "0",
     },
     "006": {
         displaynum: "#006",
         title: "The birth of my child",
         date: "8/25/23 7:05:19 PM CST",
         link: "https://zugerujk.net/blog/blog006",
+        var: "0",
     },
     "007": {
         displaynum: "#007",
         title: "Birth delayed",
         date: "8/26/23 1:15:52 AM CST",
         link: "https://zugerujk.net/blog/blog007",
+        var: "0",
     },
     "008": {
         displaynum: "#008",
         title: "[pikmin][4] Holy Shit[pikminstanding]",
         date: "8/31/23 8:49:13 PM CST",
         link: "https://zugerujk.net/blog/blog008",
+        var: "0",
     },
     "009": {
         displaynum: "#009",
         title: "More [pikmin][4][pikminstanding]",
         date: "9/2/23 11:01:15 PM CST",
         link: "https://zugerujk.net/blog/blog009",
+        var: "0",
     },
     "010": {
         displaynum: "#010",
         title: "An Hour with Mr Beast",
         date: "9/3/23 1:06:26 AM CST",
         link: "https://zugerujk.net/blog/blog010",
+        var: "0",
     },
     "011": {
         displaynum: "#011",
         title: "Beat [pikmin][4][pikminstanding]",
         date: "9/3/23 3:44:01 AM CST",
         link: "https://zugerujk.net/blog/blog011",
+        var: "0",
     },
     "012": {
         displaynum: "#012",
         title: "Errands",
         date: "9/5/23 3:54:54 PM CST",
         link: "https://zugerujk.net/blog/blog012",
+        var: "0",
     },
     "013": {
         displaynum: "#013",
         title: "The previous month of my life",
         date: "10/10/23 9:25:52 AM CST",
         link: "https://zugerujk.net/blog/blog013",
+        var: "0",
     },
     "014": {
         displaynum: "#014",
         title: "I tried the Panera Bread drink that killed someone",
         date: "10/25/23 7:46:52 PM CST",
         link: "https://zugerujk.net/blog/blog014",
+        var: "0",
     },
     "015": {
         displaynum: "#015",
         title: "The Ketamine Diaries",
         date: "11/15/23 4:12:33 PM CST",
         link: "https://zugerujk.net/blog/blog015",
+        var: "0",
     },
     "016": {
         displaynum: "#016",
         title: "Thoughts on Borne, the book",
         date: "11/19/23 10:19:07 AM CST",
         link: "https://zugerujk.net/blog/blog016",
+        var: "0",
     },
     "017": {
         displaynum: "#017",
         title: "Disco Elysium, The Voyeurs, and endings",
         date: "12/2/23 1:42:44 PM CST",
         link: "https://zugerujk.net/blog/blog017",
+        var: "0",
     },
     "018": {
         displaynum: "#018",
         title: "Code Switching and Lego Universe",
         date: "12/28/23 5:58:09 AM CST",
         link: "https://zugerujk.net/blog/blog018",
+        var: "0",
     },
     "019": {
         displaynum: "#019",
         title: "The Gundam Base Mobile USA Tour Tulsa Review",
         date: "12/28/23 2:11:29 PM CST",
         link: "https://zugerujk.net/blog/blog019",
+        var: "0",
     },
     "020": {
         displaynum: "#020",
         title: "2023 Year-end Wrap-up",
         date: "12/30/23 10:45:38 PM CST",
         link: "https://zugerujk.net/blog/blog020",
+        var: "0",
     },
     "021": {
         displaynum: "#021",
         title: "Things I own[br](for insurance, for when my home burns down)",
         date: "1/5/24 12:26:59 AM CST",
         link: "https://zugerujk.net/blog/blog021",
+        var: "0",
     },
     "022474487139…": {
         displaynum: "#022474487139…",
         title: "NieR Replicant™ ver.1.22474487139... is the Game of All Time and I'm being so genuine",
         date: "1/7/24 8:53:51 PM CST",
         link: "https://zugerujk.net/blog/blog022474487139…",
+        var: "0",
     },
     "023": {
         displaynum: "#023",
         title: "New coat",
         date: "1/12/24 11:52:58 PM CST",
         link: "https://zugerujk.net/blog/blog023",
+        var: "0",
     },
     "024": {
         displaynum: "#024",
         title: "Panera Bread Review January 2024",
         date: "1/18/24 11:29:46 AM CST",
         link: "https://zugerujk.net/blog/blog024",
+        var: "0",
+    },
+    "025": {
+        displaynum: "#025",
+        title: "Oh! Starving Cover",
+        date: "2/16/24 12:59:19 AM CST",
+        link: "https://www.youtube.com/watch?v=xmaNs_XTfJs",
+        var: "1",
+    },
+    "026": {
+        displaynum: "#026",
+        title: "Personal Loss: Take5 Bar",
+        date: "2/16/24 1:26:12 AM CST",
+        link: "https://zugerujk.net/blog/blog026",
+        var: "1",
     },
 }
 
@@ -247,7 +285,12 @@ const createBlogConstruct = function(sortVar = "") {
 const createBlogFeedEntry = function(page = Object, page_num = "", construct_element) {
     // Create the containing div
     let entry_div = document.createElement("div");
-    entry_div.setAttribute("class", "blog_feed_entry");
+    if (page.var == "1") {
+        entry_div.setAttribute("class", "blog_feed_entry_var1");
+    }
+    else {
+        entry_div.setAttribute("class", "blog_feed_entry");
+    }
     entry_div.setAttribute("id", "entry" + page_num);
 
     // Create the clickable entry link
