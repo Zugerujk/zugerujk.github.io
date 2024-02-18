@@ -23,6 +23,7 @@ var pageg2_moviestv = [
     "001",
 ];
 var pageg3_hq = [
+    "026",
     "022474487139…",
     "021",
     "020",
@@ -35,7 +36,7 @@ var pageg3_hq = [
     "001",
 ];
 var pageg4_miscellany = [
-    "024",
+    "025",
     "023",
     "021",
     "019",
@@ -47,7 +48,12 @@ var pageg5_books = [
     "015",
     "013",
     "012",
-]
+];
+var pageg6_panerabread = [
+    "028",
+    "024",
+    "014",
+];
 
 
 var page_listing = {
@@ -239,7 +245,14 @@ var page_listing = {
         date: "2/16/24 4:44:20 AM CST",
         link: "https://zugerujk.net/blog/blog027",
         var: "1",
-    }
+    },
+    "028": {
+        displaynum: "#028",
+        title: "Panera Bread Review February 2024",
+        date: "2/18/24 10:05:11 AM CST",
+        link: "https://zugerujk.net/blog/blog028",
+        var: "1",
+    },
 }
 
 // Populate all_pages variable
@@ -277,6 +290,9 @@ const createBlogConstruct = function(sortVar = "") {
             break;
         case "g5":
             included_pages = pageg5_books;
+            break;
+        case "g6":
+            included_pages = pageg6_panerabread;
             break;
     }
 
