@@ -29,17 +29,22 @@
             </div>
 
             <div class="right" id="body_right">
-                <h5>Sort:</h5>
-                <form name="radio_group">
-                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="all" checked/> Most Recent</label></div>
+                <h5>Type:</h5>
+                <form name="radio_group_type">
+                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="all" checked/> All</label></div>
+                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="g3"/> Best</label></div>
                     <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="g1"/> Gaming</label></div>
                     <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="g2"/> Movies/TV</label></div>
-                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="g3"/> Best</label></div>
-                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="g4"/> Miscellany</label></div>
                     <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="g5"/> Books</label></div>
+                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="g4"/> Miscellany</label></div>
                     <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="g6"/> 𝒫𝒶𝓃𝑒𝓇𝒶 𝐵𝓇𝑒𝒶𝒹</label></div>
                 </form>
-            </div>
+                <h5>Sort:</h5>
+                <form name="radio_group_sort">
+                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="newtoold" checked/> Newest First</label></div>
+                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="oldtonew"/> Oldest First</label></div>
+                </form>
+                </div>
         </div>
 
         <!-- The footer. Gotta have one!-->
@@ -47,7 +52,7 @@
         
         <!-- Populate divs-->
         <script type="text/javascript" src="universal_cooooode.js" onload="createElements('blog')"></script>
-        <script type="text/javascript" src="blog_construct_code.js" onload="createBlogConstruct()"></script>
+        <script type="text/javascript" src="blog_construct_code.js" onload="createBlogConstruct(sortVar='all', numVar=100)"></script>
 
         <!-- Create pretty triangles-->
         <div id="background_triangles_container">

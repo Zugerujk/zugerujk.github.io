@@ -255,6 +255,10 @@ var page_listing = {
     },
 }
 
+var included_pages = [];
+var page_sort = "0";
+var num_pages = 0;
+
 // Populate all_pages variable
 for (page in page_listing) {
     all_pages.push(page);
@@ -266,14 +270,14 @@ all_pages.reverse();
     BUILDING
 */
 // Create the blog feed
-const createBlogConstruct = function(sortVar = "") {
+const createBlogConstruct = function(sortVar = "", numVar = 0) {
     let construct_element = document.getElementById("blog_construct_div");
-    
-    var included_pages = [];
 
+    // Interpret any input from sortVar
     switch(sortVar) {
-        case "all":
         case "":
+            break;
+        case "all":
             included_pages = all_pages;
             break;
         case "g1":
@@ -294,10 +298,37 @@ const createBlogConstruct = function(sortVar = "") {
         case "g6":
             included_pages = pageg6_panerabread;
             break;
+        case "newtoold":
+            page_sort = "0";
+            break;
+        case "oldtonew":
+            page_sort = "1";
+            break;
     }
 
-    for (i in included_pages) {
-        page_num = included_pages[i]
+    // Interpret numVar input
+    if (numVar != 0) {
+        num_pages = numVar;
+    }
+
+    // Create new array containing content of included_pages, but with a new reference.
+    var sent_pages = [...included_pages];
+
+    // Interpret any changes that need to be done to the sent_pages array
+    switch (page_sort) {
+        case "1":
+            sent_pages.reverse();
+            break;
+    }
+
+    // Create pages from the sent_pages array, up to the num_pages limit.
+    pages_made = 0;
+    for (i in sent_pages) {
+        pages_made++;
+        if (pages_made > num_pages) {
+            break;
+        }
+        page_num = sent_pages[i]
         var page = page_listing[page_num]
 
         createBlogFeedEntry(page=page, page_num=page_num, construct_element=construct_element);
@@ -438,23 +469,33 @@ const extractTitleTag = function(title = "") {
 }
 
 // Function to rebuild construct_element upon clicking a radio
-const radioButtonClick = function(radioVal = "") {
+const inputEnter = function(radioVal = "", numInput = 0) {
     let construct_element = document.getElementById("blog_construct_div");
-    console.log("Changing grouping to " + radioVal + "!");
+    if (radioVal != "") {
+        console.log("Changing grouping to " + radioVal + "!");
+    }
+    if (numInput != 0) {
+        console.log("Changing number of entries shown to " + numInput + "!");
+    }
 
     // Inelegant, but hey!
     construct_element.innerHTML = '';
 
-    createBlogConstruct(sortVar=radioVal);
-//     fuster_element.setAttribute("class", "settings_icon");
-//     fuster_element.setAttribute("id", "fuster_closed");
-//     fuster_element.setAttribute("onclick", "fusterOpen()");
+    createBlogConstruct(sortVar=radioVal, numVar=numInput);
 }
 
-// Give radios the function
-var radios = document.forms["radio_group"].elements["construct_group"];
-for (var radio of radios) {
+// Give first radio group their function
+var radios_group_type = document.forms["radio_group_type"].elements["construct_group"];
+for (var radio of radios_group_type) {
     radio.onclick = function() {
-        radioButtonClick(radioVal=this.value);
+        inputEnter(radioVal=this.value);
+    }
+}
+
+// Give second radio group their function
+var radios_group_sort = document.forms["radio_group_sort"].elements["construct_group"];
+for (var radio of radios_group_sort) {
+    radio.onclick = function() {
+        inputEnter(radioVal=this.value);
     }
 }
