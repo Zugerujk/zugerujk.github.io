@@ -184,7 +184,7 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2024. v0.7.4";
+    let generic_footer_text = "All rights reserved, Me, 2024. v0.7.5";
     
     // Find the navbar div
     let footer_element = document.getElementById("the_footer");
@@ -260,4 +260,13 @@ const fusterClose = function() {
     fuster_element.setAttribute("class", "settings_icon");
     fuster_element.setAttribute("id", "fuster_closed");
     fuster_element.setAttribute("onclick", "fusterOpen()");
+}
+
+const galleryPhotoChange = function(new_photo="", alt_text="") {
+    let gallery_main_photo = document.getElementById("gallery_photo");
+    console.log("Changing gallery photo");
+
+    gallery_main_photo.setAttribute("src", new_photo);
+    gallery_main_photo.setAttribute("alt", alt_text);
+    gallery_main_photo.setAttribute("title", alt_text);
 }

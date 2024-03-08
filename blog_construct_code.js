@@ -36,6 +36,7 @@ var pageg3_hq = [
     "001",
 ];
 var pageg4_miscellany = [
+    "029",
     "025",
     "023",
     "021",
@@ -251,6 +252,13 @@ var page_listing = {
         title: "Panera Bread Review February 2024",
         date: "2/18/24 10:05:11 AM CST",
         link: "https://zugerujk.net/blog/blog028",
+        var: "1",
+    },
+    "029": {
+        displaynum: "#029",
+        title: "IN ERA+ Infinity Nova Thunderbolt Review",
+        date: "3/8/24 4:26:11 PM CST",
+        link: "https://zugerujk.net/blog/blog029",
         var: "1",
     },
 }
