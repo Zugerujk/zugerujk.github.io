@@ -261,6 +261,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog029",
         var: "1",
     },
+    "030": {
+        displaynum: "#030",
+        title: "Went to a Denny",
+        date: "3/10/24 4:55:21 AM CST",
+        link: "https://zugerujk.net/blog/blog030",
+        var: "1",
+    },
 }
 
 var included_pages = [];
