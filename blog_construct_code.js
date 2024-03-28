@@ -268,7 +268,7 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog030",
         var: "1",
     },
-    "030": {
+    "031": {
         displaynum: "#031",
         title: "Coca-Cola Spiced",
         date: "3/28/24 5:40:25 PM CST",
