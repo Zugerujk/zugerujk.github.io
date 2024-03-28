@@ -268,6 +268,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog030",
         var: "1",
     },
+    "030": {
+        displaynum: "#031",
+        title: "Coca-Cola Spiced",
+        date: "3/28/24 5:40:25 PM CST",
+        link: "https://zugerujk.net/blog/blog031",
+        var: "1",
+    },
 }
 
 var included_pages = [];
