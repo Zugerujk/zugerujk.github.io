@@ -280,14 +280,14 @@ var page_listing = {
         title: "NieR Re[in]carnation - 673 hours remain",
         date: "4/1/2024 11:01:19 PM CST",
         link: "https://zugerujk.net/blog/blog032",
-        var: "1",
+        var: "2",
     },
     "033": {
         displaynum: "#033",
         title: "NieR Re[in]carnation - 672 hours remain",
         date: "4/1/2024 11:45:15 PM CST",
         link: "https://zugerujk.net/blog/blog033",
-        var: "1",
+        var: "2",
     }
 }
 
@@ -378,6 +378,9 @@ const createBlogFeedEntry = function(page = Object, page_num = "", construct_ele
     if (page.var == "1") {
         entry_div.setAttribute("class", "blog_feed_entry_var1");
     }
+    else if (page.var == "2") {
+        entry_div.setAttribute("class", "blog_feed_entry_var2")
+    }
     else {
         entry_div.setAttribute("class", "blog_feed_entry");
     }
@@ -467,6 +470,13 @@ const parseTitle = function(title = "") {
             else if (tagElement == "[br]") {
                 let br_div = document.createElement("br");
                 title_div.append(br_div);
+            }
+            else if (tagElement == "[in]") {
+                let in_div = document.createElement("reinin");
+                in_text = document.createTextNode("in");
+                in_div.appendChild(in_text);
+                title_div.append(in_div);
+
             }
             else {
                 console.log("Couldn't figure out a title tag! FUCK!")

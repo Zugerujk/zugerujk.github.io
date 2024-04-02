@@ -88,6 +88,7 @@ center {
 .upper_navbar_element {
     flex-grow: 10;
     background-color: #453075;
+    --background-color-const: #453075;
 
     color: whitesmoke;
     font-family: 'Hanken Grotesk';
@@ -99,12 +100,14 @@ center {
 
 .upper_navbar_element:hover {
     background-color: #322357;
+    --background-color-const: #322357
     color: lightgray;
 }
 
 .selected_upper_navbar_element {
     flex-grow: 10;
     background-color: #1f0042;
+    --background-color-const: #1f0042;
 
     color: whitesmoke;
     font-family: 'Hanken Grotesk';
@@ -118,6 +121,7 @@ center {
     width: 5px;
     height: 40px;
     background-color: #1f0042;
+    --background-color-const: #1f0042;
 }
 
 
@@ -130,6 +134,7 @@ center {
     margin-bottom: 14px;
     height: auto;
     background-color: #322357;
+    --background-color-const: #322357;
     text-indent:10px;
     font-size: 34px;
 }
@@ -148,7 +153,7 @@ center {
     line-height: 12px;
 }
 
-.blog_feed_entry, .blog_feed_entry_var1 {
+.blog_feed_entry, .blog_feed_entry_var1, .blog_feed_entry_var2 {
     border: 12px solid #1f0042;
     display:flex;
     margin-left: 20px;
@@ -156,14 +161,20 @@ center {
     margin-top: 6px;
     margin-bottom: 14px;
     background-color: #322357;
+    --background-color-const: #322357;
     text-indent:10px;
     font-size: 30px;
     flex-direction: row;
 }
-
 .blog_feed_entry_var1 {
     border-color: #150042;
     background-color: #1e374a;
+    --background-color-const: #1e374a;
+}
+.blog_feed_entry_var2 {
+    border-color: #cac29f;
+    background-color: #333324;
+    --background-color-const: #333324;
 }
 
 .blog_feed_entry_content {
@@ -219,7 +230,7 @@ center {
     margin-block-end: 0em;
 }
 
-.blog_entry, .blog_entry_var1 {
+.blog_entry, .blog_entry_var1, .blog_entry_var2 {
     border: 12px solid #1f0042;
     /* border-radius: 10px; */
     margin-left: 20px;
@@ -228,13 +239,19 @@ center {
     margin-bottom: 20px;
     height: auto;
     background-color: #322357;
+    --background-color-const: #322357;
     text-indent:10px;
     font-size: 34px;
 }
-
 .blog_entry_var1 {
     border-color: #150042;
     background-color: #1e374a;
+    --background-color-const: #1e374a;  
+}
+.blog_entry_var2 {
+    border-color: #cac29f;
+    background-color: #333324;
+    --background-color-const: #333324;
 }
 
 .caption {
@@ -251,6 +268,7 @@ center {
     width:225px;
     border: 12px solid #1f0042;
     background-color: #322357;
+    --background-color-const: #322357;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 6px;
@@ -295,6 +313,7 @@ center {
     width:170px;
     border: 5px solid #1f0042;
     background-color: #322357;
+    --background-color-const: #322357;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 6px;
@@ -332,6 +351,7 @@ center {
     margin-left: auto;
     margin-right: auto;
     background-color: #1f0042;
+    --background-color-const: #1f0042;
     border: 13px solid #1f0042;
     border-top: 5px solid #1f0042;
     border-bottom: 5px solid #1f0042;
@@ -346,6 +366,7 @@ center {
     border-top: 0px;
     border-bottom: 0px;
     background-color: rgba(20, 8, 40, 1);
+    --background-color-const: rgba(20, 8, 40, 1);
 
 }
 
@@ -357,6 +378,7 @@ center {
     border-top: 0px;
     border-bottom: 0px solid #1f0042;
     background-color: rgba(20, 8, 40, 1);
+    --background-color-const: rgba(20, 8, 40, 1);
     flex-direction: column;
 }
 
@@ -370,7 +392,7 @@ center {
     border: 13px solid #1f0042;
     border-top: 5px solid #1f0042;
     background-color: rgba(20, 8, 40, 1);
-
+    --background-color-const: rgba(20, 8, 40, 1);
     text-align: right;
     font-size: 12px;
     color: whitesmoke;
@@ -383,6 +405,7 @@ center {
     line-height: 120px;
     text-indent: 15px;
     background-color: rgba(20, 8, 40, 0.82);
+    --background-color-const: rgba(20, 8, 40, 0.82);
     color: whitesmoke
 }
 
@@ -532,6 +555,7 @@ center {
     left: 867px;
     background-image:none;
     background-color: rgba(20, 8, 40, 1);
+    --background-color-const: rgba(20, 8, 40, 0.1);
     border: 13px solid #1f0042;
     overflow:hidden;
     cursor:pointer;
@@ -555,6 +579,7 @@ center {
     max-width: 850px;
     max-height: 480px;
     background-color: rgba(20, 8, 40, 1);
+    --background-color-const: rgba(20, 8, 40, 1);
 }
 
 #gallery_photo {
@@ -582,4 +607,10 @@ center {
 
 .settingscheckbox {
     padding-left: 5px;
+}
+
+/* Almost-empty classes */
+reinin {
+    background-color: whitesmoke;
+    color: var(--background-color-const);
 }
