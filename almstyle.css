@@ -31,9 +31,8 @@ p {
 a {
     text-decoration-thickness: 5%;
 }
-
 a:hover {
-    color: #9e9eff
+    color: #9e9eff;
 }
 
 h2 {
@@ -97,7 +96,6 @@ center {
     text-align: center;
     text-decoration: none;
 }
-
 .upper_navbar_element:hover {
     background-color: #322357;
     --background-color-const: #322357
@@ -209,7 +207,8 @@ center {
     text-decoration-skip-ink: none;
     font-family: 'Courier New', Courier, monospace;
     padding-right: 10px;
-    border-right: 5px dashed #1f0042;
+    border-right: 5px dashed;
+    border-right-color: inherit;
     min-width: 145px;
     text-align: center;
     line-break: anywhere;
@@ -573,6 +572,7 @@ center {
     padding-right:5px;
 }
 
+/* gallery stuff */
 #gallery_photo_container {
     width: 850px;
     height: 480px;
@@ -602,6 +602,10 @@ center {
 }
 .gallery_bar_photo:hover {
     opacity: 80%;
+    cursor: pointer;
+}
+.gallery_bar_photo:active {
+    opacity: 70%;
     cursor: pointer;
 }
 

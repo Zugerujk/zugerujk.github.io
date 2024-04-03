@@ -184,7 +184,7 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2024. v0.7.10";
+    let generic_footer_text = "All rights reserved, Me, 2024. v0.7.11";
     
     // Find the navbar div
     let footer_element = document.getElementById("the_footer");
@@ -261,6 +261,12 @@ const fusterClose = function() {
     fuster_element.setAttribute("id", "fuster_closed");
     fuster_element.setAttribute("onclick", "fusterOpen()");
 }
+
+
+
+/*
+    GALLERY STUFF
+*/
 
 const galleryPhotoChange = function(new_photo="", alt_text="") {
     let gallery_main_photo = document.getElementById("gallery_photo");
