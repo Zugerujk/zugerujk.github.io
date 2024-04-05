@@ -295,6 +295,13 @@ var page_listing = {
         date: "4/3/2024 5:17:05 AM CST",
         link: "https://zugerujk.net/blog/blog034",
         var: "2",
+    },
+    "035": {
+        displaynum: "#035",
+        title: "NieR Re[in]carnation - 597 hours remain",
+        date: "4/5/2024 2:43:30 AM CST",
+        link: "https://zugerujk.net/blog/blog035",
+        var: "2",
     }
 }
 
