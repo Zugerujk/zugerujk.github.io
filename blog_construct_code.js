@@ -303,7 +303,7 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog035",
         var: "2",
     },
-    "035": {
+    "036": {
         displaynum: "#036",
         title: "NieR Re[in]carnation - 526 hours remain",
         date: "4/8/2024 1:33:56 AM CST",
