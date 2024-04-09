@@ -309,6 +309,13 @@ var page_listing = {
         date: "4/8/2024 1:33:56 AM CST",
         link: "https://zugerujk.net/blog/blog036",
         var: "2",
+    },
+    "037": {
+        displaynum: "#037",
+        title: "The [ineclipse]",
+        date: "4/8/2024 8:42:05 PM CST",
+        link: "https://zugerujk.net/blog/blog037",
+        var: "1",
     }
 }
 
@@ -497,7 +504,12 @@ const parseTitle = function(title = "") {
                 in_text = document.createTextNode("in");
                 in_div.appendChild(in_text);
                 title_div.append(in_div);
-
+            }
+            else if (tagElement == "[ineclipse]") {
+                let in_div = document.createElement("reinin");
+                in_text = document.createTextNode("eclipse");
+                in_div.appendChild(in_text);
+                title_div.append(in_div);
             }
             else {
                 console.log("Couldn't figure out a title tag! FUCK!")
