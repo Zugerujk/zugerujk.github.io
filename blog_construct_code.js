@@ -5,6 +5,11 @@
 var all_pages = [];
 
 var pageg1_games = [
+    "036",
+    "035",
+    "034",
+    "033",
+    "032",
     "022474487139…",
     "020",
     "018",
@@ -315,6 +320,13 @@ var page_listing = {
         title: "The [ineclipse]",
         date: "4/8/2024 8:42:05 PM CST",
         link: "https://zugerujk.net/blog/blog037",
+        var: "1",
+    },
+    "038": {
+        displaynum: "#038",
+        title: "Microembarrassments",
+        date: "4/16/24 10:05:38 AM CST",
+        link: "https://zugerujk.net/blog/blog038",
         var: "1",
     }
 }
