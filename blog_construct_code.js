@@ -342,6 +342,13 @@ var page_listing = {
         date: "4/29/24 6:56:58 PM CST",
         link: "https://zugerujk.net/blog/blog040",
         var: "2",
+    },
+    "041": {
+        displaynum: "#041",
+        title: "New Coat — Spring Reckoning",
+        date: "5/5/2024 8:44:37 AM CST",
+        link: "https://zugerujk.net/blog/blog041",
+        var: "1",
     }
 }
 
