@@ -172,10 +172,12 @@ const createNavbar = function(blocked_space_arg = "") {
     navbar_master_element.append(createNavbarSpacer());
     navbar_master_element.append(bio_navbar_element);
 
+    var createFuster = false;
     // Add Fuster
-    fuster_element = createFusterElement();
-    navbar_master_element.append(fuster_element);
-    
+    if (createFuster) { 
+        fuster_element = createFusterElement();
+        navbar_master_element.append(fuster_element);
+    }
 };
 
 
