@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zugerujk.net Blog</title>
+        <link rel="icon" type="image/png" href="images/SiteAssets/Favicon/Almsmaller.png" />
+        <meta name ="description" content="Here's my blog, yo." />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#1f0042" />
+
+        <meta name="fuster-dialogue" content="Hrm... What to read..." />
+        <link rel="stylesheet" href="almstyle.css">
+    </head>
+    <body>
+
+        <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
+        <div class="flex" id="the_header"></div>
+
+        <!-- The navbar, where you can choose between a bunch of pages -->
+        <div class="flex" id="the_navbar"></div>
+
+        <!-- The body, where all the good stuff happens. -->
+        <div class="flex" id="the_body">
+            <div class="left" id="body_left">
+                <h5>Entries:</h5>
+                <div id="blog_construct_div">
+                </div>
+            </div>
+
+            <div class="right" id="body_right">
+                <h5>Type:</h5>
+                <form name="radio_group_type">
+                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="all" checked/> All</label></div>
+                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="g3"/> Best</label></div>
+                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="g1"/> Gaming</label></div>
+                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="g2"/> Movies/TV</label></div>
+                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="g5"/> Books</label></div>
+                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="g4"/> Miscellany</label></div>
+                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="g6"/> 𝒫𝒶𝓃𝑒𝓇𝒶 𝐵𝓇𝑒𝒶𝒹</label></div>
+                </form>
+                <h5>Sort:</h5>
+                <form name="radio_group_sort">
+                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="newtoold" checked/> Newest First</label></div>
+                    <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="oldtonew"/> Oldest First</label></div>
+                </form>
+                </div>
+        </div>
+
+        <!-- The footer. Gotta have one!-->
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="universal_cooooode.js" onload="createElements('blog')"></script>
+        <script type="text/javascript" src="blog_construct_code.js" onload="createBlogConstruct(sortVar='all', numVar=100)"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
+        </div>
+    </body>
+</html>
