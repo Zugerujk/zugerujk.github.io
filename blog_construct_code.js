@@ -501,7 +501,7 @@ const parseTitle = function(title = "") {
             let tagElement = rVals[0];
             if (tagElement == "[pikmin]") {
                 let image_div = document.createElement("img");
-                image_div.setAttribute("src", "blog/blog-media/008logopikmin.png");
+                image_div.setAttribute("src", "blog/blog-media/008/008logopikmin.png");
                 image_div.setAttribute("alt", "Pikmin");
                 image_div.setAttribute("height", "24px");
                 image_div.setAttribute("width", "auto");
@@ -511,7 +511,7 @@ const parseTitle = function(title = "") {
             }
             else if (tagElement == "[4]") {
                 let image_div = document.createElement("img");
-                image_div.setAttribute("src", "blog/blog-media/008logo4.png");
+                image_div.setAttribute("src", "blog/blog-media/008/008logo4.png");
                 image_div.setAttribute("alt", "4");
                 image_div.setAttribute("height", "24px");
                 image_div.setAttribute("width", "auto");
@@ -521,7 +521,7 @@ const parseTitle = function(title = "") {
             }
             else if (tagElement == "[pikminstanding]") {
                 let image_div = document.createElement("img");
-                image_div.setAttribute("src", "blog/blog-media/008pikminstanding.png");
+                image_div.setAttribute("src", "blog/blog-media/008/008pikminstanding.png");
                 image_div.setAttribute("alt", "Image of pikmin standing");
                 image_div.setAttribute("height", "24px");
                 image_div.setAttribute("width", "auto");
