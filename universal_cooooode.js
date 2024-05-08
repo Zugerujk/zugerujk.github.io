@@ -183,8 +183,12 @@ const createNavbar = function(blocked_space_arg = "") {
         head_text = head_text_meta.content;
         if (head_text != "") {
             console.log("Creating Fuster element");
-            fuster_element = createFusterElement();
+            // Create a blank div with the class "fuster_box"
+            let fuster_element = document.createElement("div");
+            fuster_element.setAttribute("class", "fuster_box");
             navbar_master_element.append(fuster_element);
+            // Reset Fuster
+            fusterReset();
         }
         else {
             console.log("'fuster-dialogue' meta element found in head, though no text found within 'content'. Did not create Fuster.");
@@ -203,14 +207,27 @@ const createNavbar = function(blocked_space_arg = "") {
 */
 const createFooter = function() {
     let generic_footer_text = "All rights reserved, Me, 2024. v0.8";
+    let settings_text = "⚙️ Settings";
     
     // Find the navbar div
     let footer_element = document.getElementById("the_footer");
-    
+
+    // Add generic text
     let footer_element_text = document.createTextNode(generic_footer_text);
-    footer_element.after(createVerticalSpacer());
-    footer_element.after(createVerticalSpacer());
     footer_element.appendChild(footer_element_text);
+
+    // Add Settings link
+    let settings_link_box = document.createElement("div") // Used so that the <a> div doesn't extend across the entire width of the footer.
+    let settings_link = document.createElement("a");
+    settings_link.setAttribute("href", "")
+    let settings_link_text = document.createTextNode(settings_text);
+    settings_link.appendChild(settings_link_text);
+    settings_link_box.appendChild(settings_link)
+    footer_element.appendChild(settings_link_box);
+
+    // Create blank space after the footer.
+    footer_element.after(createVerticalSpacer());
+    footer_element.after(createVerticalSpacer());
 
     console.log("Created footer.");
 
@@ -230,29 +247,35 @@ const createElements = function(navbar_blocked_space_arg="") {
 
 
 /*
+    Check for preferences and edit page accordingly!
+*/
+const prefChecks = function() {
+    let motion_toggle = 0;
+    // TODO: check for a motion toggle cookie
+    // If motion toggle cookie is "1", set the background triangles to not move.
+    if (motion_toggle == 1) {
+            bg_tri_element = document.getElementById("background_triangles");
+            bg_tri_element.id = "background_triangles_nomotion"
+    }
+
+}
+
+
+
+/*
     FUSTER STUFF
 */
 
-const createFusterElement = function() {
-    let fuster_element;
-    fuster_element = document.createElement("div");
-    fuster_element.setAttribute("class", "settings_icon");
-    fuster_element.setAttribute("id", "fuster_closed");
-    fuster_element.setAttribute("onclick", "fusterOpen()");
-    return fuster_element;
-}
-
 const fusterOpen = function() {
-    let fuster_element = document.getElementsByClassName("settings_icon")[0];
+    let fuster_element = document.getElementsByClassName("fuster_box")[0];
 
     // Change fuster's div ID to appear vastly different
     fuster_element.setAttribute("id", "fuster_open");
-    fuster_element.setAttribute("onclick", "fusterClose()");
+    fuster_element.setAttribute("onclick", "fusterReset()");
 
-    // Create an image of fuster within the div
-    let fuster_image = document.createElement("div");
-    fuster_image.id = "fuster_image";
-    fuster_element.append(fuster_image);
+    // Change the source gif of the fuster_image element
+    fuster_img_element = document.getElementById("fuster_image");
+    fuster_img_element.setAttribute("src", "images/SiteAssets/Fuster/Fuster\ Open.gif");
 
     // Add dialogue for fuster, found within the head of the document.
     fuster_dialogue_div = document.createElement("p"); 
@@ -270,15 +293,22 @@ const fusterOpen = function() {
     fuster_element.append(fuster_dialogue_div);
 }
 
-const fusterClose = function() {
-    let fuster_element = document.getElementsByClassName("settings_icon")[0];
-    console.log("Resetting Fuster");
+const fusterReset = function() { 
+    let fuster_element = document.getElementsByClassName("fuster_box")[0];
 
-    // Inelegant, but hey! Completely wipes fuster, and manually resets him.
+    // Wipes the inside of fuster_element if not empty.
     fuster_element.innerHTML = '';
-    fuster_element.setAttribute("class", "settings_icon");
+    fuster_element.setAttribute("class", "fuster_box");
     fuster_element.setAttribute("id", "fuster_closed");
     fuster_element.setAttribute("onclick", "fusterOpen()");
+
+    // Creates the image to go inside the closed element
+    fuster_img_element = document.createElement("img");
+    fuster_img_element.setAttribute("src", "images/SiteAssets/Fuster/Fuster\ Idle.gif");
+    fuster_img_element.setAttribute("id", "fuster_image");
+    fuster_element.append(fuster_img_element);
+
+    return fuster_element;
 }
 
 

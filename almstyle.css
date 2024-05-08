@@ -219,7 +219,6 @@ center {
 }
 
 .blog_feed_entry_end_cont {
-    /* line-height: 88px; */
     text-indent: 5px;
     font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
@@ -338,8 +337,6 @@ center {
     margin-top: 0px;
     border: 13px solid #1f0042;
     border-bottom: 0px;
-    /* border-radius: 50px; */
-    /* background-color: whitesmoke; */
 }
 
 #the_navbar {
@@ -357,32 +354,25 @@ center {
     overflow:visible;
 }
 
-#the_body {
+#the_body, #body_extension_above {
     height: auto;
     width: 850px;
     margin: auto;
     border: 13px solid #1f0042;
     border-top: 0px;
-    border-bottom: 0px;
+    border-bottom: 0px solid #1f0042;;
     background-color: rgba(20, 8, 40, 1);
     --background-color-const: rgba(20, 8, 40, 1);
 
 }
-
 #body_extension_above {
-    height: auto;
-    width: 850px;
-    margin: auto;
-    border: 13px solid #1f0042;
-    border-top: 0px;
-    border-bottom: 0px solid #1f0042;
-    background-color: rgba(20, 8, 40, 1);
-    --background-color-const: rgba(20, 8, 40, 1);
     flex-direction: column;
 }
 
 #the_footer {
     position:relative;
+    display: flex;
+    flex-direction: column;
     height: 100px;
     width: 846px;
     padding-right: 4px;
@@ -393,7 +383,7 @@ center {
     background-color: rgba(20, 8, 40, 1);
     --background-color-const: rgba(20, 8, 40, 1);
     text-align: right;
-    font-size: 12px;
+    font-size: 14px;
     color: whitesmoke;
 }
 
@@ -408,64 +398,42 @@ center {
     color: whitesmoke
 }
 
+#header_right_secret, #header_right_00, #header_right_01,
+#header_right_02, #header_right_03, #header_right_04,
+#header_right_05, #header_right_06, #header_right_07,
+#header_right_08 {
+    background-color: rgba(20, 8, 40, 1);
+    background-repeat: no-repeat;
+}
 #header_right_secret {
     background-image: url("images/Splashes/SplashSecret.png");
-    background-color: rgba(20, 8, 40, 1);
-    background-repeat: no-repeat;
 }
-
 #header_right_00 {
     background-image: url("images/Splashes/Splash00.png");
-    background-color: rgba(20, 8, 40, 1);
-    background-repeat: no-repeat;
 }
-
 #header_right_01 {
     background-image: url("images/Splashes/Splash01.png");
-    background-color: rgba(20, 8, 40, 1);
-    background-repeat: no-repeat;
 }
-
 #header_right_02 {
     background-image: url("images/Splashes/Splash02.png");
-    background-color: rgba(20, 8, 40, 1);
-    background-repeat: no-repeat;
 }
-
 #header_right_03 {
     background-image: url("images/Splashes/Splash03.png");
-    background-color: rgba(20, 8, 40, 1);
-    background-repeat: no-repeat;
 }
-
 #header_right_04 {
     background-image: url("images/Splashes/Splash04.png");
-    background-color: rgba(20, 8, 40, 1);
-    background-repeat: no-repeat;
 }
-
 #header_right_05 {
     background-image: url("images/Splashes/Splash05.png");
-    background-color: rgba(20, 8, 40, 1);
-    background-repeat: no-repeat;
 }
-
 #header_right_06 {
     background-image: url("images/Splashes/Splash06.png");
-    background-color: rgba(20, 8, 40, 1);
-    background-repeat: no-repeat;
 }
-
 #header_right_07 {
     background-image: url("images/Splashes/Splash07.png");
-    background-color: rgba(20, 8, 40, 1);
-    background-repeat:no-repeat
 }
-
 #header_right_08 {
     background-image: url("images/Splashes/Splash08.png");
-    background-color: rgba(20, 8, 40, 1);
-    background-repeat:no-repeat
 }
 
 #body_left {
@@ -495,7 +463,7 @@ center {
     z-index: -2;
 }
 
-#background_triangles {
+#background_triangles, #background_triangles_nomotion {
     content: "";
     position:absolute;
     width:320%;
@@ -505,6 +473,8 @@ center {
     z-index: -2;
     background: url(images/SiteAssets/Background/triangles_v1_light.png) 0 0 repeat;
     transform: rotate(30deg);
+}
+#background_triangles {
     animation-name: triangles_animation;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -540,7 +510,6 @@ center {
     top: -5px;
     left: 880px;
     width: 50px;
-    background-image:url('images/SiteAssets/Fuster/Fuster\ Idle.gif');
     cursor:pointer;
 }
 
@@ -561,9 +530,9 @@ center {
 }
 
 #fuster_image {
-    height:50px;
-    width:50px;
-    background-image:url('images/SiteAssets/Fuster/Fuster\ Open.gif');
+    height: 50px;
+    width: 50px;
+    image-rendering: nearest-neighbor;
 }
 
 #fuster_dialogue {
