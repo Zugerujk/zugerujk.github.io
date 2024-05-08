@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zugerujk.net Gallery</title>
+        <link rel="icon" type="image/png" href="../images/SiteAssets/Favicon/Almsmaller.png" />
+        <meta name ="description" content="Gallery002 - Photos of Model Kits" />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#1f0042" />
+
+        <meta name="fuster-dialogue" content="Beautiful beautiful beautiful...  " />
+        <link rel="stylesheet" href="../almstyle.css">
+    </head>
+    <body>
+        <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
+        <div class="flex" id="the_header"></div>
+
+        <!-- The navbar, where you can choose between a bunch of pages -->
+        <div class="flex" id="the_navbar"></div>
+        
+        <!-- A gallery-->
+        <div class="flex" id="body_extension_above">
+            <div class="blog_feed_entry" id="goback">
+                <a href="../gallery.html" class="blog_feed_entry_link">
+                    < 
+                </a>
+                <div class="blog_feed_entry_content">
+                    Photos of Model Kits
+                    <div class="blog_feed_entry_end_cont">
+                        Last Updated: 5/7/2024
+                    </div>
+                </div>
+            </div>
+            <div id="gallery_photo_container">
+                <center><img src="../blog/blog-media/029/029coolpose.png" alt="In ERA+ Thunderbolt 1/100 in a cool pose." title="In ERA+ Thunderbolt 1/100 in a cool pose." id="gallery_photo"></center>
+            </div> 
+            <div class="flex" id="gallery_bar_container">
+                <img class="gallery_bar_photo" src="../blog/blog-media/029/029coolpose_sm.png" title="In ERA+ Thunderbolt 1/100 in a cool pose." onclick="galleryPhotoChange('../blog/blog-media/029/029coolpose.png', 'In ERA+ Thunderbolt 1/100 in a cool pose!')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/029/029railgun_sm.png" title="In ERA+ Thunderbolt 1/100's railgun." onclick="galleryPhotoChange('../blog/blog-media/029/029railgun.png', 'In ERA+ Thunderbolt 1/100\'s railgun.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/029/029sizecomparison_sm.png" title="In ERA+ Thunderbolt 1/100 next to an MG Hi-nu Ver.ka and an M!Corrin amiibo." onclick="galleryPhotoChange('../blog/blog-media/029/029sizecomparison.png', 'In ERA+ Thunderbolt 1/100 next to an MG Hi-nu Ver.ka and an M!Corrin amiibo.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/029/029treadmill_sm.png" title="In ERA+ Thunderbolt 1/100 sitting on a treadmill." onclick="galleryPhotoChange('../blog/blog-media/029/029treadmill.png', 'In ERA+ Thunderbolt 1/100 sitting on a treadmill.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/029/029wip_sm.png" title="In ERA+ Thunderbolt 1/100 WIP." onclick="galleryPhotoChange('../blog/blog-media/029/029wip.png', 'In ERA+ Thunderbolt 1/100 WIP.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/029/029zoomed_sm.png" title="In ERA+ Thunderbolt 1/100 close-up." onclick="galleryPhotoChange('../blog/blog-media/029/029zoomed.png', 'In ERA+ Thunderbolt 1/100 close-up.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/021/021phenex_sm.png" title="My MG Phenex One of Seventy Two 😭💛💛💛💛" onclick="galleryPhotoChange('../blog/blog-media/021/021phenex.png', 'My MG Phenex One of Seventy Two 😭💛💛💛💛')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/021/021fridge_sm.png" title="My old Destiny Fridge." onclick="galleryPhotoChange('../blog/blog-media/021/021fridge.png', 'My old Destiny Fridge.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/021/021desk_sm.png" title="My old desk, starring my painted RG Hi-nu and some others!" onclick="galleryPhotoChange('../blog/blog-media/021/021desk.png', 'My old desk, starring my painted RG Hi-nu and some others!')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/013/013overexposed_sm.png" title="My old collection, blown the fuck out by the morning sun." onclick="galleryPhotoChange('../blog/blog-media/013/013overexposed.jpg', 'My old collection, blown the fuck out by the morning sun.')">
+            </div>
+        </div>
+
+        <!-- The footer. Gotta have one!-->
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="../universal_cooooode.js" onload="createElements()"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
+        </div>
+    </body>
+</html>

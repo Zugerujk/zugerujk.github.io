@@ -602,7 +602,7 @@ const inputEnter = function(radioVal = "", numInput = 0) {
     createBlogConstruct(sortVar=radioVal, numVar=numInput);
 }
 
-// Give first radio group their function
+// Give first radio group (type) their function
 var radios_group_type = document.forms["radio_group_type"].elements["construct_group"];
 for (var radio of radios_group_type) {
     radio.onclick = function() {
@@ -610,7 +610,7 @@ for (var radio of radios_group_type) {
     }
 }
 
-// Give second radio group their function
+// Give second radio group (sort) their function
 var radios_group_sort = document.forms["radio_group_sort"].elements["construct_group"];
 for (var radio of radios_group_sort) {
     radio.onclick = function() {
