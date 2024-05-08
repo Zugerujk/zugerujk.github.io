@@ -591,8 +591,10 @@ center {
 
 #gallery_bar_container {
     width: 850px;
-    height: 70px;
+    min-height: 70px;
     justify-content: center;
+    overflow: visible;
+    flex-wrap: wrap;
 }
 
 .gallery_bar_photo {

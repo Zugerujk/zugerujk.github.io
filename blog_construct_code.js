@@ -4,7 +4,9 @@
 
 var all_pages = [];
 
-var pageg1_games = [
+var pageg1_games = [  // Last Updated: 041
+    "040",
+    "039",
     "036",
     "035",
     "034",
@@ -20,14 +22,14 @@ var pageg1_games = [
     "006",
     "001",
 ];
-var pageg2_moviestv = [
+var pageg2_moviestv = [  // Last Updated: 041
     "020",
     "017",
     "008",
     "003",
     "001",
 ];
-var pageg3_hq = [
+var pageg3_hq = [  // Last Updated: 041
     "026",
     "022474487139…",
     "021",
@@ -40,7 +42,8 @@ var pageg3_hq = [
     "003",
     "001",
 ];
-var pageg4_miscellany = [
+var pageg4_miscellany = [  // Last Updated: 041
+    "041",
     "029",
     "025",
     "023",
@@ -48,15 +51,18 @@ var pageg4_miscellany = [
     "019",
     "014",
 ];
-var pageg5_books = [
+var pageg5_books = [  // Last Updated: 041
     "020",
     "016",
     "015",
     "013",
     "012",
 ];
-var pageg6_panerabread = [
+var pageg6_food = [  // Last Updated: 041
+    "031",
+    "030",
     "028",
+    "026",
     "024",
     "014",
 ];
@@ -393,7 +399,7 @@ const createBlogConstruct = function(sortVar = "", numVar = 0) {
             included_pages = pageg5_books;
             break;
         case "g6":
-            included_pages = pageg6_panerabread;
+            included_pages = pageg6_food;
             break;
         case "newtoold":
             page_sort = "0";

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zugerujk.net Gallery</title>
+        <link rel="icon" type="image/png" href="../images/SiteAssets/Favicon/Almsmaller.png" />
+        <meta name ="description" content="Gallery001 - Photos of Me (Zug)" />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#1f0042" />
+
+        <meta name="fuster-dialogue" content="Wow, this guy has so many good outfits! It's cray cray 😳." />
+        <link rel="stylesheet" href="../almstyle.css">
+    </head>
+    <body>
+        <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
+        <div class="flex" id="the_header"></div>
+
+        <!-- The navbar, where you can choose between a bunch of pages -->
+        <div class="flex" id="the_navbar"></div>
+        
+        <!-- A gallery-->
+        <div class="flex" id="body_extension_above">
+            <div class="blog_feed_entry" id="goback">
+                <a href="../gallery.html" class="blog_feed_entry_link">
+                    < 
+                </a>
+                <div class="blog_feed_entry_content">
+                    Photos of Me (Zug)
+                    <div class="blog_feed_entry_end_cont">
+                        Last Updated: 5/7/2024
+                    </div>
+                </div>
+            </div>
+            <div id="gallery_photo_container">
+                <center><img src="../blog/blog-media/038/038smile.png" alt="Me smiling next to a human-sized RX-78-2." title="Me smiling next to a human-sized RX-78-2." id="gallery_photo"></center>
+            </div> 
+            <div class="flex" id="gallery_bar_container">
+                <img class="gallery_bar_photo" src="../blog/blog-media/041/041noidea_sm.png" title="No idea what I'm doing here." onclick="galleryPhotoChange('../blog/blog-media/041/041noidea.png', 'No idea what I\'m doing here.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/041/041hellyeah_sm.png" title="Pogging out in da park." onclick="galleryPhotoChange('../blog/blog-media/041/041hellyeah.png', 'Pogging out in da park.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/038/038smile_sm.png" title="Me smiling next to a human-sized RX-78-2." onclick="galleryPhotoChange('../blog/blog-media/038/038smile.png', 'Me smiling next to a human-sized RX-78-2.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/038/038pose_sm.png" title="Me posing next to a human-sized RX-78-2." onclick="galleryPhotoChange('../blog/blog-media/038/038pose.png', 'Me posing next to a human-sized RX-78-2.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/029/029fit_sm.png" title="Me showing off my outfit the day it was heavily complimented." onclick="galleryPhotoChange('../blog/blog-media/029/029fit.jpg', 'Me showing off my outfit the day it was heavily complimented.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/028/028photo_sm.png" title="Panera Bread, amirite?" onclick="galleryPhotoChange('../blog/blog-media/028/028photo.jpg', 'Panera Bread, amirite?')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/024/024selfie_sm.png" title="The Panera fit!" onclick="galleryPhotoChange('../blog/blog-media/024/024selfie.jpg', 'The Panera fit!')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/023/023police_sm.png" title="Die scheußliche Polizei." onclick="galleryPhotoChange('../blog/blog-media/023/023police.jpg', 'Die scheußliche Polizei.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/023/023noparking2_sm.png" title="Posing by the sign." onclick="galleryPhotoChange('../blog/blog-media/023/023noparking2.jpg', 'Posing by the sign.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/023/023noparking1_sm.png" title="Retweet if you hate parking!" onclick="galleryPhotoChange('../blog/blog-media/023/023noparking1.jpg', 'Retweet if you hate parking!')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/023/023house_sm.png" title="One of my fave fits ever, jeez louise." onclick="galleryPhotoChange('../blog/blog-media/023/023house.jpg', 'One of my fave fits ever, jeez louise.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/019/019amurogsphoto_sm.png" title="Me meeting Amuro Ray (real)!" onclick="galleryPhotoChange('../blog/blog-media/019/019amurogsphoto.jpg', 'Me meeting Amuro Ray (real)!')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/019/019posing_sm.png" title="Guys I love this photo so fucking much 😭💞!" onclick="galleryPhotoChange('../blog/blog-media/019/019posing.png', 'Guys I love this photo so fucking much 😭💞!')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/019/019outsidetruck_sm.png" title="Me outside the Bandai Hobby US mobile tour truck!" onclick="galleryPhotoChange('../blog/blog-media/019/019outsidetruck.png', 'Me outside the Bandai Hobby US mobile tour truck!')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/019/019inline_sm.png" title="Me in line for da Bandai Hobby US mobile tour." onclick="galleryPhotoChange('../blog/blog-media/019/019inline.png', 'Me in line for da Bandai Hobby US mobile tour.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/015/015cashforgold_sm.png" title="Posing next to a Cash for Gold sign and some racist politicians' campaign signs." onclick="galleryPhotoChange('../blog/blog-media/015/015cashforgold.jpg', 'Posing next to a Cash for Gold sign and some racist politicians\' campaign signs.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/015/015selfie_sm.png" title="Selfie I took while high on ketamine!" onclick="galleryPhotoChange('../blog/blog-media/015/015selfie.jpg', 'Selfie I took while high on ketamine!')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/014/014osqasties_sm.png" title="Me and some of my good friends from OSQ&A, during tabling for the Harvest Moon festival! Lucas, Jordan (I think), me, Basden, and Matt (:" onclick="galleryPhotoChange('../blog/blog-media/014/014osqasties.jpg', 'Me and some of my good friends from OSQ&A, during tabling for the Harvest Moon festival! Lucas, Jordan (I think), me, Basden, and Matt (:')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/014/014night_sm.png" title="Me taking a night selfie at Stillwater's skate park! Was hanging out with my friends Fadi and Dylan." onclick="galleryPhotoChange('../blog/blog-media/014/014night.png', 'Me taking a night selfie at Stillwater\'s skate park! Was hanging out with my friends Fadi and Dylan.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/003/003korochanme_sm.png" title="My plush Koromaru and my nose." onclick="galleryPhotoChange('../blog/blog-media/003/003korochanme.jpg', 'My plush Koromaru and my nose.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/001/001image_sm.png" title="Me, after seeing Past Lives in Quail Springs mall (kinography)." onclick="galleryPhotoChange('../blog/blog-media/001/001image.jpg', 'Me, after seeing Past Lives in Quail Springs mall (kinography).')">
+            </div>
+        </div>
+
+        <!-- The footer. Gotta have one!-->
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="../universal_cooooode.js" onload="createElements()"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
+        </div>
+    </body>
+</html>
