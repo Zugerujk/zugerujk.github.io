@@ -4,7 +4,9 @@
 
 var all_pages = [];
 
-var pageg1_games = [
+var pageg1_games = [  // Last Updated: 041
+    "040",
+    "039",
     "036",
     "035",
     "034",
@@ -20,14 +22,14 @@ var pageg1_games = [
     "006",
     "001",
 ];
-var pageg2_moviestv = [
+var pageg2_moviestv = [  // Last Updated: 041
     "020",
     "017",
     "008",
     "003",
     "001",
 ];
-var pageg3_hq = [
+var pageg3_hq = [  // Last Updated: 041
     "026",
     "022474487139…",
     "021",
@@ -40,7 +42,8 @@ var pageg3_hq = [
     "003",
     "001",
 ];
-var pageg4_miscellany = [
+var pageg4_miscellany = [  // Last Updated: 041
+    "041",
     "029",
     "025",
     "023",
@@ -48,15 +51,18 @@ var pageg4_miscellany = [
     "019",
     "014",
 ];
-var pageg5_books = [
+var pageg5_books = [  // Last Updated: 041
     "020",
     "016",
     "015",
     "013",
     "012",
 ];
-var pageg6_panerabread = [
+var pageg6_food = [  // Last Updated: 041
+    "031",
+    "030",
     "028",
+    "026",
     "024",
     "014",
 ];
@@ -393,7 +399,7 @@ const createBlogConstruct = function(sortVar = "", numVar = 0) {
             included_pages = pageg5_books;
             break;
         case "g6":
-            included_pages = pageg6_panerabread;
+            included_pages = pageg6_food;
             break;
         case "newtoold":
             page_sort = "0";
@@ -501,7 +507,7 @@ const parseTitle = function(title = "") {
             let tagElement = rVals[0];
             if (tagElement == "[pikmin]") {
                 let image_div = document.createElement("img");
-                image_div.setAttribute("src", "blog/blog-media/008logopikmin.png");
+                image_div.setAttribute("src", "blog/blog-media/008/008logopikmin.png");
                 image_div.setAttribute("alt", "Pikmin");
                 image_div.setAttribute("height", "24px");
                 image_div.setAttribute("width", "auto");
@@ -511,7 +517,7 @@ const parseTitle = function(title = "") {
             }
             else if (tagElement == "[4]") {
                 let image_div = document.createElement("img");
-                image_div.setAttribute("src", "blog/blog-media/008logo4.png");
+                image_div.setAttribute("src", "blog/blog-media/008/008logo4.png");
                 image_div.setAttribute("alt", "4");
                 image_div.setAttribute("height", "24px");
                 image_div.setAttribute("width", "auto");
@@ -521,7 +527,7 @@ const parseTitle = function(title = "") {
             }
             else if (tagElement == "[pikminstanding]") {
                 let image_div = document.createElement("img");
-                image_div.setAttribute("src", "blog/blog-media/008pikminstanding.png");
+                image_div.setAttribute("src", "blog/blog-media/008/008pikminstanding.png");
                 image_div.setAttribute("alt", "Image of pikmin standing");
                 image_div.setAttribute("height", "24px");
                 image_div.setAttribute("width", "auto");
@@ -596,7 +602,7 @@ const inputEnter = function(radioVal = "", numInput = 0) {
     createBlogConstruct(sortVar=radioVal, numVar=numInput);
 }
 
-// Give first radio group their function
+// Give first radio group (type) their function
 var radios_group_type = document.forms["radio_group_type"].elements["construct_group"];
 for (var radio of radios_group_type) {
     radio.onclick = function() {
@@ -604,7 +610,7 @@ for (var radio of radios_group_type) {
     }
 }
 
-// Give second radio group their function
+// Give second radio group (sort) their function
 var radios_group_sort = document.forms["radio_group_sort"].elements["construct_group"];
 for (var radio of radios_group_sort) {
     radio.onclick = function() {
