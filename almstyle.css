@@ -560,7 +560,7 @@ center {
 }
 
 #gallery_photo {
-    width: min-content;
+    width: auto;
     max-height: 480px;
     max-width: 850px;
     height: min-content;
