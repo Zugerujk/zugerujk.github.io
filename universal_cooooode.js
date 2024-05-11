@@ -236,13 +236,13 @@ const createFooter = function() {
     footer_element.appendChild(footer_element_text);
 
     // Add Settings link
-    // let settings_link_box = document.createElement("div") // Used so that the <a> div doesn't extend across the entire width of the footer.
-    // let settings_link = document.createElement("a");
-    // settings_link.setAttribute("href", "https://zugerujk.net/settings.html")
-    // let settings_link_text = document.createTextNode(settings_text);
-    // settings_link.appendChild(settings_link_text);
-    // settings_link_box.appendChild(settings_link)
-    // footer_element.appendChild(settings_link_box);
+    let settings_link_box = document.createElement("div") // Used so that the <a> div doesn't extend across the entire width of the footer.
+    let settings_link = document.createElement("a");
+    settings_link.setAttribute("href", "https://zugerujk.net/settings.html")
+    let settings_link_text = document.createTextNode(settings_text);
+    settings_link.appendChild(settings_link_text);
+    settings_link_box.appendChild(settings_link)
+    footer_element.appendChild(settings_link_box);
 
     // Create blank space after the footer.
     footer_element.after(createVerticalSpacer());
