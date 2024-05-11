@@ -1,4 +1,23 @@
 /*
+    COOKIE UTILITY
+*/
+const fetchCookie = function(cookie_name = "") { 
+    // Get the list of cookies separated into an array
+    let document_cookies = document.cookie.split(';')
+    // Cycle through the array
+    for (i = 0; i < document_cookies.length; i++) {
+        let cookie_name_index = document_cookies[i].indexOf(cookie_name);
+        // If the cookie name is present, grab it!
+        if (cookie_name_index != -1) { // Will return 0+ if present.
+            document_cookies[i] = document_cookies[i].replace(cookie_name + "=", "");
+            return String(document_cookies[i].trim());
+        }
+    }
+    return "-1";
+}
+
+
+/*
     SPACER STUFF
 */
 const createVerticalSpacer = function() {
@@ -217,13 +236,13 @@ const createFooter = function() {
     footer_element.appendChild(footer_element_text);
 
     // Add Settings link
-    let settings_link_box = document.createElement("div") // Used so that the <a> div doesn't extend across the entire width of the footer.
-    let settings_link = document.createElement("a");
-    settings_link.setAttribute("href", "")
-    let settings_link_text = document.createTextNode(settings_text);
-    settings_link.appendChild(settings_link_text);
-    settings_link_box.appendChild(settings_link)
-    footer_element.appendChild(settings_link_box);
+    // let settings_link_box = document.createElement("div") // Used so that the <a> div doesn't extend across the entire width of the footer.
+    // let settings_link = document.createElement("a");
+    // settings_link.setAttribute("href", "https://zugerujk.net/settings.html")
+    // let settings_link_text = document.createTextNode(settings_text);
+    // settings_link.appendChild(settings_link_text);
+    // settings_link_box.appendChild(settings_link)
+    // footer_element.appendChild(settings_link_box);
 
     // Create blank space after the footer.
     footer_element.after(createVerticalSpacer());
@@ -250,14 +269,23 @@ const createElements = function(navbar_blocked_space_arg="") {
     Check for preferences and edit page accordingly!
 */
 const prefChecks = function() {
-    let motion_toggle = 0;
-    // TODO: check for a motion toggle cookie
+    let motion_toggle = fetchCookie("motiontoggle");
+    
     // If motion toggle cookie is "1", set the background triangles to not move.
     if (motion_toggle == 1) {
             bg_tri_element = document.getElementById("background_triangles");
             bg_tri_element.id = "background_triangles_nomotion"
+            console.log("motiontoggle cookie found with value 1. Turning off background motion.")
+    }
+    else {
+        console.log("motiontoggle cookie found with value" + motion_toggle);
     }
 
+    // Check if the user's display is taller than wider, change the meta to be mobile-friendly.
+    if (window.innerWidth <= window.innerHeight) {
+        meta_element = document.querySelector('meta[name="viewport"]');
+        meta_element.content = "width=1000";
+    } 
 }
 
 
@@ -275,7 +303,7 @@ const fusterOpen = function() {
 
     // Change the source gif of the fuster_image element
     fuster_img_element = document.getElementById("fuster_image");
-    fuster_img_element.setAttribute("src", "images/SiteAssets/Fuster/Fuster\ Open.gif");
+    fuster_img_element.setAttribute("src", "https://zugerujk.net/images/SiteAssets/Fuster/Fuster%20Open.gif");
 
     // Add dialogue for fuster, found within the head of the document.
     fuster_dialogue_div = document.createElement("p"); 
@@ -304,7 +332,7 @@ const fusterReset = function() {
 
     // Creates the image to go inside the closed element
     fuster_img_element = document.createElement("img");
-    fuster_img_element.setAttribute("src", "images/SiteAssets/Fuster/Fuster\ Idle.gif");
+    fuster_img_element.setAttribute("src", "https://zugerujk.net/images/SiteAssets/Fuster/Fuster%20Idle.gif");
     fuster_img_element.setAttribute("id", "fuster_image");
     fuster_element.append(fuster_img_element);
 
