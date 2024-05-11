@@ -12,8 +12,8 @@ const motionToggleButton = function(radioVal = "") {
     else if (radioVal = "off") {
         motion_toggle = 1
     }
-    let cookie_string = "motiontoggle=" + String(motion_toggle) // + "; domain=zugerujk.net"
-    document.cookie = cookie_string + ";max-age=31536000";
+    let cookie_string = "motiontoggle=" + String(motion_toggle) + "; domain=zugerujk.net"
+    document.cookie = cookie_string + "; max-age=31536000";
 
     prefChecks();
 

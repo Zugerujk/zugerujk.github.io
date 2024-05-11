@@ -273,12 +273,14 @@ const prefChecks = function() {
     
     // If motion toggle cookie is "1", set the background triangles to not move.
     if (motion_toggle == 1) {
-            bg_tri_element = document.getElementById("background_triangles");
+            bg_tri_element = document.getElementsByClassName("background_triangles")[0];
             bg_tri_element.id = "background_triangles_nomotion"
-            console.log("motiontoggle cookie found with value 1. Turning off background motion.")
+            console.log("motiontoggle cookie found with value " + motion_toggle + ". Turning off background motion.")
     }
     else {
-        console.log("motiontoggle cookie found with value" + motion_toggle);
+        bg_tri_element = document.getElementsByClassName("background_triangles")[0];
+        bg_tri_element.id = "background_triangles"
+        console.log("motiontoggle cookie found with value " + motion_toggle) +". Turning on background motion.";
     }
 
     // Check if the user's display is taller than wider, change the meta to be mobile-friendly.
