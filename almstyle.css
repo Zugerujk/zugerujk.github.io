@@ -17,6 +17,7 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
     color: whitesmoke;
     z-index: 2;
+    --hover-color-const: #9e9eff;
 }
 
 p {
@@ -32,7 +33,7 @@ a {
     text-decoration-thickness: 5%;
 }
 a:hover {
-    color: #9e9eff;
+    color: var(--hover-color-const);
 }
 
 h2 {
@@ -173,6 +174,7 @@ center {
     border-color: #cac29f;
     background-color: #333324;
     --background-color-const: #333324;
+    --hover-color-const: #cac29f;
 }
 
 .blog_feed_entry_content {
@@ -213,9 +215,10 @@ center {
     text-align: center;
     line-break: anywhere;
     max-width:145px;
+    --hover-color-const: inherit;
 }
 .blog_feed_entry_link:visited {
-    color: #9e9eff
+    color: var(--hover-color-const);
 }
 
 .blog_feed_entry_end_cont {
@@ -496,6 +499,11 @@ center {
 }
 
 /*Less important stuff*/
+#newsfeed_archive_link_cont {
+    display: flex;
+    align-items: flex-end;
+}
+
 #newsfeed_archive_link {
     font-size: 12px;
     text-align: right;
