@@ -6,6 +6,8 @@
     --background-color-body: rgba(20, 8, 40, 1);
     --navbar-bg-color: #453075;
     --link-hover-color: #9e9eff;
+    --txt-color-def: whitesmoke;
+    --txt-color-dark-def: lightgray;
     /* Var 1 colors */
     --border-color-var1: #150042;
     --background-color-var1: #1e374a;
@@ -28,7 +30,7 @@ body {
 
 * {
     font-family: 'Hanken Grotesk', sans-serif;
-    color: whitesmoke;
+    color: var(--txt-color-def);
     z-index: 2;
     --hover-color-const: var(--link-hover-color);
 }
@@ -102,7 +104,7 @@ center {
     flex-grow: 10;
     background-color: var(--navbar-bg-color);
     --background-color-const: var(--navbar-bg-color);
-    color: whitesmoke;
+    color: var(--txt-color-def);
     font-family: 'Hanken Grotesk';
     font-size: 20px;
     line-height: 40px;
@@ -112,14 +114,14 @@ center {
 .upper_navbar_element:hover {
     background-color: var(--background-color-def);
     --background-color-const: var(--background-color-def)
-    color: lightgray;
+    color: var(--txt-color-dark-def);
 }
 
 .selected_upper_navbar_element {
     flex-grow: 10;
     background-color: var(--border-color-def);
     --background-color-const: var(--border-color-def);
-    color: whitesmoke;
+    color: var(--txt-color-def);
     font-family: 'Hanken Grotesk';
     font-size: 20px;
     line-height: 40px;
@@ -316,7 +318,7 @@ center {
     padding-left:auto;
     padding-right:auto;
     font-size: 16px;
-    color:lightgray;
+    color:var(--txt-color-dark-def);
 }
 
 .featured_container {
@@ -397,7 +399,7 @@ center {
     --background-color-const: var(--background-color-body);
     text-align: right;
     font-size: 14px;
-    color: whitesmoke;
+    color: var(--txt-color-def);
 }
 
 /* All the rest of the Unique IDs*/
@@ -408,13 +410,14 @@ center {
     text-indent: 15px;
     background-color: rgba(20, 8, 40, 0.82);
     --background-color-const: rgba(20, 8, 40, 0.82);
-    color: whitesmoke
+    color: var(--txt-color-def)
 }
 
 #header_right_secret, #header_right_00, #header_right_01,
 #header_right_02, #header_right_03, #header_right_04,
 #header_right_05, #header_right_06, #header_right_07,
-#header_right_08 {
+#header_right_08, #header_right_09, #header_right_10,
+#header_right_11, #header_right_12 {
     background-color: var(--background-color-body);
     background-repeat: no-repeat;
 }
@@ -448,19 +451,31 @@ center {
 #header_right_08 {
     background-image: url("images/Splashes/Splash08.png");
 }
+#header_right_09 {
+    background-image: url("images/Splashes/Splash09.png");
+}
+#header_right_10 {
+    background-image: url("images/Splashes/Splash10.png");
+}
+#header_right_11 {
+    background-image: url("images/Splashes/Splash11.png");
+}
+#header_right_12 {
+    background-image: url("images/Splashes/Splash12.png");
+}
 
 #body_left {
     display: flex;
     flex-direction: column;
     font-size: 16px;
-    color: whitesmoke;
+    color: var(--txt-color-def);
     text-indent:3px;
 }
 
 #body_right {
     flex-direction: column;
     font-size: 16px;
-    color: whitesmoke;
+    color: var(--txt-color-def);
 }
 
 @keyframes triangles_animation {
@@ -552,7 +567,7 @@ center {
 #fuster_image {
     height: 50px;
     width: 50px;
-    image-rendering: nearest-neighbor;
+    image-rendering:optimizeQuality;
 }
 
 #fuster_dialogue {
@@ -563,6 +578,9 @@ center {
 
 /* gallery stuff */
 #gallery_photo_container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     width: 850px;
     height: 480px;
     max-width: 850px;
@@ -574,7 +592,9 @@ center {
 #gallery_photo {
     width: auto;
     max-height: 480px;
-    max-width: 850px;
+    max-width: 830px;
+    padding-left: 10px;
+    padding-right: 10px;
     height: min-content;
 }
 
@@ -584,6 +604,11 @@ center {
     justify-content: center;
     overflow: visible;
     flex-wrap: wrap;
+}
+
+#gallery_caption {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .gallery_bar_photo {
@@ -606,6 +631,6 @@ center {
 
 /* Almost-empty classes */
 reinin {
-    background-color: whitesmoke; /* TODO - make work with some sort of color const */
+    background-color: var(--txt-color-def); /* TODO - make work with some sort of color const */
     color: var(--background-color-const);
 }

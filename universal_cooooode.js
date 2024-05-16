@@ -41,7 +41,7 @@ const changeHeaderToSecret = function() {  // Runs whenever the header image is 
 const determineHeaderSeed = function() {  // Figures out which header image to show.
     let the_date = new Date();
     let seconds_since_epoch = Math.round(the_date.getTime() / 1000);
-    let header_seed = Math.floor(seconds_since_epoch / 3600) % 9; // Remainder of "hours since epoch / 9"
+    let header_seed = Math.floor(seconds_since_epoch / 3600) % 13; // Remainder of "hours since epoch / 9"
     console.log("The header seed is " + header_seed + ".");
     return header_seed;
 }
@@ -62,7 +62,7 @@ const createHeaderRight = function() {
             break;
         case 2:
             header_element_right.setAttribute("id", "header_right_02");
-            header_element_right.setAttribute("title", "Art credit: Meronpan");
+            header_element_right.setAttribute("title", "Art credit: moshgraves");
             break;
         case 3:
             header_element_right.setAttribute("id", "header_right_03");
@@ -87,6 +87,22 @@ const createHeaderRight = function() {
         case 8:
             header_element_right.setAttribute("id", "header_right_08");
             header_element_right.setAttribute("title", "Art credit: Crank");
+            break;
+        case 9:
+            header_element_right.setAttribute("id", "header_right_09");
+            header_element_right.setAttribute("title", "Art credit: moshgraves");
+            break;
+        case 10:
+            header_element_right.setAttribute("id", "header_right_10");
+            header_element_right.setAttribute("title", "Art credit: Yguana");
+            break;
+        case 11:
+            header_element_right.setAttribute("id", "header_right_11");
+            header_element_right.setAttribute("title", "Photo credit: Hunter (from Gundam Club)");
+            break;
+        case 12:
+            header_element_right.setAttribute("id", "header_right_12");
+            header_element_right.setAttribute("title", "Art credit: Cap'n Metalhead");
             break;
 
     }
@@ -270,6 +286,13 @@ const createElements = function(navbar_blocked_space_arg="") {
 */
 const prefChecks = function() {
     let motion_toggle = fetchCookie("motiontoggle");
+
+    // Check if the user's display is taller than wider, change the meta to be mobile-friendly.
+    if (window.innerWidth <= window.innerHeight) {
+        meta_element = document.querySelector('meta[name="viewport"]');
+        meta_element.content = "width=1000";
+        motion_toggle = 1;
+    } 
     
     // If motion toggle cookie is "1", set the background triangles to not move.
     if (motion_toggle == 1) {
@@ -282,12 +305,6 @@ const prefChecks = function() {
         bg_tri_element.id = "background_triangles"
         console.log("motiontoggle cookie found with value " + motion_toggle) +". Turning on background motion.";
     }
-
-    // Check if the user's display is taller than wider, change the meta to be mobile-friendly.
-    if (window.innerWidth <= window.innerHeight) {
-        meta_element = document.querySelector('meta[name="viewport"]');
-        meta_element.content = "width=1000";
-    } 
 }
 
 
@@ -347,11 +364,20 @@ const fusterReset = function() {
     GALLERY STUFF
 */
 
-const galleryPhotoChange = function(new_photo="", alt_text="") {
+const galleryPhotoChange = function(new_photo="", alt_text="", img_render_mode="high-quality") {
     let gallery_main_photo = document.getElementById("gallery_photo");
     console.log("Changing gallery photo");
 
     gallery_main_photo.setAttribute("src", new_photo);
     gallery_main_photo.setAttribute("alt", alt_text);
     gallery_main_photo.setAttribute("title", alt_text);
+    gallery_main_photo.setAttribute("style", "image-rendering: " + img_render_mode);
+
+    let gallery_caption = document.getElementById("gallery_caption");
+    if (gallery_caption != null) {
+        console.log("Changing gallery caption")
+
+        gallery_caption.removeChild(gallery_caption.firstChild);
+        gallery_caption.appendChild(document.createTextNode(alt_text));
+    }
 }
