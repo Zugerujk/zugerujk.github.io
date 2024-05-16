@@ -323,6 +323,8 @@ const fusterOpen = function() {
     // Change the source gif of the fuster_image element
     fuster_img_element = document.getElementById("fuster_image");
     fuster_img_element.setAttribute("src", "https://zugerujk.net/images/SiteAssets/Fuster/Fuster%20Open.gif");
+    fuster_img_element.setAttribute("onmouseover", "");
+    fuster_img_element.setAttribute("onmouseout", "");
 
     // Add dialogue for fuster, found within the head of the document.
     fuster_dialogue_div = document.createElement("p"); 
@@ -352,6 +354,8 @@ const fusterReset = function() {
     // Creates the image to go inside the closed element
     fuster_img_element = document.createElement("img");
     fuster_img_element.setAttribute("src", "https://zugerujk.net/images/SiteAssets/Fuster/Fuster%20Idle.gif");
+    fuster_img_element.setAttribute("onmouseover", "src='https://zugerujk.net/images/SiteAssets/Fuster/Fuster Hover.png'");
+    fuster_img_element.setAttribute("onmouseout", "src='https://zugerujk.net/images/SiteAssets/Fuster/Fuster%20Idle.gif'");
     fuster_img_element.setAttribute("id", "fuster_image");
     fuster_element.append(fuster_img_element);
 
@@ -364,7 +368,7 @@ const fusterReset = function() {
     GALLERY STUFF
 */
 
-const galleryPhotoChange = function(new_photo="", alt_text="", img_render_mode="high-quality") {
+const galleryPhotoChange = function(new_photo="", alt_text="", img_render_mode="optimizequality") {
     let gallery_main_photo = document.getElementById("gallery_photo");
     console.log("Changing gallery photo");
 

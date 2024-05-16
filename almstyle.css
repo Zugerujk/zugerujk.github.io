@@ -567,7 +567,7 @@ center {
 #fuster_image {
     height: 50px;
     width: 50px;
-    image-rendering:optimizeQuality;
+    image-rendering:crisp-edges;
 }
 
 #fuster_dialogue {
