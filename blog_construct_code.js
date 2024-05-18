@@ -364,6 +364,13 @@ var page_listing = {
         link: "https://youtu.be/UMd8YBrtFjA",
         var: "1",
     },
+    "043": {
+        displaynum: "#043",
+        title: "Finishing things, I guess",
+        date: "5/18/24 12:51:00 PM CST",
+        link: "https://zugerujk.net/blog/blog043",
+        var: "1",
+    },
 }
 
 var included_pages = [];
