@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zugerujk.net Gallery</title>
+        <link rel="icon" type="image/png" href="../images/SiteAssets/Favicon/Almsmaller.png" />
+        <meta name ="description" content="Gallery000 - TODO" />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#1f0042" />
+
+        <meta name="fuster-dialogue" content="Some real good stuff, here! Shoutouts to every individual artist, y'know? Power to the shareholders." />
+        <link rel="stylesheet" href="../almstyle.css">
+    </head>
+    <body>
+        <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
+        <div class="flex" id="the_header"></div>
+
+        <!-- The navbar, where you can choose between a bunch of pages -->
+        <div class="flex" id="the_navbar"></div>
+        
+        <!-- A gallery-->
+        <div class="flex" id="body_extension_above">
+            <div class="blog_feed_entry" style="margin-top:15px;" id="goback">
+                <a href="../gallery.html" class="blog_feed_entry_link">
+                    < 
+                </a>
+                <div class="blog_feed_entry_content">
+                    Art of Zug (Me)
+                    <div class="blog_feed_entry_end_cont">
+                        Last Updated: 5/15/2024
+                    </div>
+                </div>
+            </div>
+            <div id="gallery_photo_container">
+                <center><img src="../images/Gallery/gallery003/lambchopper_comm2.png" style="image-rendering:pixelated;" alt="Art made by Lambchopper. Beautiful, innit!" title="Art made by Lambchopper. Beautiful, innit!" id="gallery_photo"></center>
+            </div> 
+            <center><p id="gallery_caption">Art made by Lambchopper. Beautiful, innit!</p></center>
+            <div class="flex" id="gallery_bar_container">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/bensaint_sap_sm.png" title="Art made by Ben Saint, drawn on the inside of a copy of Slime and Punishment (for pledging $40 to the Kickstarter)." onclick="galleryPhotoChange('../images/Gallery/gallery003/bensaint_sap.png', 'Art made by Ben Saint, drawn on the inside of a copy of Slime and Punishment (for pledging $40 to the Kickstarter).')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/bensaint_slimefest9_sm.png" title="Art made by Ben Saint, to commemorate Slimefest 9 (which I organized, and hosted alongside M@)!" onclick="galleryPhotoChange('../images/Gallery/gallery003/bensaint_slimefest9.png', 'Art made by Ben Saint, to commemorate Slimefest 9 (which I organized, and hosted alongside M@)!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/capn_big_zungus_sm.png" title="Art made by Cap'n Metalhead. Self-explanatory." onclick="galleryPhotoChange('../images/Gallery/gallery003/capn_big_zungus.jpg', 'Art made by Cap\'n Metalhead. Self-explanatory.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/capn_horse_sm.png" title="Art made by Cap'n Metalhead." onclick="galleryPhotoChange('../images/Gallery/gallery003/capn_horse.png', 'Art made by Cap\'n Metalhead.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/crank_eggsnax_sm.png" title="Art made by Crank. An image edit of a boiled egg I'm holding in the dark, in the kitchen of my first apartment. I was REALLY into boiled eggs for, uh, a while. They're good!" onclick="galleryPhotoChange('../images/Gallery/gallery003/crank_eggsnax.png', 'Art made by Crank. An image edit of a boiled egg I\'m holding in the dark, in the kitchen of my first apartment. I was REALLY into boiled eggs for, uh, a while. They\'re good!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/crank_n_zug_smaller_sm.png" title="Art made by Crank. He's showing off that clown lady from Ace Attorney." onclick="galleryPhotoChange('../images/Gallery/gallery003/crank_n_zug_smaller.gif', 'Art made by Crank. He\'s showing off that clown lady from Ace Attorney.', 'pixelated')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/crank_slimey_ramadan_sm.png" title="Art made by Crank." onclick="galleryPhotoChange('../images/Gallery/gallery003/crank_slimey_ramadan.png', 'Art made by Crank.', 'pixelated')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/crank_zug_griffin_sm.png" title="Art made by Crank, for his Big Griffins series. 'Twas glorious!" onclick="galleryPhotoChange('../images/Gallery/gallery003/crank_zug_griffin.png', 'Art made by Crank, for his Big Griffins series. \'Twas glorious!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/diva_cats_sm.png" title="Art made by Diva. Features me, DaKAT, and Smragnol." onclick="galleryPhotoChange('../images/Gallery/gallery003/diva_cats.png', 'Art made by Diva. Features me, DaKAT, and Smragnol.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/diva_wanda_sm.png" title="Art made by Diva, during my long-gone WandaVision phase." onclick="galleryPhotoChange('../images/Gallery/gallery003/diva_wanda.PNG', 'Art made by Diva, during my long-gone WandaVision phase.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/ebola_villains_entry_9_sm.png" title="Art made by ebolaSpreadn247, which was one page of an entry in the RFCK Villains Contest." onclick="galleryPhotoChange('../images/Gallery/gallery003/ebola_villains_entry_9.png', 'Art made by ebolaSpreadn247, which was one page of an entry in the RFCK Villains Contest.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/emirulz_pier_w_friends_sm.png" title="Art made by emirulz, who made this and then disappeared from the internet. Commemorates a time Soliss, me, Emi, Schrafft, Ech, and Infernal were fishing together. Good times (: ." onclick="galleryPhotoChange('../images/Gallery/gallery003/emirulz_pier_w_friends.png', 'Art made by emirulz, who made this and then disappeared from the internet. Commemorates a time Soliss, me, Emi, Schrafft, Ech, and Infernal were fishing together. Good times (: .')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/glimmer_admin_reveal_sm.png" title="Art made by Glimmer. I think it was for a joke that I was the RFCK admin, and, well. That happened, eventually." onclick="galleryPhotoChange('../images/Gallery/gallery003/glimmer_admin_reveal.png', 'Art made by Glimmer. I think it was for a joke that I was the RFCK admin, and, well. That happened, eventually.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/glimmer_zug_eridan.png" title="Art made by Glimmer, showing me kissing Eridan." onclick="galleryPhotoChange('../images/Gallery/gallery003/glimmer_zug_eridan.png', 'Art made by Glimmer, showing me kissing Eridan.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/lambchopper_comm1_sm.png" title="Art made by Lambchopper. It's the first time I ever commissioned someone - Lambchopper wanted a TF2 hat!" onclick="galleryPhotoChange('../images/Gallery/gallery003/lambchopper_comm1.png', 'Art made by Lambchopper. It\'s the first time I ever commissioned someone - Lambchopper wanted a TF2 hat!', 'pixelated')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/lambchopper_comm2_sm.png" title="Art made by Lambchopper. Beautiful, innit!" onclick="galleryPhotoChange('../images/Gallery/gallery003/lambchopper_comm2.png', 'Art made by Lambchopper. Beautiful, innit!', 'pixelated')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/liam_zug2_sm.png" title="Art made by LIAM/RF_SLAM." onclick="galleryPhotoChange('../images/Gallery/gallery003/liam_zug2.png', 'Art made by LIAM/RF_SLAM.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/majykks_assort_sm.png" title="Art made by MAJYKKS." onclick="galleryPhotoChange('../images/Gallery/gallery003/majykks_assort.png', 'Art made by MAJYKKS.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/mithrin_image_sm.png" title="Art made by Mithrin. It's of me building a model kit :D !" onclick="galleryPhotoChange('../images/Gallery/gallery003/mithrin_image.png', 'Art made by Mithrin. It\'s of me building a model kit :D !')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/mosh_comm1_sm.png" title="Art made by moshgraves. I commissioned this when I was more head-over-heels into Death Stranding, and holy kamoly! As always, they did wonderfully!" onclick="galleryPhotoChange('../images/Gallery/gallery003/mosh_comm1.png', 'Art made by moshgraves. I commissioned this when I was more head-over-heels into Death Stranding, and holy kamoly! As always, they did wonderfully!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/mosh_comm1ex_sm.png" title="Art made by moshgraves. A bonus they gave me with my commission!" onclick="galleryPhotoChange('../images/Gallery/gallery003/mosh_comm1ex.png', 'Art made by moshgraves. A bonus they gave me with my commission!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/mosh_pres_sm.png" title="Art made by moshgraves. A present, for my birthday! It's me! As Alm Fire Emblem!" onclick="galleryPhotoChange('../images/Gallery/gallery003/mosh_pres.png', 'Art made by moshgraves. A present, for my birthday! It\'s me! As Alm Fire Emblem!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/mosh_dema_bday_sm.png" title="Art made by moshgraves, pt.2 reaction shot for Demadunk's birthday. The group celebrating is really nice, so I included the whole thing." onclick="galleryPhotoChange('../images/Gallery/gallery003/mosh_dema_bday.png', 'Art made by moshgraves, pt.2 reaction shot for Demadunk\'s birthday. The group celebrating is really nice, so I included the whole thing.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/prince_enlist_zoom_sm.png" title="Art made by PrinceIsolation. An excerpt of me dunking on Farafrog's racecar bed, from Prince's comic where he announced he was enlisting Rowdys." onclick="galleryPhotoChange('../images/Gallery/gallery003/prince_enlist_zoom.png', 'Art made by PrinceIsolation. An excerpt of me dunking on Farafrog\'s racecar bed, from Prince\'s comic where he announced he was enlisting Rowdys.', 'pixelated')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/prince_look_sm.png" title="Art made by PrinceIsolation." onclick="galleryPhotoChange('../images/Gallery/gallery003/prince_look.png', 'Art made by PrinceIsolation.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/prince_zug_bday_sm.png" title="Art made by PrinceIsolation, for my birthday!" onclick="galleryPhotoChange('../images/Gallery/gallery003/prince_zug_bday.png', 'Art made by PrinceIsolation, for my birthday!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/prince_zug_classic_sm.png" title="Art made by PrinceIsolation, for his RFCK Gacha concept project!" onclick="galleryPhotoChange('../images/Gallery/gallery003/prince_zug_classic.png', 'Art made by PrinceIsolation, for his RFCK Gacha concept project!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/red5_bestie_sm.png" title="Art made by red5rainbow. Features me, Goopy (my slimeoid), and Hoe Biden (my hoe) farming poudrins." onclick="galleryPhotoChange('../images/Gallery/gallery003/red5_bestie.png', 'Art made by red5rainbow. Features me, Goopy (my slimeoid), and Hoe Biden (my hoe) farming poudrins.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/shrapnel_zug_sm.png" title="Art made by ShrapnelBeast." onclick="galleryPhotoChange('../images/Gallery/gallery003/shrapnel_zug.png', 'Art made by ShrapnelBeast.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/soliss_zug_sm.png" title="Art made by Soliss. One of the first pieces ever made of me!" onclick="galleryPhotoChange('../images/Gallery/gallery003/soliss_zug.png', 'Art made by Soliss. One of the first pieces ever made of me!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/vivid_superstarzug_sm.png" title="Art made by VividVanil, which eerily resembles Brick the Rat 😳." onclick="galleryPhotoChange('../images/Gallery/gallery003/vivid_superstarzug.png', 'Art made by VividVanil, which eerily resembles Brick the Rat 😳.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/yguana_bdaymural_sm.png" title="Art made by Yguana, for my birthday!" onclick="galleryPhotoChange('../images/Gallery/gallery003/yguana_bdaymural.png', 'Art made by Yguana, for my birthday!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/yguana_canwe_sm.png" title="Art made by Yguana. Can we pretend that airplanes in the night sky are like shooting stars?" onclick="galleryPhotoChange('../images/Gallery/gallery003/yguana_canwe.png', 'Art made by Yguana. Can we pretend that airplanes in the night sky are like shooting stars?')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/yguana_look_sm.png" title="Art made by Yguana." onclick="galleryPhotoChange('../images/Gallery/gallery003/yguana_look.png', 'Art made by Yguana.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery003/yguana_zug_pichu_sm.png" title="Art made by Yguana. Us as pichus." onclick="galleryPhotoChange('../images/Gallery/gallery003/yguana_zug_pichu.png', 'Art made by Yguana. Us as pichus.')">
+                <!-- <img class="gallery_bar_photo" src="../images/Gallery/gallery003" title="" onclick="galleryPhotoChange('', '')"> -->
+            </div>
+        </div>
+
+        <!-- The footer. Gotta have one!-->
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="../universal_cooooode.js" onload="createElements()"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div class="background_triangles" id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
+        </div>
+
+        <!-- Check for preferences-->
+        <script>prefChecks()</script>
+    </body>
+</html>
