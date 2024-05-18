@@ -241,7 +241,7 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2024. v0.8.0";
+    let generic_footer_text = "All rights reserved, Me, 2024. v1.0";
     let settings_text = "⚙️ Settings";
     
     // Find the navbar div

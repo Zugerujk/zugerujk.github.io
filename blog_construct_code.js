@@ -67,7 +67,7 @@ var pageg6_food = [  // Last Updated: 041
     "014",
 ];
 
-
+// Data for building the blog.html page.
 var page_listing = {
     "001": {
         displaynum: "#001",
