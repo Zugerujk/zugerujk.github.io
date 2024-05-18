@@ -58,7 +58,8 @@ var pageg5_books = [  // Last Updated: 041
     "013",
     "012",
 ];
-var pageg6_food = [  // Last Updated: 041
+var pageg6_food = [  // Last Updated: 042
+    "042",
     "031",
     "030",
     "028",
@@ -355,7 +356,14 @@ var page_listing = {
         date: "5/5/2024 8:44:37 AM CST",
         link: "https://zugerujk.net/blog/blog041",
         var: "1",
-    }
+    },
+    "042": {
+        displaynum: "#042",
+        title: "Pepsi Peach and Pepsi Lime",
+        date: "5/17/2024 2:26:11 PM CST",
+        link: "https://youtu.be/UMd8YBrtFjA",
+        var: "1",
+    },
 }
 
 var included_pages = [];

@@ -431,7 +431,8 @@ center {
     background-image: url("images/Splashes/Splash01.png");
 }
 #header_right_02 {
-    background-image: url("images/Splashes/Splash02.png");
+    /* background-image: url("images/Splashes/Splash02.png"); */
+    background-image: url("images/Splashes/Splash07.png");
 }
 #header_right_03 {
     background-image: url("images/Splashes/Splash03.png");
