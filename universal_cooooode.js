@@ -115,13 +115,21 @@ const createHeaderRight = function() {
 const createHeader = function() {
     let header_element = document.getElementById("the_header");
     // Create title left area
-    let zugerujknet_title_text = "Zugerujk.net 😎"
+    let zugerujknet_title_text = "Zugerujk.net"// 😎"
     let header_element_left = document.createElement("div");
     header_element_left.setAttribute("class", "left");
     header_element_left.setAttribute("id", "zugerujknet_title");
 
     let header_element_left_text = document.createTextNode(zugerujknet_title_text);
     header_element_left.appendChild(header_element_left_text);
+
+    if (true) { // Ascended sleeper summer babyyyy!!!
+        let header_element_left_image = document.createElement("img");
+        header_element_left_image.setAttribute("src", "https://zugerujk.net/images/SiteAssets/Miscellany/Ascended Sleeper.png");
+        header_element_left_image.setAttribute("style", "height:110px;margin-top:5px;margin-bottom:5px;margin-left:10px;")
+        header_element_left.append(header_element_left_image);
+    }
+
     header_element_right = createHeaderRight();
 
     header_element.before(createVerticalSpacer());
@@ -241,7 +249,7 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2024. v1.0.2";
+    let generic_footer_text = "All rights reserved, Me, 2024. v1.0.3";
     let settings_text = "⚙️ Settings";
     
     // Find the navbar div

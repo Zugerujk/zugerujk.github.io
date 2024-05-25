@@ -14,6 +14,7 @@
     /* Var 2 colors */
     --border-color-var2: #cac29f;
     --background-color-var2: #333324;
+    /* TODO: Add a var for youtube links that look like blog feed entry links*/
 }
 
 body {
@@ -345,6 +346,7 @@ center {
 
 /* Unique IDs for the main sections */
 #the_header {
+    display: flex;
     height: 120px;
     width: 850px;
     margin-left: auto;
@@ -405,6 +407,7 @@ center {
 /* All the rest of the Unique IDs*/
 /* Important shit, on most pages*/
 #zugerujknet_title {
+    display: flex;
     font-size: 60px;
     line-height: 120px;
     text-indent: 15px;
