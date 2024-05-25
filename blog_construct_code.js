@@ -371,6 +371,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog043",
         var: "1",
     },
+    "044": {
+        displaynum: "#044",
+        title: "Mid-to-Late May 2024",
+        date: "5/25/24 6:26:32 AM CST",
+        link: "https://zugerujk.net/blog/blog044",
+        var: "1",
+    },
 }
 
 var included_pages = [];
