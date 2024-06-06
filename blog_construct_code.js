@@ -378,6 +378,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog044",
         var: "1",
     },
+    "045": {
+        displaynum: "#045",
+        title: "Requiem for a Morrowind and More-owind",
+        date: "6/5/24 7:06:15 PM CST",
+        link: "https://zugerujk.net/blog/blog045",
+        var: "2",
+    },
 }
 
 var included_pages = [];
