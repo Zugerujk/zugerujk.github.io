@@ -385,6 +385,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog045",
         var: "2",
     },
+    "046": {
+        displaynum: "#046",
+        title: "Morrowind, Evil Does Not Exist, et cetera",
+        date: "6/13/24 2:56:36 PM CST",
+        link: "https://zugerujk.net/blog/blog046",
+        var: "2",
+    },
 }
 
 var included_pages = [];
