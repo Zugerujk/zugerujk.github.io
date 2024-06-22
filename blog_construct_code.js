@@ -392,6 +392,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog046",
         var: "2",
     },
+    "047": {
+        displaynum: "#047",
+        title: "I finished The Castle, and more",
+        date: "6/22/24 5:46:31 PM CST",
+        link: "https://zugerujk.net/blog/blog047",
+        var: "1",
+    }
 }
 
 var included_pages = [];
