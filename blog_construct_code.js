@@ -398,6 +398,13 @@ var page_listing = {
         date: "6/22/24 5:46:31 PM CST",
         link: "https://zugerujk.net/blog/blog047",
         var: "1",
+    },
+    "048": {
+        displaynum: "#048",
+        title: "2024 Year-middle Wrap-up",
+        date: "6/30/24 9:32:32 PM CST",
+        link: "https://zugerujk.net/blog/blog048",
+        var: "1",
     }
 }
 
