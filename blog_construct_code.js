@@ -4,7 +4,10 @@
 
 var all_pages = [];
 
-var pageg1_games = [  // Last Updated: 041
+var pageg1_games = [  // Last Updated: 049
+    "046",
+    "045",
+    "044",
     "040",
     "039",
     "036",
@@ -22,7 +25,10 @@ var pageg1_games = [  // Last Updated: 041
     "006",
     "001",
 ];
-var pageg2_moviestv = [  // Last Updated: 041
+var pageg2_moviestv = [  // Last Updated: 049
+    "047",
+    "046",
+    "044",
     "020",
     "017",
     "008",
@@ -30,6 +36,9 @@ var pageg2_moviestv = [  // Last Updated: 041
     "001",
 ];
 var pageg3_hq = [  // Last Updated: 041
+    "048",
+    "044",
+    "041",
     "026",
     "022474487139…",
     "021",
@@ -42,7 +51,8 @@ var pageg3_hq = [  // Last Updated: 041
     "003",
     "001",
 ];
-var pageg4_miscellany = [  // Last Updated: 041
+var pageg4_miscellany = [  // Last Updated: 049
+    "043",
     "041",
     "029",
     "025",
@@ -51,7 +61,8 @@ var pageg4_miscellany = [  // Last Updated: 041
     "019",
     "014",
 ];
-var pageg5_books = [  // Last Updated: 041
+var pageg5_books = [  // Last Updated: 049
+    "047",
     "020",
     "016",
     "015",
@@ -59,6 +70,7 @@ var pageg5_books = [  // Last Updated: 041
     "012",
 ];
 var pageg6_food = [  // Last Updated: 042
+    "049",
     "042",
     "031",
     "030",
@@ -405,7 +417,14 @@ var page_listing = {
         date: "6/30/24 9:32:32 PM CST",
         link: "https://zugerujk.net/blog/blog048",
         var: "1",
-    }
+    },
+    "049": {
+        displaynum: "#049",
+        title: "Panera Bread Review July 2024",
+        date: "7/3/24 7:58:22 AM CST",
+        link: "https://zugerujk.net/blog/blog049",
+        var: "1",
+    },
 }
 
 var included_pages = [];
