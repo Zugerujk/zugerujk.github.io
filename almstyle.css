@@ -504,7 +504,8 @@ center {
     top:-100%;
     left:-100%;
     z-index: -2;
-    background: url(images/SiteAssets/Background/triangles_v1_light.png) 0 0 repeat;
+    background: url(images/SiteAssets/Background/triangles_v1_bright.png) 0 0 repeat;
+    opacity: 0.8;
     transform: rotate(30deg);
 }
 #background_triangles {
@@ -521,10 +522,11 @@ center {
     width:100%;
     top:0;
     z-index: -1;
-    background-image:url('images/SiteAssets/Background/gradient_v3_light_overlay.png');
+    background-image:url('images/SiteAssets/Background/gradient_v3_light_overlay_alt.png');
     opacity: 1;
     background-repeat:no-repeat;
     background-size:100% 100%;
+    image-rendering: pixelated;
     mix-blend-mode: hue;
 }
 
