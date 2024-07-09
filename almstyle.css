@@ -505,7 +505,7 @@ center {
     left:-100%;
     z-index: -2;
     background: url(images/SiteAssets/Background/triangles_v1_bright.png) 0 0 repeat;
-    opacity: 0.8;
+    opacity: 0.9;
     transform: rotate(30deg);
 }
 #background_triangles {
