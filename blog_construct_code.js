@@ -425,11 +425,18 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog049",
         var: "1",
     },
-    "049": {
+    "050": {
         displaynum: "#050",
         title: "Remembering RFCKcon 7",
         date: "7/22/24 6:51:57 AM CST",
         link: "https://zugerujk.net/blog/blog050",
+        var: "1",
+    },
+    "051": {
+        displaynum: "#051",
+        title: "Houston Trip Summer 2024",
+        date: "7/28/24 2:45:56 AM CST",
+        link: "https://zugerujk.net/blog/blog051",
         var: "1",
     },
 }
