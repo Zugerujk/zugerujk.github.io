@@ -446,6 +446,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog052",
         var: "1",
     },
+    "053": {
+        displaynum: "#053",
+        title: "Newest Music Friday",
+        date: "8/24/24 5:15:40 PM CST",
+        link: "https://zugerujk.net/blog/blog053",
+        var: "1",
+    },
 }
 
 var included_pages = [];
