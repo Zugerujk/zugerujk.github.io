@@ -271,7 +271,7 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2024. v1.0.15";
+    let generic_footer_text = "All rights reserved, Me, 2024. v1.1.0";
     let settings_text = "⚙️ Settings";
     
     // Find the navbar div
@@ -406,6 +406,8 @@ const galleryPhotoChange = function(new_photo="", alt_text="", img_render_mode="
     gallery_main_photo.setAttribute("alt", alt_text);
     gallery_main_photo.setAttribute("title", alt_text);
     gallery_main_photo.setAttribute("style", "image-rendering: " + img_render_mode);
+    gallery_main_photo.setAttribute("onclick", "createImagePopup(\"" + new_photo + "\", \"" + alt_text + "\")")
+    console.log("createImagePopup('" + new_photo + "', '" + alt_text + "')")
 
     let gallery_caption = document.getElementById("gallery_caption");
     if (gallery_caption != null) {
@@ -414,4 +416,49 @@ const galleryPhotoChange = function(new_photo="", alt_text="", img_render_mode="
         gallery_caption.removeChild(gallery_caption.firstChild);
         gallery_caption.appendChild(document.createTextNode(alt_text));
     }
+}
+
+/*
+    IMAGE POPUP STUFF
+*/
+
+const createImagePopup = function(new_photo="", alt_text="") {
+    // Create all used elements
+    let image_popup_cont = document.createElement("div");
+    image_popup_cont.setAttribute("id", "img_pop_cont");
+    let image_popup_bg = document.createElement("div");
+    image_popup_bg.setAttribute("id", "img_pop_bg");
+    let image_popup_flexbox = document.createElement("div");
+    image_popup_flexbox.setAttribute("id", "img_pop_flexbox");
+    let image_popup_img = document.createElement("img");
+    image_popup_img.setAttribute("id", "img_pop_img");
+    let image_popup_caption = document.createElement("p");
+    image_popup_caption.setAttribute("id", "img_pop_caption");
+    let image_popup_close = document.createElement("p");
+    image_popup_close.setAttribute("id", "img_pop_close");
+    console.log("A")
+
+    // Create image and caption
+    image_popup_img.setAttribute("src", new_photo);
+    console.log("B")
+    let image_popup_caption_text = document.createTextNode(alt_text);
+    image_popup_caption.appendChild(image_popup_caption_text);
+    // Give close text and the ability to close
+    image_popup_close.setAttribute("onclick", "closeImagePopup()")
+    let close_text = document.createTextNode("Close");
+    image_popup_close.appendChild(close_text);
+
+    // Append city amirite
+    image_popup_flexbox.append(image_popup_img);
+    image_popup_flexbox.append(image_popup_caption);
+    image_popup_cont.append(image_popup_bg);
+    image_popup_cont.append(image_popup_flexbox);
+    image_popup_cont.append(image_popup_close);
+    // Put it in there
+    document.body.append(image_popup_cont)
+}
+
+const closeImagePopup = function() {
+    let image_popup = document.getElementById("img_pop_cont");
+    image_popup.remove()
 }
