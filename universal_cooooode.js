@@ -46,6 +46,20 @@ const determineHeaderSeed = function() {  // Figures out which header image to s
     return header_seed;
 }
 
+const determineSleeperSeed = function() {
+    let the_date = new Date();
+    let seconds_since_epoch = Math.round(the_date.getTime() / 1000);
+    let cur_minute = Math.floor(seconds_since_epoch / 60) % 60; // Remainder of "hours since epoch / 9"
+    if (cur_minute >= 55) {
+        console.log("The current minute is " + cur_minute + ". Placing Ascended Sleeper image.")
+        return true
+    }
+    else {
+        console.log("The current minute is " + cur_minute + ". Placing 😎.")
+        return false
+    }
+}
+
 const createHeaderRight = function() {
     let header_element_right = document.createElement("div");
     header_element_right.setAttribute("class", "right");
@@ -120,14 +134,22 @@ const createHeader = function() {
     header_element_left.setAttribute("class", "left");
     header_element_left.setAttribute("id", "zugerujknet_title");
 
-    let header_element_left_text = document.createTextNode(zugerujknet_title_text);
-    header_element_left.appendChild(header_element_left_text);
+    let ascended_sleeper_toggle = determineSleeperSeed()
 
-    if (true) { // Ascended sleeper summer babyyyy!!!
+    if (ascended_sleeper_toggle) { // Ascended sleeper summer babyyyy!!!
+        let header_element_left_text = document.createTextNode(zugerujknet_title_text);
+        header_element_left.appendChild(header_element_left_text);
+    
         let header_element_left_image = document.createElement("img");
         header_element_left_image.setAttribute("src", "https://zugerujk.net/images/SiteAssets/Miscellany/Ascended Sleeper.png");
         header_element_left_image.setAttribute("style", "height:110px;margin-top:5px;margin-bottom:5px;margin-left:10px;")
         header_element_left.append(header_element_left_image);
+    }
+    else {
+        zugerujknet_title_text += " 😎"
+
+        let header_element_left_text = document.createTextNode(zugerujknet_title_text);
+        header_element_left.appendChild(header_element_left_text);
     }
 
     header_element_right = createHeaderRight();
@@ -249,7 +271,7 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2024. v1.0.14";
+    let generic_footer_text = "All rights reserved, Me, 2024. v1.0.15";
     let settings_text = "⚙️ Settings";
     
     // Find the navbar div

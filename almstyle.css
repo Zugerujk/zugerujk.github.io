@@ -14,6 +14,9 @@
     /* Var 2 colors */
     --border-color-var2: #cac29f;
     --background-color-var2: #333324;
+    /* Var 3 colors */
+    --border-color-var3: #1a1e17;
+    --background-color-var3: #293027;
     /* TODO: Add a var for youtube links that look like blog feed entry links*/
 }
 
@@ -165,7 +168,7 @@ center {
     line-height: 12px;
 }
 
-.blog_feed_entry, .blog_feed_entry_var1, .blog_feed_entry_var2 {
+.blog_feed_entry, .blog_feed_entry_var1, .blog_feed_entry_var2, .blog_feed_entry_var3 {
     border: 12px solid var(--border-color-def);
     display:flex;
     margin-left: 20px;
@@ -187,6 +190,12 @@ center {
     border-color: var(--border-color-var2);
     background-color: var(--background-color-var2);
     --background-color-const: var(--background-color-var2);
+    --hover-color-const: var(--border-color-var2);
+}
+.blog_feed_entry_var3{
+    border-color: var(--border-color-var3);
+    background-color: var(--background-color-var3);
+    --background-color-const: var(--background-color-var3);
     --hover-color-const: var(--border-color-var2);
 }
 
@@ -244,7 +253,7 @@ center {
     margin-block-end: 0em;
 }
 
-.blog_entry, .blog_entry_var1, .blog_entry_var2 {
+.blog_entry, .blog_entry_var1, .blog_entry_var2, .blog_entry_var3 {
     border: 12px solid var(--border-color-def);
     /* border-radius: 10px; */
     margin-left: 20px;
@@ -266,6 +275,11 @@ center {
     border-color: var(--border-color-var2);
     background-color: var(--background-color-var2);
     --background-color-const: var(--background-color-var2);
+}
+.blog_entry_var3 {
+    border-color: var(--border-color-var3);
+    background-color: var(--background-color-var3);
+    --background-color-const: var(--background-color-var3);
 }
 
 .caption {

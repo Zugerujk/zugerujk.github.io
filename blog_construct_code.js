@@ -453,6 +453,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog053",
         var: "1",
     },
+    "054": {
+        displaynum: "#054",
+        title: "Zugpartment 2: The Bone Temple",
+        date: "9/7/24 8:18:38 AM CST",
+        link: "https://zugerujk.net/blog/blog054",
+        var: "3",
+    },
 }
 
 var included_pages = [];
@@ -544,6 +551,9 @@ const createBlogFeedEntry = function(page = Object, page_num = "", construct_ele
     }
     else if (page.var == "2") {
         entry_div.setAttribute("class", "blog_feed_entry_var2")
+    }
+    else if (page.var == "3") {
+        entry_div.setAttribute("class", "blog_feed_entry_var3")
     }
     else {
         entry_div.setAttribute("class", "blog_feed_entry");
