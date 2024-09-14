@@ -460,6 +460,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog054",
         var: "3",
     },
+    "054": {
+        displaynum: "#055",
+        title: "Magdalena Bay Imaginal Mystery Tour Fall 2024",
+        date: "9/14/24 5:28:19 AM CST",
+        link: "https://zugerujk.net/blog/blog055",
+        var: "3",
+    },
 }
 
 var included_pages = [];
