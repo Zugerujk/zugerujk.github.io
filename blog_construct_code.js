@@ -467,6 +467,20 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog055",
         var: "3",
     },
+    "056": {
+        displaynum: "#056",
+        title: "Imaginal Disk Plot Breakdown",
+        date: "10/4/24 4:39:48 AM CST",
+        link: "https://zugerujk.net/blog/blog056",
+        var: "3",
+    },
+    "057": {
+        displaynum: "#057",
+        title: "Life's Pretty Swell",
+        date: "10/4/24 4:44:04 AM CST",
+        link: "https://zugerujk.net/blog/blog057",
+        var: "3",
+    },
 }
 
 var included_pages = [];
