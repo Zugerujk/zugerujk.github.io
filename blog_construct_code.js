@@ -481,6 +481,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog057",
         var: "3",
     },
+    "058": {
+        displaynum: "#058",
+        title: "The Fanciest Best Buy I've Ever Been In",
+        date: "10/9/24 8:07:35 PM CST",
+        link: "https://zugerujk.net/blog/blog058",
+        var: "3",
+    },
 }
 
 var included_pages = [];
