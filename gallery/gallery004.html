@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zugerujk.net Gallery</title>
+        <link rel="icon" type="image/png" href="../images/SiteAssets/Favicon/Almsmaller.png" />
+        <meta name ="description" content="Gallery002 - Photos of Model Kits" />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#1f0042" />
+
+        <meta name="fuster-dialogue" content="There're so many particles visible in all these because Zug always had to have water breathing! Lotta potions, lotta fishing to get pufferfish!" />
+        <link rel="stylesheet" href="../almstyle.css">
+    </head>
+    <body>
+        <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
+        <div class="flex" id="the_header"></div>
+
+        <!-- The navbar, where you can choose between a bunch of pages -->
+        <div class="flex" id="the_navbar"></div>
+        
+        <!-- A gallery-->
+        <div class="flex" id="body_extension_above">
+            <div class="blog_feed_entry" style="margin-top:15px;" id="goback">
+                <a href="../gallery.html" class="blog_feed_entry_link">
+                    < 
+                </a>
+                <div class="blog_feed_entry_content">
+                    Photos of THE BASED ONES Minecraft 2024
+                    <div class="blog_feed_entry_end_cont">
+                        Last Updated: 10/17/2024
+                    </div>
+                </div>
+            </div>
+            <div id="gallery_photo_container">
+                <center><img class="img_hover" onclick="createImagePopup('../images/Gallery/gallery004/demaaiohangout_day.png', 'The top of Dema\'s AIO hangout, featuring a conduit (so I could breathe air), a fishing hole that fulfills the requirements to enable the treasure loot table, a small garden, an enchanting area, and a mob farm. Dema\'s behind the beacon!')" src="../images/Gallery/gallery004/demaaiohangout_day.png" alt="The top of Dema's AIO hangout, featuring a conduit (so I could breathe air), a fishing hole that fulfills the requirements to enable the treasure loot table, a small garden, an enchanting area, and a mob farm. Dema's behind the beacon!" title="The top of Dema's AIO hangout, featuring a conduit (so I could breathe air), a fishing hole that fulfills the requirements to enable the treasure loot table, a small garden, an enchanting area, and a mob farm. Dema's behind the beacon!" id="gallery_photo"></center>
+            </div>
+            <center><p id="gallery_caption">The top of Dema's AIO hangout, featuring a conduit (so I could breathe air), a fishing hole that fulfills the requirements to enable the treasure loot table, a small garden, an enchanting area, and a mob farm. Dema's behind the beacon!</p></center>
+            <div class="flex" id="gallery_bar_container">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/zughouse_viewat_sm.png" title="The view of my area, approaching. The theme that stuck in my mind was 'this is not a hallowed place'." onclick="galleryPhotoChange('../images/Gallery/gallery004/zughouse_viewat.png', 'The view of my area, approaching. The theme that stuck in my mind was \'this is not a hallowed place\'.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/zughouse_viewatclose_sm.png" title="Up close. The theme that stuck in my mind was 'this is not a hallowed place'." onclick="galleryPhotoChange('../images/Gallery/gallery004/zughouse_viewatclose.png', 'Up close. The theme that stuck in my mind was \'this is not a hallowed place\'.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/zughouse_initial_sm.png" title="My initial humble abode, in a deep river right near spawn. Right underneath the final house!" onclick="galleryPhotoChange('../images/Gallery/gallery004/zughouse_initial.png', 'My initial humble abode, in a deep river right near spawn. Right underneath the final house!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/zughouse_inside_sm.png" title="Inside the black box. It connects to the far upper area via a large water column. Beneath the water column is a hole." onclick="galleryPhotoChange('../images/Gallery/gallery004/zughouse_inside.png', 'Inside the black box. It connects to the far upper area via a large water column. Beneath the water column is a hole.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/zughouse_top_sm.png" title="On top of the house, far far above the world. Didn't end up doing much up here." onclick="galleryPhotoChange('../images/Gallery/gallery004/zughouse_top.png', 'On top of the house, far far above the world. Didn\'t end up doing much up here.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/zughouse_topnether_sm.png" title="A closer look at the nether area. Dunno what I was doing, maybe a playground?" onclick="galleryPhotoChange('../images/Gallery/gallery004/zughouse_topnether.png', 'A closer look at the nether area. Dunno what I was doing, maybe a playground?')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/zughouse_viewtop_sm.png" title="The view from up there." onclick="galleryPhotoChange('../images/Gallery/gallery004/zughouse_viewtop.png', 'The view from up there.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/zughouse_viewenter_sm.png" title="The view from the entrance to my area. Dema made the enchanting area behind his villa, right by the river, so I could easily use it in the early days of the server 🥺." onclick="galleryPhotoChange('../images/Gallery/gallery004/zughouse_viewenter.png', 'The view from the entrance to my area. Dema made the enchanting area behind his villa, right by the river, so I could easily use it in the early days of the server 🥺.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/demahouse_side_sm.png" title="The side of Dema's unfinished villa. Used to be my mutual storage area (because I owned nothing, as all I collected was communal), before that moved to the storehouse." onclick="galleryPhotoChange('../images/Gallery/gallery004/demahouse_side.png', 'The side of Dema\'s unfinished villa. Used to be my mutual storage area (because I owned nothing, as all I collected was communal), before that moved to the storehouse.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/demahouse_front_sm.png" title="The front of Dema's unfinished villa. He had a good thing going!" onclick="galleryPhotoChange('../images/Gallery/gallery004/demahouse_front.png', 'The front of Dema\'s unfinished villa. He had a good thing going!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/storehouse_side_sm.png" title="The building where we trapped the Mending villager, this photo prominently featuring Mr Straight!" onclick="galleryPhotoChange('../images/Gallery/gallery004/storehouse_side.png', 'The building where we trapped the Mending villager, this photo prominently featuring Mr Straight!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/storehouse_storage_sm.png" title="The storehouse, which I sorted (which I love doing!). This photo features Mr Bi to the right, and Xr Gay just barely sticking their head out of frame." onclick="galleryPhotoChange('../images/Gallery/gallery004/storehouse_storage.png', 'The storehouse, which I sorted (which I love doing!). This photo features Mr Bi to the right, and Xr Gay just barely sticking their head out of frame.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/glorpery_sm.png" title="Glorpery II. Glorpery I hit an iron golem, who then proceeded to kill him." onclick="galleryPhotoChange('../images/Gallery/gallery004/glorpery.png', 'Glorpery II. Glorpery I hit an iron golem, who then proceeded to kill him.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/storehouse_back_sm.png" title="The back of the storehouse." onclick="galleryPhotoChange('../images/Gallery/gallery004/storehouse_back.png', 'The back of the storehouse.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/library_sm.png" title="The never-finished library due west of the storehouse." onclick="galleryPhotoChange('../images/Gallery/gallery004/library.png', 'The never-finished library due west of the storehouse.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/imaginalshed_sm.png" title="THE Imaginal Shed, due south of the storehouse." onclick="galleryPhotoChange('../images/Gallery/gallery004/imaginalshed.png', 'THE Imaginal Shed, due south of the storehouse.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/storehouse_view_sm.png" title="The view from the storehouse, of Dema's AIO hangout." onclick="galleryPhotoChange('../images/Gallery/gallery004/storehouse_view.png', 'The view from the storehouse, of Dema\'s AIO hangout.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/demaaiohangout_ext_sm.png" title="The exterior of Dema's AIO hangout, turned partially into an airship by Liz!" onclick="galleryPhotoChange('../images/Gallery/gallery004/demaaiohangout_ext.png', 'The exterior of Dema\'s AIO hangout, turned partially into an airship by Liz!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/demaaiohangout_day_sm.png" title="The top of Dema's AIO hangout, featuring a conduit (so I could breathe air), a fishing hole that fulfills the requirements to enable the treasure loot table, a small garden, an enchanting area, and a mob farm. Dema's behind the beacon!" onclick="galleryPhotoChange('../images/Gallery/gallery004/demaaiohangout_day.png', 'The top of Dema\'s AIO hangout, featuring a conduit (so I could breathe air), a fishing hole that fulfills the requirements to enable the treasure loot table, a small garden, an enchanting area, and a mob farm. Dema\'s behind the beacon!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/demaaiohangout_on_sm.png" title="A closer look at the mob farm!" onclick="galleryPhotoChange('../images/Gallery/gallery004/demaaiohangout_on.png', 'A closer look at the mob farm!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/demaaiohangout_view_sm.png" title="A view from the AIO hangout, towards the villa area and my area." onclick="galleryPhotoChange('../images/Gallery/gallery004/demaaiohangout_view.png', 'A view from the AIO hangout, towards the villa area and my area.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/demaaiohangout_inside_sm.png" title="Inside the AIO hangout, featuring a mob drop collection area, as well as a lot of villagers." onclick="galleryPhotoChange('../images/Gallery/gallery004/demaaiohangout_inside.png', 'Inside the AIO hangout, featuring a mob drop collection area, as well as a lot of villagers.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/demaaiohangout_sleeper_sm.png" title="Inside the AIO hangout's watering hole 🥺." onclick="galleryPhotoChange('../images/Gallery/gallery004/demaaiohangout_sleeper.png', 'Inside the AIO hangout\'s watering hole 🥺.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/turtlegay_sm.png" title="Gay Straightman." onclick="galleryPhotoChange('../images/Gallery/gallery004/turtlegay.png', 'Gay Straightman.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/turtlestraight_sm.png" title="Straight Gayman" onclick="galleryPhotoChange('../images/Gallery/gallery004/turtlestraight.png', 'Straight Gayman')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/demaaiohangout_chilling_sm.png" title="Me and Dema chilling." onclick="galleryPhotoChange('../images/Gallery/gallery004/demaaiohangout_chilling.png', 'Me and Dema chilling.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/copperfarm_viewat1_sm.png" title="Aerial look at my copper farm, the walls made via pouring water on lava!" onclick="galleryPhotoChange('../images/Gallery/gallery004/copperfarm_viewat1.png', 'Aerial look at my copper farm, the walls made via pouring water on lava!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/copperfarm_viewat2_sm.png" title="View from behind my copper farm, showing the top of my house and Dema's AIO hangout." onclick="galleryPhotoChange('../images/Gallery/gallery004/copperfarm_viewat2.png', 'View from behind my copper farm, showing the top of my house and Dema\'s AIO hangout.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/copperfarm_view_sm.png" title="Up close from the copper farm." onclick="galleryPhotoChange('../images/Gallery/gallery004/copperfarm_view.png', 'Up close from the copper farm.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/lizhouse_sm.png" title="Liz's house area, to the east of mine." onclick="galleryPhotoChange('../images/Gallery/gallery004/lizhouse.png', 'Liz\'s house area, to the east of mine.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/vhouse_sm.png" title="V's house, southwest of the copper farm, east of SolarMoth's house, northwest of the villa area. V made a BUNCH of underground mines, which I didn't grab photos of. Me and Dema fought the wither twice under here!" onclick="galleryPhotoChange('../images/Gallery/gallery004/vhouse.png', 'V\'s house, southwest of the copper farm, east of SolarMoth\'s house, northwest of the villa area. V made a BUNCH of underground mines, which I didn\'t grab photos of. Me and Dema fought the wither twice under here!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/solarmothhouse_outside_sm.png" title="The exterior of SolarMoth's house." onclick="galleryPhotoChange('../images/Gallery/gallery004/solarmothhouse_outside.png', 'The exterior of SolarMoth\'s house.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/solarmothhouse_inside_sm.png" title="The interior of SolarMoth's house." onclick="galleryPhotoChange('../images/Gallery/gallery004/solarmothhouse_inside.png', 'The interior of SolarMoth\'s house.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/solarskeletonfarm_sm.png" title="SolarMoth's skeleton farm, far underneath their house. During the final phase of construction, I swam up through it with a water bucket in order to fill out its upward water pipe with seaweed. Dema jumpscared me (as he could phase through blocks). It was real fun (:" onclick="galleryPhotoChange('../images/Gallery/gallery004/solarskeletonfarm.png', 'SolarMoth\'s skeleton farm, far underneath their house. During the final phase of construction, I swam up through it with a water bucket in order to fill out its upward water pipe with seaweed. Dema jumpscared me (as he could phase through blocks). It was real fun (:')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/nighttimeview_sm.png" title="Nighttime view of the villa area." onclick="galleryPhotoChange('../images/Gallery/gallery004/nighttimeview.png', 'Nighttime view of the villa area.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/turtlefarm_sm.png" title="My turtle farm, east of the villa area." onclick="galleryPhotoChange('../images/Gallery/gallery004/turtlefarm.png', 'My turtle farm, east of the villa area.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/gaysties_sm.png" title="Two gay creepers. Get a room 🙄." onclick="galleryPhotoChange('../images/Gallery/gallery004/gaysties.png', 'Two gay creepers. Get a room 🙄.')">
+
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/enderfight_beforehorn_sm.png" title="Me tooting my horn at Liz before we fight the Ender Dragon." onclick="galleryPhotoChange('../images/Gallery/gallery004/enderfight_beforehorn.png', 'Me tooting my horn at Liz before we fight the Ender Dragon.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/enderfight_during1_sm.png" title="Shot with real good composition, featuring Dema, Liz, and the fish reverse pack Crank made." onclick="galleryPhotoChange('../images/Gallery/gallery004/enderfight_during1.png', 'Shot with real good composition, featuring Dema, Liz, and the fish reverse pack Crank made.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/enderfight_during2_sm.png" title="A shot missing!" onclick="galleryPhotoChange('../images/Gallery/gallery004/enderfight_during2.png', 'A shot missing!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/enderfight_during3_sm.png" title="Throwing my trident at a landed Ender Dragon." onclick="galleryPhotoChange('../images/Gallery/gallery004/enderfight_during3.png', 'Throwing my trident at a landed Ender Dragon.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/enderfight_during4_sm.png" title="Enderman mogging Dema." onclick="galleryPhotoChange('../images/Gallery/gallery004/enderfight_during4.png', 'Enderman mogging Dema.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/enderfight_during5_sm.png" title="Me tooting my horn after my trident fell in the void and disappeared forever (becoming LOST MEDIA)." onclick="galleryPhotoChange('../images/Gallery/gallery004/enderfight_during5.png', 'Me tooting my horn after my trident fell in the void and disappeared forever (becoming LOST MEDIA).')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/enderfight_after1_sm.png" title="Dema getting the dragon egg." onclick="galleryPhotoChange('../images/Gallery/gallery004/enderfight_after1.png', 'Dema getting the dragon egg.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/enderfight_after2_sm.png" title="Dema making walkways with the unorthodox gunpowder blocks." onclick="galleryPhotoChange('../images/Gallery/gallery004/enderfight_after2.png', 'Dema making walkways with the unorthodox gunpowder blocks.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/enderfight_after3_sm.png" title="Liz, Dema, and I exploring an end city." onclick="galleryPhotoChange('../images/Gallery/gallery004/enderfight_after3.png', 'Liz, Dema, and I exploring an end city.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/enderfight_after4_sm.png" title="A waystone Dema left me after he found some elytra." onclick="galleryPhotoChange('../images/Gallery/gallery004/enderfight_after4.png', 'A waystone Dema left me after he found some elytra.')">
+
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/liz_airship_sm.png" title="A photo Liz took, of the airship in development." onclick="galleryPhotoChange('../images/Gallery/gallery004/liz_airship.png', 'A photo Liz took, of the airship in development.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/liz_prop_sm.png" title="A photo Liz took, of the airship's propeller." onclick="galleryPhotoChange('../images/Gallery/gallery004/liz_prop.png', 'A photo Liz took, of the airship\'s propeller.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/liz_demaext_sm.png" title="A photo Liz took, of the exterior of Dema's villa, prior to being deforested." onclick="galleryPhotoChange('../images/Gallery/gallery004/liz_demaext.png', 'A photo Liz took, of the exterior of Dema\'s villa, prior to being deforested.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/liz_entitycramming_sm.png" title="A photo Liz took, of the exterior of Dema's villa, prior to being deforested." onclick="galleryPhotoChange('../images/Gallery/gallery004/liz_entitycramming.png', 'A photo Liz took, of the exterior of Dema\'s villa, prior to being deforested.')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/liz_selfie_sm.png" title="A selfie Liz took!" onclick="galleryPhotoChange('../images/Gallery/gallery004/liz_selfie.png', 'A selfie Liz took!')">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/liz_tit_sm.png" title="A photo of Liz's tit." onclick="galleryPhotoChange('../images/Gallery/gallery004/liz_tit.png', 'A photo of Liz\'s tit.')">
+                
+                <!-- <img class="gallery_bar_photo" src="../images/Gallery/gallery004" title="" onclick="galleryPhotoChange('', '')"> -->
+            </div>
+        </div>
+
+        <!-- The footer. Gotta have one!-->
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="../universal_cooooode.js" onload="createElements()"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div class="background_triangles" id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
+        </div>
+
+        <!-- Check for preferences-->
+        <script>prefChecks()</script>
+    </body>
+</html>

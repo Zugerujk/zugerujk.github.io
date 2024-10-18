@@ -271,7 +271,7 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2024. v1.1.4";
+    let generic_footer_text = "All rights reserved, Me, 2024. v1.1.5";
     let settings_text = "⚙️ Settings";
     
     // Find the navbar div
@@ -445,6 +445,7 @@ const createImagePopup = function(new_photo="", alt_text="") {
     image_popup_caption.appendChild(image_popup_caption_text);
     // Give close text and the ability to close
     image_popup_close.setAttribute("onclick", "closeImagePopup()")
+    image_popup_flexbox.setAttribute("onclick", "closeImagePopup()")
     let close_text = document.createTextNode("Close");
     image_popup_close.appendChild(close_text);
 

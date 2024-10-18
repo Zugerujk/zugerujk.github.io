@@ -488,6 +488,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog058",
         var: "3",
     },
+    "059": {
+        displaynum: "#059",
+        title: "THE BASED ONES Minecraft 2024",
+        date: "10/17/24 9:30:57 AM CST",
+        link: "https://zugerujk.net/blog/blog059",
+        var: "3",
+    }
 }
 
 var included_pages = [];
