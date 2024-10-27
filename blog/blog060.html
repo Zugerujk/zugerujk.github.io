@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Model Kits August-October 2024</title>
+        <link rel="icon" type="image/png" href="../images/SiteAssets/Favicon/Almsmaller.png" />
+        <meta name ="description" content="I built some model kits, yo." />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#293027" />
+
+        <meta name="fuster-dialogue" content="So many plastic guys in storage... so little shelf space..." />
+        <link rel="stylesheet" href="../almstyle.css">
+    </head>
+    <body>
+        <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
+        <div class="flex" id="the_header"></div>
+
+        <!-- The navbar, where you can choose between a bunch of pages -->
+        <div class="flex" id="the_navbar"></div>
+        
+        <div class="flex" id="body_extension_above">
+            <div id="gallery_photo_container">
+                <center><img class="img_hover" onclick="createImagePopup('../blog/blog-media/060/vrabe_fin.png', 'The Vrabe standing tall!')" src="../blog/blog-media/060/vrabe_fin.png" alt="The Vrabe standing tall!" title="The Vrabe standing tall!" id="gallery_photo"></center>
+            </div> 
+            <center><p id="gallery_caption">The Vrabe standing tall!</p></center>
+            <div class="flex" id="gallery_bar_container">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/tsugumori_wip1_sm.png" title="The 1/100 Kotobukiya Tsugumori in progress." onclick="galleryPhotoChange('../blog/blog-media/060/tsugumori_wip1.png', 'The 1/100 Kotobukiya Tsugumori in progress.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/tsugumori_done_sm.png" title="The finished 1/100 Kotobukiya Tsugumori. I'd love to pose it... except it SHORE my Action Base 5 connector 😭." onclick="galleryPhotoChange('../blog/blog-media/060/tsugumori_done.png', 'The finished Tsugumori. I\'d love to pose it... except it SHORE my Action Base 5 connector 😭.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/tsugumori_foot_sm.png" title="The 1/100 Kotobukiya Tsugumori in its cuck footstool position, as punishment for shearing a 30mm connector." onclick="galleryPhotoChange('../blog/blog-media/060/tsugumori_foot.png', 'The 1/100 Kotobukiya Tsugumori in its cuck footstool position, as punishment for shearing a 30mm connector.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/atlas_pose_sm.png" title="The HGGT Atlas Gundam, posed very awkwardly on its sled." onclick="galleryPhotoChange('../blog/blog-media/060/atlas_pose.png', 'The HGGT Atlas Gundam, posed very awkwardly on its sled.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/atlas_tsugumori_sm.png" title="The HGGT Atlas Gundam next to the 1/100 Kotobukiya Tsugumori (in the footstool position)." onclick="galleryPhotoChange('../blog/blog-media/060/atlas_tsugumori.png', 'The HGGT Atlas Gundam next to the 1/100 Kotobukiya Tsugumori (in the footstool position).')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/vrabe_selfie_sm.png" title="Selfie walking home with the HG Hi-𝜈 Vrabe." onclick="galleryPhotoChange('../blog/blog-media/060/vrabe_selfie.png', 'Selfie walking home with the HG Hi-𝜈 Vrabe.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/vrabe_wip_sm.png" title="The Vrabe as a work-in-progress." onclick="galleryPhotoChange('../blog/blog-media/060/vrabe_wip.png', 'The Vrabe as a work-in-progress.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/vrabe_webcam2_sm.png" title="Screen capture of me putting some cold water on my eyelid while building the HG Hi-𝜈 Vrabe in a voice call (taken by LIAM)." onclick="galleryPhotoChange('../blog/blog-media/060/vrabe_webcam2.png', 'Screen capture of me putting some cold water on my eyelid while building the HG Hi-𝜈 Vrabe in a voice call (taken by LIAM).')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/vrabe_webcam1_sm.png" title="Screen capture of me with the HG Hi-𝜈 Vrabe in a voice call (taken by LIAM)." onclick="galleryPhotoChange('../blog/blog-media/060/vrabe_webcam1.png', 'Screen capture of me with the HG Hi-𝜈 Vrabe in a voice call (taken by LIAM).')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/vrabe_fin_sm.png" title="The Vrabe standing tall!" onclick="galleryPhotoChange('../blog/blog-media/060/vrabe_fin.png', 'The Vrabe standing tall!')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/vrabe_bird_sm.png" title="The bird!" onclick="galleryPhotoChange('../blog/blog-media/060/vrabe_bird.png', 'The bird!')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/vrabe_noback_sm.png" title="Close-up of the Vrabe by the bird." onclick="galleryPhotoChange('../blog/blog-media/060/vrabe_noback.png', 'Close-up of the Vrabe by the bird.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/vrabe_stance_sm.png" title="The Vrabe's truly awful posture." onclick="galleryPhotoChange('../blog/blog-media/060/vrabe_stance.png', 'The Vrabe\'s truly awful posture.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/ver2wip_sm.png" title="The RG RX-78-2 Ver2.0 WIP." onclick="galleryPhotoChange('../blog/blog-media/060/ver2wip.png', 'The RG RX-78-2 Ver2.0 WIP.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/ver2standing1_sm.png" title="The RG RX-78-2 Ver2.0 standing, posed." onclick="galleryPhotoChange('../blog/blog-media/060/ver2standing1.png', 'The RG RX-78-2 Ver2.0 standing, posed.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/ver2standing2_sm.png" title="The RG RX-78-2 Ver2.0 standing, posed." onclick="galleryPhotoChange('../blog/blog-media/060/ver2standing2.png', 'The RG RX-78-2 Ver2.0 standing, posed.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/060/ver2context_sm.png" title="The RG RX-78-2 Ver2.0 in context." onclick="galleryPhotoChange('../blog/blog-media/060/ver2context.png', 'The RG RX-78-2 Ver2.0 in context.')">
+            </div>
+        </div>
+
+        <!-- The body, where all the good stuff happens. -->
+        <div class="flex" id="the_body">
+            <div class="left" id="body_left">
+                <div class="blog_entry_var3">
+                    <h2>Model Kits August-October 2024</h2>
+                    <div class="news_feed_entry_divider"></div>
+                    <p>I loooooove building model kits. Pictured above are the guys I built over the past 3 months. Reviews below!</p>
+                    <p><reinin>1/100 Kotobukiya Tsugumori:</reinin> it's... okay, with one huge glaring flaw that hurts the kit an immense amount. First off, the build is mostly fine. It's nothing to write home about, and it's nothing truly terrible. The Death Stranding Reverse Trike is the best Kotobukiya kit I've ever built, and this is probably a distant third (second being Tamotu). The plastic feels a little cheap, and the waterslides aren't great quality. It can pose okay. It's honestly pretty boring of a kit. Now, the GLARING flaw - its 3mm connector up the butt fuckin' shears plastic! It shore through my 3mm connector! The stresses just aren't up to snuff, at all. I put it in the footstool position because, goddamn, it killed that connector! WTF!</p>
+                    <p><reinin>HGGT Atlas Gundam:</reinin> pretty great. It's a very complex HG, and though a lot of that is stickers, a fair bit is just honest-to-god complex engineering. It's a joy to put together, and there's plenty to panel line, and posing it is. I mean, it could be better. The rail connectors feel weird and not great, and the stresses on the plastic felt kinda uncomfortable in my hands, like I was bending it the wrong way. And getting it to stand in a proper position on its own is pretty hard. But it's very pretty, and a white/black/yellow mobile suit looks really clean, and it's, just, like, nice!</p>
+                    <p><reinin>HGBF Hi-𝜈 Vrabe:</reinin> honestly wayyyyyy better than I was expecting. It's based on the plenty-older HG Hi-𝜈, and you can feel it with the joints, but, I mean. The plastic feels quite good-quality, and the thing holds itself mostly-okay, and the design, though polycap-heavy, is solid. Its biggest issue is the joints are NOT solid. The waist joint is one big ball joint (i think?) that separates a shitton, due to the amount of weight on the top part of the body. The wings are glorious, and I love the bird aesthetic that's been recontextualized and expanded upon from the original Hi-𝜈's design, but jeez louise. The joints! Argh, the joints. Also, it's got a butt action base connector point, and so because it's got so much weight from the wings, it sits on the connector point lopsided (similar to the RG Unicorn Full Armor and the RG Nu). But, uh, other than that? It's quite good. And gorgeous! I don't even mind the blue that much!</p>
+                    <p><reinin>RG RX-78-2 Ver2.0:</reinin> exactly as you've heard. This thing's been covered to death, and yeah, it's complex, and extremely posable, and very fun to build, and gorgeous. It's the first grandaddy I've built, and, uh. It's good. It's a simple design iterated upon to such a degree that it kinda feels overly-excessive in detail. But hey, that's what RGs are for!</p>
+                    <p>The next things I'm building are the MG Eclipse and the Super Robot Heroes ExCreR Slash Coat... if USAGS would fulfill my order, already 😭. I've never had this issue with them before but this order is taking forever to fulfill!</p>
+                    <div class="news_feed_entry_end">10/27/24 10:34:53 AM CST</div>  
+                </div>
+            </div>
+        </div>
+
+        <!-- The footer. Gotta have one!-->
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="../universal_cooooode.js" onload="createElements()"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div class="background_triangles" id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
+        </div>
+
+        <!-- Check for preferences-->
+        <script>prefChecks()</script>
+    </body>
+</html>
