@@ -334,13 +334,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog036",
         var: "2",
     },
-    "037": {
-        displaynum: "#037",
-        title: "The [ineclipse]",
-        date: "4/8/2024 8:42:05 PM CST",
-        link: "https://zugerujk.net/blog/blog037",
-        var: "1",
-    },
+    // "037": {
+    //     displaynum: "#037",
+    //     title: "The [ineclipse]",
+    //     date: "4/8/2024 8:42:05 PM CST",
+    //     link: "https://zugerujk.net/blog/blog037",
+    //     var: "1",
+    // },
     "038": {
         displaynum: "#038",
         title: "Microembarrassments",
@@ -500,6 +500,13 @@ var page_listing = {
         title: "Model Kits August-October 2024",
         date: "10/27/24 10:34:53 AM CST",
         link: "https://zugerujk.net/blog/blog060",
+        var: "3",
+    },
+    "061": {
+        displaynum: "#061",
+        title: "I played IMMORTALITY",
+        date: "10/29/24 5:08:56 AM CST",
+        link: "https://zugerujk.net/blog/blog061",
         var: "3",
     },
 }
