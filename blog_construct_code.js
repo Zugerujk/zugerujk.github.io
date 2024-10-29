@@ -509,6 +509,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog061",
         var: "3",
     },
+    "062": {
+        displaynum: "#062",
+        title: "I'm Balding",
+        date: "10/29/24 7:01:17 AM CST",
+        link: "https://zugerujk.net/blog/blog062",
+        var: "3",
+    },
 }
 
 var included_pages = [];
