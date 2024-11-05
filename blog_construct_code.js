@@ -516,6 +516,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog062",
         var: "3",
     },
+    "063": {
+        displaynum: "#063",
+        title: "The last day of not knowing",
+        date: "11/5/24 1:30:15 AM CST",
+        link: "https://zugerujk.net/blog/blog063",
+        var: "3",
+    },
 }
 
 var included_pages = [];
