@@ -530,6 +530,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog064",
         var: "3",
     },
+    "065": {
+        displaynum: "#065",
+        title: "I played Triangle Strategy VR for about an hour",
+        date: "12/10/24 1:39:44 AM CST",
+        link: "https://zugerujk.net/blog/blog065",
+        var: "3",
+    },
 }
 
 var included_pages = [];

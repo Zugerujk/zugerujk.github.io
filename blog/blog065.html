@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>I played Triangle Strategy VR for about an hour</title>
+        <link rel="icon" type="image/png" href="../images/SiteAssets/Favicon/Almsmaller.png" />
+        <meta name ="description" content="Lull, by Radiohead" />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#293027" />
+
+        <meta name="fuster-dialogue" content="Dialogue!" />
+        <link rel="stylesheet" href="../almstyle.css">
+    </head>
+    <body>
+        <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
+        <div class="flex" id="the_header"></div>
+
+        <!-- The navbar, where you can choose between a bunch of pages -->
+        <div class="flex" id="the_navbar"></div>
+        
+        <!-- The body, where all the good stuff happens. -->
+        <div class="flex" id="the_body">
+            <div class="left" id="body_left">
+                <div class="blog_entry_var3">
+                    <h2>I played Triangle Strategy VR for about an hour</h2>
+                    <div class="news_feed_entry_divider"></div>
+                    <p>It was okay. I dunno about the game itself — I played for just an hour! — but boy howdy, is it... a port.</p>
+                    <center><img src="blog-media/065/065gameplay.jpg" height="250px" width="auto" onclick="createImagePopup('blog-media/065/065gameplay.jpg', 'What the good stuff looks like.')"></center>
+                    <center><p class="caption">What the good stuff looks like.</p></center>
+                    <p>The controls are very clunky, and while I'll get used to them with time, it's... gonna take some time. Moving characters is the least intuitive thing, which isn't good, and is actually quite bad, because you gotta move 'em all the time. The game defaults to pointer mode if you have your left thumb <i>resting</i> on the left stick, and you have to have it resting on the buttons to actually comfortably use the "pick up guys" mode. And "pick up guys" mode has a bit of a delay, and is weird in 3d space, and doesn't work quite right. And then all the menuing is centred on the left controller, and it's kind of small, and probably slanted, and blurry. And boy howdy, the game sure is blurry! It's definitely made for the Quest 3 rather than the Quest 2. Whatever the case, yeesh.</p>
+                    <center><img src="blog-media/065/065meh.jpg" height="200px" width="auto" onclick="createImagePopup('blog-media/065/065meh.jpg', 'What everything that isn\'t combat looks like.')"><img src="blog-media/065/065attractive.jpg" height="200px" width="auto" onclick="createImagePopup('blog-media/065/065attractive.jpg', 'Veritable awooga.')"></center>
+                    <center><p class="caption">What everything that isn't combat looks like. And the guy on the right, veritable awooga.</p></center>
+                    <p>Most of the game is just "2D Triangle Strategy playing on a menu in front of you", which is weird and not good. And, minor annoyance, but the Meta Horizon mobile app is very annoying and doesn't work right, so the only way for me to export photos of the game is to upload them to facebook from within my headset. Yowch, Facebook.</p>
+                    <center><img src="blog-media/065/065facebook.png" height="250px" width="auto" onclick="createImagePopup('blog-media/065/065facebook.png', 'My Facebook feed now.')"></center>
+                    <center><p class="caption">My Facebook feed now.</p></center>
+                    <p>Might put some more time into it. Might not. I was playing modded Minecraft with Dema, Dan, Liz, SolarMoth, Soba, Dany, and a few others, and two days ago completely royally fucked that up by getting extremely mad at Liz and ruining the end raid in a massive way. So I feel like shit, though I definitely made other people feel worse. And it was such a public thing! Totally fucked myself irreparably. I didn't have a hold on my anger issues, even for hours afterwards, and, fuck. I guess I'm trying to retreat to solo passions and pleasures. Video game not going good, not at all, I'm in a creative rut entirely (if you couldn't tell from the lack of blog posts). College is going alright.</p>
+                    <center><p><a href="https://www.youtube.com/watch?v=-wOHfEZL3tg">Lull, by Radiohead.</a></p></center>
+                    <div class="news_feed_entry_end">12/10/24 1:39:44 AM CST</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The footer. Gotta have one!-->
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="../universal_cooooode.js" onload="createElements()"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div class="background_triangles" id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
+        </div>
+
+        <!-- Check for preferences-->
+        <script>prefChecks()</script>
+    </body>
+</html>
