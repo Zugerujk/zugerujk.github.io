@@ -537,6 +537,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog065",
         var: "3",
     },
+    "066": {
+        displaynum: "#066",
+        title: "I dislike my body very much, though it ebbs and flows, quite honestly",
+        date: "12/10/24 7:35:21 AM CST",
+        link: "https://zugerujk.net/blog/blog066",
+        var: "3",
+    },
 }
 
 var included_pages = [];
