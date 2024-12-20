@@ -544,6 +544,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog066",
         var: "3",
     },
+    "067": {
+        displaynum: "#067",
+        title: "Reflecting upon walking through the morning cold to get an iced mocha and a donut",
+        date: "12/20/24 7:28:31 AM CST",
+        link: "https://zugerujk.net/blog/blog067",
+        var: "3",
+    },
 }
 
 var included_pages = [];
