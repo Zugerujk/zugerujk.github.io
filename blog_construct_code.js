@@ -551,6 +551,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog067",
         var: "3",
     },
+    "068": {
+        displaynum: "#068",
+        title: "Model Kits December 2024",
+        date: "12/29/24 8:14:00 AM CST",
+        link: "https://zugerujk.net/blog/blog068",
+        var: "3",
+    },
 }
 
 var included_pages = [];
