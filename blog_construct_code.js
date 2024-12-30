@@ -558,6 +558,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog068",
         var: "3",
     },
+    "069": {
+        displaynum: "#069",
+        title: "2024 Year-end Wrap-up",
+        date: "12/30/24 3:14:44 PM CST",
+        link: "https://zugerujk.net/blog/blog069",
+        var: "3",
+    },
 }
 
 var included_pages = [];
