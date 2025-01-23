@@ -1,33 +1,29 @@
 :root {
     color-scheme: dark;
     /* Default colors */
-    --border-color-def: #1f0042;
-    --background-color-def: #322357;
-    --background-color-body: rgba(20, 8, 40, 1);
-    --navbar-bg-color: #453075;
+    --border-color-def: #2c2b5b;
+    --background-color-def: #0e0e0e;
+    --background-color-body: #0e0e0e;
+    --navbar-bg-color: #1c1c2f;
     --link-hover-color: #9e9eff;
     --txt-color-def: whitesmoke;
     --txt-color-dark-def: lightgray;
     /* Var 1 colors */
-    --border-color-var1: #150042;
-    --background-color-var1: #1e374a;
+    --border-color-var1: #2c2b5b;
+    --background-color-var1: #0e0e0e;
     /* Var 2 colors */
     --border-color-var2: #cac29f;
     --background-color-var2: #333324;
     /* Var 3 colors */
     --border-color-var3: #1a1e17;
     --background-color-var3: #293027;
-    /* Darknessian colors */
-    --border-color-varD: #2c2b5b;
-    --background-color-varD: #0e0e0e;
     /* TODO: Add a var for youtube links that look like blog feed entry links*/
-
 }
 
 body {
-    background-image:url('images/SiteAssets/Background/gradient_v4_light.png');
-    background-repeat:no-repeat;
-    background-size: 100vw 100%;
+    background-image:url('images/SiteAssets/Background/Darknessian/backgroundtiling.png');
+    background-repeat:repeat;
+    /* background-size: 100vw 100%; */
     position:relative;
     min-height:100vh;
     max-width:100vw;
@@ -172,7 +168,7 @@ center {
     line-height: 12px;
 }
 
-.blog_feed_entry, .blog_feed_entry_var1, .blog_feed_entry_var2, .blog_feed_entry_var3, .blog_feed_entry_varD {
+.blog_feed_entry, .blog_feed_entry_var1, .blog_feed_entry_var2, .blog_feed_entry_var3 {
     border: 12px solid var(--border-color-def);
     display:flex;
     margin-left: 20px;
@@ -201,12 +197,6 @@ center {
     background-color: var(--background-color-var3);
     --background-color-const: var(--background-color-var3);
     --hover-color-const: var(--border-color-var2);
-}
-.blog_feed_entry_varD{
-    border-color: var(--border-color-varD);
-    background-color: var(--background-color-varD);
-    --background-color-const: var(--background-color-varD);
-    --hover-color-const: var(--border-color-var1);
 }
 
 .blog_feed_entry_content {
@@ -263,7 +253,7 @@ center {
     margin-block-end: 0em;
 }
 
-.blog_entry, .blog_entry_var1, .blog_entry_var2, .blog_entry_var3, .blog_entry_varD {
+.blog_entry, .blog_entry_var1, .blog_entry_var2, .blog_entry_var3 {
     border: 12px solid var(--border-color-def);
     /* border-radius: 10px; */
     margin-left: 20px;
@@ -290,11 +280,6 @@ center {
     border-color: var(--border-color-var3);
     background-color: var(--background-color-var3);
     --background-color-const: var(--background-color-var3);
-}
-.blog_entry_varD {
-    border-color: var(--border-color-varD);
-    background-color: var(--background-color-varD);
-    --background-color-const: var(--background-color-varD);  
 }
 
 .caption {
@@ -528,12 +513,12 @@ center {
 #background_triangles, #background_triangles_nomotion {
     content: "";
     position:absolute;
-    width:360%;
+    width:320%;
     height:250%;
     top:-100%;
     left:-100%;
     z-index: -2;
-    background: url(images/SiteAssets/Background/triangles_v1_bright.png) 0 0 repeat;
+    background: url(images/SiteAssets/Background/Darknessian/triangles_v1_color.png) 0 0 repeat;
     opacity: 1;
     transform: rotate(30deg);
 }
@@ -551,12 +536,12 @@ center {
     width:100%;
     top:0;
     z-index: -1;
-    background-image:url('images/SiteAssets/Background/gradient_v4_light_overlay.png');
+    background-image:url('images/SiteAssets/Background/Darknessian/bgwater_overlay.png');
     opacity: 1;
     background-repeat:no-repeat;
     background-size:100% 100%;
     image-rendering: pixelated;
-    mix-blend-mode: hue;
+    /* mix-blend-mode: hue; */
 }
 
 /*Less important stuff*/

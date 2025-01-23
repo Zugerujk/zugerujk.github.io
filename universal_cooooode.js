@@ -196,6 +196,7 @@ const createNavbar = function(blocked_space_arg = "") {
     // Establish the hyperlinks
     let home_link = "https://zugerujk.net/index.html";
     let blog_link = "https://zugerujk.net/blog.html";
+    let iood_link = "https://zugerujk.net/islandoffouterdarkness.html"
     let projects_link = "https://zugerujk.net/projects.html";
     let gallery_link = "https://zugerujk.net/gallery.html";
     let bio_link = "https://zugerujk.net/bio.html";
@@ -222,6 +223,7 @@ const createNavbar = function(blocked_space_arg = "") {
     // Create "home"
     home_navbar_element = createNavbarElement("Home", home_link);
     blog_navbar_element = createNavbarElement("Blog", blog_link);
+    iood_navbar_element = createNavbarElement("Outer Darkness", iood_link);
     projects_navbar_element = createNavbarElement("Projects", projects_link);
     gallery_navbar_element = createNavbarElement("Gallery", gallery_link);
     bio_navbar_element = createNavbarElement("About", bio_link);
@@ -234,6 +236,8 @@ const createNavbar = function(blocked_space_arg = "") {
     navbar_master_element.append(createNavbarSpacer());
     navbar_master_element.append(blog_navbar_element);
     navbar_master_element.append(createNavbarSpacer());
+    // navbar_master_element.append(iood_navbar_element);
+    // navbar_master_element.append(createNavbarSpacer());
     navbar_master_element.append(projects_navbar_element);
     navbar_master_element.append(createNavbarSpacer());
     navbar_master_element.append(gallery_navbar_element);

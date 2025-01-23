@@ -660,6 +660,9 @@ const createBlogFeedEntry = function(page = Object, page_num = "", construct_ele
     else if (page.var == "3") {
         entry_div.setAttribute("class", "blog_feed_entry_var3")
     }
+    else if (page.var == "D") {
+        entry_div.setAttribute("class", "blog_feed_entry_varD")
+    }
     else {
         entry_div.setAttribute("class", "blog_feed_entry");
     }
