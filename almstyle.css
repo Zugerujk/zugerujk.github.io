@@ -205,6 +205,8 @@ center {
 .blog_feed_entry_varD{
     border-color: var(--border-color-varD);
     background-color: var(--background-color-varD);
+    background-image:url('images/SiteAssets/Background/Darknessian/black_bg.png');
+    background-repeat:repeat;
     --background-color-const: var(--background-color-varD);
     --hover-color-const: var(--border-color-var1);
 }
@@ -294,6 +296,8 @@ center {
 .blog_entry_varD {
     border-color: var(--border-color-varD);
     background-color: var(--background-color-varD);
+    background-image:url('images/SiteAssets/Background/Darknessian/black_bg.png');
+    background-repeat:repeat;
     --background-color-const: var(--background-color-varD);  
 }
 

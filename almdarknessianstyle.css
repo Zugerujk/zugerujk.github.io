@@ -148,7 +148,8 @@ center {
     margin-top: 6px;
     margin-bottom: 8px;
     height: auto;
-    background-color: var(--background-color-def);
+    background-image:url('images/SiteAssets/Background/Darknessian/black_bg.png');
+    background-repeat:repeat;
     --background-color-const: var(--background-color-def);
     text-indent:10px;
     font-size: 34px;
@@ -175,7 +176,8 @@ center {
     margin-right: 20px;
     margin-top: 6px;
     margin-bottom: 14px;
-    background-color: var(--background-color-def);
+    background-image:url('images/SiteAssets/Background/Darknessian/black_bg.png');
+    background-repeat:repeat;
     --background-color-const: var(--background-color-def);
     text-indent:10px;
     font-size: 30px;
@@ -261,14 +263,16 @@ center {
     margin-top: 20px;
     margin-bottom: 20px;
     height: auto;
-    background-color: var(--background-color-def);
+    background-image:url('images/SiteAssets/Background/Darknessian/black_bg.png');
+    background-repeat:repeat;
     --background-color-const: var(--background-color-def);
     text-indent:10px;
     font-size: 34px;
 }
 .blog_entry_var1 {
     border-color: var(--border-color-var1);
-    background-color: var(--background-color-var1);
+    background-image:url('images/SiteAssets/Background/Darknessian/black_bg.png');
+    background-repeat:repeat;
     --background-color-const: var(--background-color-var1);  
 }
 .blog_entry_var2 {
@@ -295,7 +299,8 @@ center {
     height:240px;
     width:225px;
     border: 12px solid var(--border-color-def);
-    background-color: var(--background-color-def);
+    background-image:url('images/SiteAssets/Background/Darknessian/black_bg.png');
+    background-repeat:repeat;
     --background-color-const: var(--background-color-def);
     margin-left: 10px;
     margin-right: 10px;
@@ -341,7 +346,8 @@ center {
     height:auto;
     width:170px;
     border: 5px solid var(--border-color-def);
-    background-color: var(--background-color-def);
+    background-image:url('images/SiteAssets/Background/Darknessian/black_bg.png');
+    background-repeat:repeat;
     --background-color-const: var(--background-color-def);
     margin-left: auto;
     margin-right: auto;
@@ -392,7 +398,8 @@ center {
     border: 13px solid var(--border-color-def);
     border-top: 0px;
     border-bottom: 0px solid var(--border-color-def);;
-    background-color: var(--background-color-body);
+    background-image:url('images/SiteAssets/Background/Darknessian/black_bg.png');
+    background-repeat:repeat;
     --background-color-const: var(--background-color-body);
 
 }
@@ -411,7 +418,8 @@ center {
     margin-right: auto;
     border: 13px solid var(--border-color-def);
     border-top: 5px solid var(--border-color-def);
-    background-color: var(--background-color-body);
+    background-image:url('images/SiteAssets/Background/Darknessian/black_bg.png');
+    background-repeat:repeat;
     --background-color-const: var(--background-color-body);
     text-align: right;
     font-size: 14px;
@@ -425,7 +433,9 @@ center {
     font-size: 60px;
     line-height: 120px;
     text-indent: 15px;
-    background-color: rgba(20, 8, 40, 0.82);
+    /* background-color: rgba(20, 8, 40, 0.82); */
+    background-image:url('images/SiteAssets/Background/Darknessian/black_bg_transparent.png');
+    background-repeat:repeat;
     --background-color-const: rgba(20, 8, 40, 0.82);
     color: var(--txt-color-def)
 }
