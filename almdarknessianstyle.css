@@ -391,21 +391,26 @@ center {
     overflow:visible;
 }
 
-#the_body, #body_extension_above {
+#the_body, #body_extension_above, #body_extension_above_bottomborder {
     height: auto;
     width: 850px;
     margin: auto;
     border: 13px solid var(--border-color-def);
     border-top: 0px;
-    border-bottom: 0px solid var(--border-color-def);;
+    border-bottom: 0px solid var(--border-color-def);
     background-image:url('images/SiteAssets/Background/Darknessian/black_bg.png');
     background-repeat:repeat;
+    background-color: var(--background-color-body);
     --background-color-const: var(--background-color-body);
 
 }
 #body_extension_above {
     flex-direction: column;
 }
+#body_extension_above_bottomborder {
+    border-bottom: 5px solid var(--border-color-def);
+}
+
 
 #the_footer {
     position:relative;

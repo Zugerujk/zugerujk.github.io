@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Island Off Outer Darkness</title>
+        <link rel="icon" type="image/png" href="images/SiteAssets/Favicon/pf.png" />
+        <meta name ="description" content="The Island Off Outer Darkness official web landing page." />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#2c2b5b" />
+
+        <meta name="fuster-dialogue" content="This 'island' sure seems 'off' and pretty far 'out'. And, 'er', covered with 'darkness'!"" />
+        <meta name="keywords" content="Island Off Outer Darkness, IOOD, iood, Official, Zug, Lambchopper, Zugerujk, Outer Darkness" />
+        <link rel="stylesheet" href="almdarknessianstyle.css">
+    </head>
+    <body>
+        <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
+        <div class="flex" id="the_header"></div>
+
+        <!-- The navbar, where you can choose between a bunch of pages -->
+        <div class="flex" id="the_navbar"></div>
+
+        <!-- BUG - only left-aligning? What the FUCK???????? -->
+        <div class="flex" id="body_extension_above_bottomborder">
+            <div class="left" id="body_left">
+                <div class="blog_entry">
+                    <p><reinin>Island Off Outer Darkness</reinin> is the game I've been working on. The initial concept began development in February 2024 (though actual full-scale production did not begin until June 2024). You play as a Postman within a temporary Postman's residency on Rekkieg, a small fishing village in Antarctic waters far off the southwest coast of Chryse, the mainland. You talk to people, and deliver packages, and garden, and fish. It takes place over the course of many weeks, as the seasons change and the people with them.</p>
+                    <p>I find it difficult to elaborate in much further detail without just explaining the crux of the game and the details of the world and its people, which I do not want to do, and rather have players discover. It's many things, but also not much. It's the most inwardly-focused creative project I've ever worked on — though that wasn't the plan from the beginning — and I've worn my inspirations on my sleeve.</p>
+                    <p>My current collaborators and compatriots on the project are <reinin>Lambchopper</reinin>, who is doing character design, character art, and environmental textures, and <reinin>Calamity</reinin> (formerly known as Scallope), who is composing the soundtrack. Both have been instrumental in crafting the tone and environment of the world. No generative AI was, has been, or will be involved in the creation of anything in or near the project. In addition, I've <reinin>Smearg</reinin>'s permission to utilize art they've previously created for the gardening within the game, which I am very grateful for.</p>
+                    <p>It will be releasing <reinin>sometime later this year</reinin>, and cost <reinin>$13.99</reinin> on release, on Steam and Itch (probably). Its target audience is critically small, but I hope you pick it up when it launches and play it. I hope it evokes some sort of emotion in you.</p>
+                    <p><reinin>More on the game below.</reinin></p>
+                    <div class="news_feed_entry_end">1/30/25 11:19:59 AM CST</div>
+                </div>
+            </div>
+        </div>
+        <!-- The body, where all the good stuff happens. -->
+        <div class="flex" id="the_body">
+            <div class="left" id="body_left">
+                <h5>Entries:</h5>
+                <div id="blog_construct_div">
+                    <div class="blog_feed_entry" id="entry002">
+                        <a class="blog_feed_entry_link" href="https://zugerujk.net/blog/blogOD02.html">< OD02</a>
+                        <div class="blog_feed_entry_content">
+                            <div>Learning to direct for Island Off Outer Darkness has been very hard.</div>
+                            <div class="blog_feed_entry_end_cont">2/1/25 3:19:55 AM CST</div>
+                        </div>
+                    </div>
+                        <div class="blog_feed_entry" id="entry001">
+                            <a class="blog_feed_entry_link" href="https://zugerujk.net/blog/blogOD01.html">< OD01</a>
+                            <div class="blog_feed_entry_content">
+                                <div>Character Introduction: PC</div>
+                                <div class="blog_feed_entry_end_cont">2/1/25 2:50:38 AM CST</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="right" id="body_right">
+                <h5>Featured:</h5>
+                <div class="featured_container">
+                    <a class="project_title" href=""><img class="featured_thumbnail" src="images/SiteAssets/Miscellany/Sea.png">
+                    <center>Nothin' yet</a>
+                    <div class="project_description">Nothing yet featured. Check out the blog posts.</div></center>
+                </div>
+            </div>
+        </div>
+
+        <!-- The footer. Gotta have one!-->
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="universal_cooooode.js" onload="createElements('outerdarkness')"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div class="background_triangles" id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
+        </div>
+
+        <!-- Check for preferences-->
+        <script>prefChecks()</script>
+    </body>
+</html>

@@ -126,30 +126,46 @@ const createHeaderRight = function() {
     return header_element_right;
 }
 
-const createHeader = function() {
+const createHeader = function(page_type_var = "") {
     let header_element = document.getElementById("the_header");
     // Create title left area
     let zugerujknet_title_text = "Zugerujk.net"// 😎"
+    let img_append = false
+    let img_to_app = ""
     let header_element_left = document.createElement("div");
     header_element_left.setAttribute("class", "left");
     header_element_left.setAttribute("id", "zugerujknet_title");
 
     let ascended_sleeper_toggle = determineSleeperSeed()
-
-    if (ascended_sleeper_toggle) { // Ascended sleeper summer babyyyy!!!
-        let header_element_left_text = document.createTextNode(zugerujknet_title_text);
-        header_element_left.appendChild(header_element_left_text);
-    
-        let header_element_left_image = document.createElement("img");
-        header_element_left_image.setAttribute("src", "https://zugerujk.net/images/SiteAssets/Miscellany/Ascended Sleeper.png");
-        header_element_left_image.setAttribute("style", "height:110px;margin-top:5px;margin-bottom:5px;margin-left:10px;")
-        header_element_left.append(header_element_left_image);
+    console.log(page_type_var)
+    if (page_type_var == "outerdarkness" || page_type_var == "outerdarknessblog") {
+        if (ascended_sleeper_toggle) {
+            img_append = true
+            img_to_app = "https://zugerujk.net/images/SiteAssets/Miscellany/pf.png"
+        }
+        else {
+            img_append = true
+            img_to_app = "https://zugerujk.net/images/SiteAssets/Miscellany/man.png"
+        }
     }
     else {
-        zugerujknet_title_text += " 😎"
+        if (ascended_sleeper_toggle) { // Ascended sleeper summer babyyyy!!!
+            img_append = true
+            img_to_app = "https://zugerujk.net/images/SiteAssets/Miscellany/Ascended Sleeper.png"
+        }
+        else {
+            zugerujknet_title_text += " 😎"
+        }
+    }
 
-        let header_element_left_text = document.createTextNode(zugerujknet_title_text);
-        header_element_left.appendChild(header_element_left_text);
+    let header_element_left_text = document.createTextNode(zugerujknet_title_text);
+    header_element_left.appendChild(header_element_left_text);
+
+    if (img_append) {
+        let header_element_left_image = document.createElement("img");
+        header_element_left_image.setAttribute("src", img_to_app);
+        header_element_left_image.setAttribute("style", "height:110px;margin-top:5px;margin-bottom:5px;margin-left:10px;image-rendering:pixelated;")
+        header_element_left.append(header_element_left_image);
     }
 
     header_element_right = createHeaderRight();
@@ -212,6 +228,9 @@ const createNavbar = function(blocked_space_arg = "") {
         case "projects":
             projects_link = "";
             break;
+        case "outerdarkness":
+            iood_link = "";
+            break;
         case "gallery":
             gallery_link = "";
             break;
@@ -236,8 +255,8 @@ const createNavbar = function(blocked_space_arg = "") {
     navbar_master_element.append(createNavbarSpacer());
     navbar_master_element.append(blog_navbar_element);
     navbar_master_element.append(createNavbarSpacer());
-    // navbar_master_element.append(iood_navbar_element);
-    // navbar_master_element.append(createNavbarSpacer());
+    navbar_master_element.append(iood_navbar_element);
+    navbar_master_element.append(createNavbarSpacer());
     navbar_master_element.append(projects_navbar_element);
     navbar_master_element.append(createNavbarSpacer());
     navbar_master_element.append(gallery_navbar_element);
@@ -307,9 +326,9 @@ const createFooter = function() {
 /*
     THE FULL LOAD
 */
-const createElements = function(navbar_blocked_space_arg="") {
-    createHeader();
-    createNavbar(blocked_space_arg=navbar_blocked_space_arg);
+const createElements = function(page_type_arg="") {
+    createHeader(page_type_var=page_type_arg);
+    createNavbar(blocked_space_arg=page_type_arg);
     createFooter();
 }
 

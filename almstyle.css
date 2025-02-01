@@ -404,7 +404,7 @@ center {
     overflow:visible;
 }
 
-#the_body, #body_extension_above {
+#the_body, #the_body_2, #body_extension_above, #body_extension_above_bottomborder {
     height: auto;
     width: 850px;
     margin: auto;
@@ -417,6 +417,9 @@ center {
 }
 #body_extension_above {
     flex-direction: column;
+}
+#body_extension_above_bottomborder {
+    border-bottom: 5px solid var(--border-color-def);
 }
 
 #the_footer {
