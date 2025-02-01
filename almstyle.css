@@ -535,7 +535,7 @@ center {
 #background_triangles, #background_triangles_nomotion {
     content: "";
     position:absolute;
-    width:360%;
+    width:320%;
     height:250%;
     top:-100%;
     left:-100%;
