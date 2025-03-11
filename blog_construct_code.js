@@ -565,6 +565,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog069",
         var: "3",
     },
+    "070": {
+        displaynum: "#070",
+        title: "I took a bath for the first time in, like, a decade",
+        date: "3/11/25 10:17:14 AM CST",
+        link: "https://zugerujk.net/blog/blog070",
+        var: "3",
+    },
 }
 
 var included_pages = [];
