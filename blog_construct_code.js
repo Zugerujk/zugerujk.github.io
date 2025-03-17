@@ -572,6 +572,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog070",
         var: "3",
     },
+    "071": {
+        displaynum: "#071",
+        title: "I started Finasteride btw",
+        date: "3/17/25 5:56:29 AM CST",
+        link: "https://zugerujk.net/blog/blog071",
+        var: "3",
+    },
 }
 
 var included_pages = [];
