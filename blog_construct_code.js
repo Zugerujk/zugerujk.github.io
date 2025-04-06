@@ -579,6 +579,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog071",
         var: "3",
     },
+    "072": {
+        displaynum: "#072",
+        title: "Hello Kitty dailies have taken over my life (also I got a part-time job)",
+        date: "4/6/25 9:03:51 AM CST",
+        link: "https://zugerujk.net/blog/blog072",
+        var: "3",
+    },
 }
 
 var included_pages = [];

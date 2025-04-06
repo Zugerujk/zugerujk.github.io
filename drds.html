@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zugerujk.net</title>
+        <link rel="icon" type="image/png" href="images/SiteAssets/Favicon/Almsmaller.png" />
+        <meta name ="description" content="DELECTIMALS: Roewen's Dating Simulator." />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#1f0042" />
+
+        <meta name="fuster-dialogue" content="Thought up mostly during a grueling 11-hour car drive."/>
+        <link rel="stylesheet" href="almstyle.css">
+    </head>
+    <body>
+
+        <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
+        <div class="flex" id="the_header"></div>
+
+        <!-- The navbar, where you can choose between a bunch of pages -->
+        <div class="flex" id="the_navbar"></div>
+
+        <!-- The body, where all the good stuff happens. -->
+        <div class="flex" id="the_body">
+            <div class="left" id="body_left">
+                <div class="blog_entry">
+                    <center><img title="" alt="DELECTIMALS: Roewen's Dating Simulator yaoi image."src="images/Projects/DRDS.png" height="400px" width="auto"></center>
+                    <center><h2><reinin>DELECTIMALS: Roewen's Dating Simulator</reinin></h2></center>
+                    <p>A short, low-effort, high-sovl thing I made for DELECTIMALS, a Discord MMORPG unrelated to anything you've ever heard of. 100% of the art was made by the DELECTIMALS team, except the above yaoi image, which I made. I think only one person has ever played this at time of writing, but I made it, so here it is.</p>
+                    <center><p><a href="https://drive.google.com/drive/folders/1KMtnJ7UCmQlnpv6b3fJS5evWF640ePFx?usp=sharing">Here's the Google Drive link to the Mac and PC .zips.</a></p></center>
+                    <marquee style="color:darkred;font-family:'Times New Roman', Times, serif;background-image: url(images/Projects/projects_drds.png);">100% canon - official red text</marquee>
+                </div>
+            </div>
+        </div>
+
+        <!-- The footer. Gotta have one!-->
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="universal_cooooode.js" onload="createElements()"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div class="background_triangles" id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
+        </div>
+
+        <!-- Check for preferences-->
+        <script>prefChecks()</script>
+    </body>
+</html>
