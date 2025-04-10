@@ -586,6 +586,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog072",
         var: "3",
     },
+    "073": {
+        displaynum: "#073",
+        title: "Link rot, the great destroyer",
+        date: "4/10/25 10:58:59 AM CST",
+        link: "https://zugerujk.net/blog/blog073",
+        var: "3",
+    },
 }
 
 var included_pages = [];
