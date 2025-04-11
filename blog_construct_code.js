@@ -593,6 +593,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog073",
         var: "3",
     },
+    "074": {
+        displaynum: "#074",
+        title: "Hypomanic Depression and Mount Eerie",
+        date: "4/10/25 10:46:16 PM CST",
+        link: "https://zugerujk.net/blog/blog074",
+        var: "3",
+    },
 }
 
 var included_pages = [];
