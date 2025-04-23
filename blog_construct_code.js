@@ -600,6 +600,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog074",
         var: "3",
     },
+    "074": {
+        displaynum: "#075",
+        title: "I feel weird about writing Yo • to • Yo • ta",
+        date: "4/23/25 8:56:27 AM CST",
+        link: "https://zugerujk.net/blog/blog075",
+        var: "3",
+    },
 }
 
 var included_pages = [];
