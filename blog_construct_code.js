@@ -600,18 +600,11 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog074",
         var: "3",
     },
-    "075": {
+    "074": {
         displaynum: "#075",
         title: "I feel weird about writing Yo • to • Yo • ta",
         date: "4/23/25 8:56:27 AM CST",
         link: "https://zugerujk.net/blog/blog075",
-        var: "3",
-    },
-    "076": {
-        displaynum: "#076",
-        title: "I have no will to do anything and I am completely lost in life",
-        date: "4/25/25 10:18:22 PM CST",
-        link: "https://zugerujk.net/blog/blog076",
         var: "3",
     },
 }
