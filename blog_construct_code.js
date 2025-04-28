@@ -607,6 +607,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog075",
         var: "3",
     },
+    "076": {
+        displaynum: "#076",
+        title: "The shower food Twitter guy got engaged so my morning bath felt particularly lonely today",
+        date: "4/28/25 3:47:26 AM CST",
+        link: "https://zugerujk.net/blog/blog076",
+        var: "3",
+    },
 }
 
 var included_pages = [];
