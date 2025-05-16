@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wishlists: An Analysis</title>
+        <link rel="icon" type="image/png" href="../images/SiteAssets/Favicon/pf.png" />
+        <meta name ="description" content="From the Island Off Outer Darkness blog." />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#2c2b5b" />
+
+        <meta name="fuster-dialogue" content="Steam actually gives you these beautiful graphs but jury's out on if it's legal to show those." />
+        <link rel="stylesheet" href="../almdarknessianstyle.css">
+    </head>
+    <body>
+        <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
+        <div class="flex" id="the_header"></div>
+
+        <!-- The navbar, where you can choose between a bunch of pages -->
+        <div class="flex" id="the_navbar"></div>
+        
+        <!-- The body, where all the good stuff happens. -->
+        <div class="flex" id="the_body">
+            <div class="left" id="body_left">
+                <div class="blog_entry_var1">
+                    <h2>Wishlists: An Analysis</h2>
+                    <div class="news_feed_entry_divider"></div>
+                    <p>The Steam page for Island Off Outer Darkness went live on April 17th, 2025, though I did not advertise it publicly until April 19th, after I had finished and uploaded the Steam trailer. And at that point in my life, I gained a new catchphrase: <reinin>"wishlist my game on Steam"</reinin>. I've been saying it all the time.</p>
+                    <p>The Steam page and announcement was posted in four different friend group servers, #playground and #auditorium in RFCK (Kip posted it in #auditorium and @everyone'd), the Bencord, my Bluesky, and my Twitter. I've advertised it to many in-person friends, as it's all I talk about, and after my last session of ketamine therapy my nurse asked about the game (because I've been talking to my psychiatrist about it, it's a very positive thing in my life), and I gave the whole spiel to her.</p>
+                    <p>So, with this, 29 days later, how do the wishlists look?</p>
+                    <center><img src="ioodblog-media/iood006/wishlists graph.png" height="463px" width="auto" onclick="createImagePopup('ioodblog-media/iood006/wishlists graph.png', 'Island Off Outer Darkness\' total wishlists, graph made in Google Docs.')" style="cursor:zoom-in"></center>
+                    <center><p class="caption">Island Off Outer Darkness' total wishlists, graph made in Google Docs.</p></center>
+                    <p>If every single wishlist converted to a full-price $13.99 Steam purchase (netting me approximately $9.79, before taxes), I'd need a little over 3x that amount of purchases to "break even", before I spend anything on advertising. So. I'm very happy with the current amount of wishlists — 68 people is a <reinin>SHITTON</reinin> of people — but I'm definitely gonna have to spend money on advertising. And smartly.</p>
+                    <div class="news_feed_entry_end">5/16/25 2:36:51 AM CST</div>  
+                </div>
+            </div>
+        </div>
+
+        <!-- The footer. Gotta have one!-->
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="../universal_cooooode.js" onload="createElements('outerdarknessblog')"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div class="background_triangles" id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
+        </div>
+
+        <!-- Check for preferences-->
+        <script>prefChecks()</script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Permission to bird!</title>
+        <link rel="icon" type="image/png" href="../images/SiteAssets/Favicon/pf.png" />
+        <meta name ="description" content="From the Island Off Outer Darkness blog." />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#2c2b5b" />
+
+        <meta name="fuster-dialogue" content="You'll see the other two photos in-game... though we don't want to spoil the surprise." />
+        <link rel="stylesheet" href="../almdarknessianstyle.css">
+    </head>
+    <body>
+        <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
+        <div class="flex" id="the_header"></div>
+
+        <!-- The navbar, where you can choose between a bunch of pages -->
+        <div class="flex" id="the_navbar"></div>
+        
+        <!-- The body, where all the good stuff happens. -->
+        <div class="flex" id="the_body">
+            <div class="left" id="body_left">
+                <div class="blog_entry_var1">
+                    <h2>Permission to bird!</h2>
+                    <div class="news_feed_entry_divider"></div>
+                    <p>This is <reinin>BIG</reinin> news, y'all. I've been a huge fan of the <a href="https://www.worldbirdsanctuary.org/">World Bird Sanctuary</a>, and ever since deciding upon putting a crow and a bald eagle in my game, I've known that I want to utilize the visages of their birds within. I don't talk about it much, but I'm huge into birds. And my favorite bald eagle currently is Bald Eagle 24-390. He suffers from a gunshot wound to his beak, and has been in WBS care since mid-last year. And, the beautiful thing, he's experiencing keratin growth.</p>
+                    <center><img src="ioodblog-media/iood005/24390.jpg" height="400px" width="auto" onclick="createImagePopup('ioodblog-media/iood005/24390.jpg', 'My favorite photo of 24-390, taken by World Bird Sanctuary.')" style="cursor:zoom-in"></center>
+                    <center><p class="caption">My favorite photo of 24-390, <a href="https://x.com/WBSSTL/status/1884738465104875602">taken by World Bird Sanctuary.</a></p></center>
+                    <p>The news: <reinin>I've recieved permission from World Bird Sanctuary and photographer Stu Goz to use three photos of Bald Eagle 24-390 within the game, as well as a photo of Aesop the crow, who I also adore.</reinin> I want thank those at World Bird Sanctuary as well as Stu Goz greatly for this gracious opportunity. And... I want to show off the in-game portraits for the bald eagle and crow below.</p>
+                    <center><img src="ioodblog-media/iood005/Bald Eagle 24-390.png" height="400px" width="auto" onclick="createImagePopup('ioodblog-media/iood005/Bald Eagle 24-390.png', 'Bald Eagle 24-390, framed Darknessian.')" style="cursor:zoom-in"> <img src="ioodblog-media/iood005/Crow.png" height="400px" width="auto" onclick="createImagePopup('ioodblog-media/iood005/Crow.png', 'Aesop, framed Darknessian.')" style="cursor:zoom-in"></center>
+                    <center><p class="caption">Bald Eagle 24-390 and Aesop the crow, framed Darknessian. Backgrounds by Lambchopper.</p></center>
+                    <div class="news_feed_entry_end">5/16/25 1:46:24 AM CST</div>  
+                </div>
+            </div>
+        </div>
+
+        <!-- The footer. Gotta have one!-->
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="../universal_cooooode.js" onload="createElements('outerdarknessblog')"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div class="background_triangles" id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
+        </div>
+
+        <!-- Check for preferences-->
+        <script>prefChecks()</script>
+    </body>
+</html>
