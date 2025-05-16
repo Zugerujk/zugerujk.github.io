@@ -614,6 +614,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog076",
         var: "3",
     },
+    "077": {
+        displaynum: "#077",
+        title: "I can feel the end of IOOD, now",
+        date: "5/16/25 7:07:27 AM CST",
+        link: "https://zugerujk.net/blog/blog077",
+        var: "3",
+    },
 }
 
 var included_pages = [];
