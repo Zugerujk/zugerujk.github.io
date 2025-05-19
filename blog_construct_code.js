@@ -621,6 +621,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog077",
         var: "3",
     },
+    "078": {
+        displaynum: "#078",
+        title: "Slop, Garbage, Chance Encounters, Digital Mementos",
+        date: "5/19/25 10:54:44 AM CST",
+        link: "https://zugerujk.net/blog/blog078",
+        var: "3",
+    },
 }
 
 var included_pages = [];
