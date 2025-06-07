@@ -628,6 +628,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog078",
         var: "3",
     },
+    "079": {
+        displaynum: "#079",
+        title: "I got the handheld console everyone's talking about and the end of things",
+        date: "6/7/25 2:06:48 AM CST",
+        link: "https://zugerujk.net/blog/blog079",
+        var: "3",
+    },
 }
 
 var included_pages = [];
