@@ -635,6 +635,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog079",
         var: "3",
     },
+    "080": {
+        displaynum: "#080",
+        title: "General Hospital Good, Hello Kitty Island Adventure Bad",
+        date: "6/16/25 7:28:40 PM CST",
+        link: "https://zugerujk.net/blog/blog080",
+        var: "3",
+    },
 }
 
 var included_pages = [];
