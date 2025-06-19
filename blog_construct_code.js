@@ -642,6 +642,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog080",
         var: "3",
     },
+    "081": {
+        displaynum: "#081",
+        title: "Finasteride 6 Month Update",
+        date: "6/19/25 4:39:44 AM CST",
+        link: "https://zugerujk.net/blog/blog081",
+        var: "3",
+    },
 }
 
 var included_pages = [];
