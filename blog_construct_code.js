@@ -649,6 +649,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog081",
         var: "3",
     },
+    "082": {
+        displaynum: "#082",
+        title: "2025 Year-middle Wrap-up",
+        date: "12/30/24 8:33:30 PM CST",
+        link: "https://zugerujk.net/blog/blog082",
+        var: "3",
+    },
 }
 
 var included_pages = [];
