@@ -656,6 +656,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog082",
         var: "3",
     },
+    "083": {
+        displaynum: "#083",
+        title: "I'm going to SDGQ 2025 lol",
+        date: "7/6/25 7:23:39 AM CST",
+        link: "https://zugerujk.net/blog/blog083",
+        var: "4",
+    },
 }
 
 var included_pages = [];
@@ -750,6 +757,9 @@ const createBlogFeedEntry = function(page = Object, page_num = "", construct_ele
     }
     else if (page.var == "3") {
         entry_div.setAttribute("class", "blog_feed_entry_var3")
+    }
+    else if (page.var == "4") {
+        entry_div.setAttribute("class", "blog_feed_entry_var4")
     }
     else if (page.var == "D") {
         entry_div.setAttribute("class", "blog_feed_entry_varD")
