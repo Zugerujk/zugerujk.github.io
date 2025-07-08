@@ -658,9 +658,16 @@ var page_listing = {
     },
     "083": {
         displaynum: "#083",
-        title: "I'm going to SDGQ 2025 lol",
+        title: "I'm going to SGDQ 2025 lol",
         date: "7/6/25 7:23:39 AM CST",
         link: "https://zugerujk.net/blog/blog083",
+        var: "4",
+    },
+    "084": {
+        displaynum: "#084",
+        title: "SGDQ 2025 Part 1",
+        date: "7/8/25 2:34:52 PM CST",
+        link: "https://zugerujk.net/blog/blog084",
         var: "4",
     },
 }
