@@ -665,9 +665,16 @@ var page_listing = {
     },
     "084": {
         displaynum: "#084",
-        title: "SGDQ 2025 Part 1",
+        title: "SGDQ 2025 Part 1 (Bad)",
         date: "7/8/25 2:34:52 PM CST",
         link: "https://zugerujk.net/blog/blog084",
+        var: "4",
+    },
+    "085": {
+        displaynum: "#085",
+        title: "SGDQ 2025 Part 2 (Amazing)",
+        date: "7/14/25 2:13:43 AM CST",
+        link: "https://zugerujk.net/blog/blog085",
         var: "4",
     },
 }
