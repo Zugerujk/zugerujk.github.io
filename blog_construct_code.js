@@ -672,7 +672,7 @@ var page_listing = {
     },
     "085": {
         displaynum: "#085",
-        title: "SGDQ 2025 Part 2 (Amazing)",
+        title: "SGDQ 2025 Part 2 (Revelatory)",
         date: "7/14/25 2:13:43 AM CST",
         link: "https://zugerujk.net/blog/blog085",
         var: "4",
