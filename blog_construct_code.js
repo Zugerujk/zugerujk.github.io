@@ -677,6 +677,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog085",
         var: "4",
     },
+    "086": {
+        displaynum: "#086",
+        title: "Failed the \"don't talk about Zombie Strippers! (2008) on the first date\" challenge :/",
+        date: "8/2/25 1:01:29 AM CST",
+        link: "https://zugerujk.net/blog/blog086",
+        var: "4",
+    },
 }
 
 var included_pages = [];
