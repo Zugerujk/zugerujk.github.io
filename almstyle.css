@@ -209,7 +209,6 @@ center {
     border-color: var(--border-color-var4);
     background-color: var(--background-color-var4);
     --background-color-const: var(--background-color-var4);
-    --hover-color-const: var(--border-color-var2);
 }
 .blog_feed_entry_varD{
     border-color: var(--border-color-varD);

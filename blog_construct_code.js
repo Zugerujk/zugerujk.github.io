@@ -684,6 +684,20 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog086",
         var: "4",
     },
+    "087": {
+        displaynum: "#087",
+        title: "American 7/11 Review August 2025",
+        date: "8/1/25 10:26:38 PM CST",
+        link: "https://zugerujk.net/blog/blog087",
+        var: "4",
+    },
+    "088": {
+        displaynum: "#088",
+        title: "I stopped being physiomentally able to handle RFCK some time ago",
+        date: "8/3/25 12:15:51 PM CST",
+        link: "https://zugerujk.net/blog/blog088",
+        var: "4",
+    },
 }
 
 var included_pages = [];
