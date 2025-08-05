@@ -698,6 +698,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog088",
         var: "4",
     },
+    "089": {
+        displaynum: "#089",
+        title: "I took Bipolar 2 off my dating profile and started getting matches",
+        date: "8/5/25 4:08:08 AM CST",
+        link: "https://zugerujk.net/blog/blog089",
+        var: "4",
+    },
 }
 
 var included_pages = [];
