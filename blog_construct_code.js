@@ -705,6 +705,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog089",
         var: "4",
     },
+    "090": {
+        displaynum: "#090",
+        title: "Lafufu: Birth & Death 🖤",
+        date: "8/8/25 6:48:15 AM CST",
+        link: "https://zugerujk.net/blog/blog090",
+        var: "4",
+    },
 }
 
 var included_pages = [];
