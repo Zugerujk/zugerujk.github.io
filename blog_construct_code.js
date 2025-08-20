@@ -712,6 +712,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog090",
         var: "4",
     },
+    "091": {
+        displaynum: "#091",
+        title: "Divinity II: Developer's Cut is not good",
+        date: "8/20/25 11:06:48 AM CST",
+        link: "https://zugerujk.net/blog/blog091",
+        var: "4",
+    },
 }
 
 var included_pages = [];
