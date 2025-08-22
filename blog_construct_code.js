@@ -719,6 +719,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog091",
         var: "4",
     },
+    "092": {
+        displaynum: "#092",
+        title: "Krak hurt me really really bad",
+        date: "8/21/25 8:38:27 PM CST",
+        link: "https://zugerujk.net/blog/blog092",
+        var: "4",
+    },
 }
 
 var included_pages = [];
