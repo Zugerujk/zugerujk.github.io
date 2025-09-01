@@ -726,6 +726,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog092",
         var: "4",
     },
+    "093": {
+        displaynum: "#093",
+        title: "Farewell Forever Summer 2025",
+        date: "9/1/25 6:39:51 AM CST",
+        link: "https://zugerujk.net/blog/blog093",
+        var: "4",
+    },
 }
 
 var included_pages = [];
