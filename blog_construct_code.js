@@ -733,6 +733,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog093",
         var: "4",
     },
+    "094": {
+        displaynum: "#094",
+        title: "I Watched 25 Movies in August",
+        date: "9/14/25 12:02:09 AM CST",
+        link: "https://zugerujk.net/blog/blog094",
+        var: "4",
+    },
 }
 
 var included_pages = [];
