@@ -740,6 +740,27 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog094",
         var: "4",
     },
+    "095": {
+        displaynum: "#095",
+        title: "Social Engagements the Past While",
+        date: "9/28/25 5:10:34 AM CST",
+        link: "https://zugerujk.net/blog/blog095",
+        var: "4",
+    },
+    "096": {
+        displaynum: "#096",
+        title: "Happy Fat Bear Week‼️‼️‼️",
+        date: "9/28/25 5:26:38 AM CST",
+        link: "https://zugerujk.net/blog/blog096",
+        var: "4",
+    },
+    "097": {
+        displaynum: "#097",
+        title: "Indie Game Sequel Release Week",
+        date: "9/28/25 5:42:16 AM CST",
+        link: "https://zugerujk.net/blog/blog097",
+        var: "4",
+    },
 }
 
 var included_pages = [];
