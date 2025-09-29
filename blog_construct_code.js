@@ -761,6 +761,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog097",
         var: "4",
     },
+    "098": {
+        displaynum: "#098",
+        title: "Flat Affect",
+        date: "9/29/25 12:47:57 PM CST",
+        link: "https://zugerujk.net/blog/blog098",
+        var: "4",
+    },
 }
 
 var included_pages = [];
