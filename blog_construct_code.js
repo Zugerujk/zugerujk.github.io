@@ -768,6 +768,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog098",
         var: "4",
     },
+    "099": {
+        displaynum: "#099",
+        title: "Maybe There's A Reason To Keep Going",
+        date: "10/4/25 3:35:59 PM CST",
+        link: "https://zugerujk.net/blog/blog099",
+        var: "4",
+    },
 }
 
 var included_pages = [];
