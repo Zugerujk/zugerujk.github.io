@@ -775,6 +775,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog099",
         var: "4",
     },
+    "100": {
+        displaynum: "#100",
+        title: "I'm a Gen Alpha ally",
+        date: "10/10/25 2:44:28 PM CST",
+        link: "https://zugerujk.net/blog/blog100",
+        var: "4",
+    },
 }
 
 var included_pages = [];
