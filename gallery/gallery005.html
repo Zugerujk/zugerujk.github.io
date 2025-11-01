@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zugerujk.net Gallery</title>
+        <link rel="icon" type="image/png" href="../images/SiteAssets/Favicon/Almsmaller.png" />
+        <meta name ="description" content="Gallery004 - Photos of THE BASED ONES Minecraft 2024" />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#1f0042" />
+
+        <meta name="fuster-dialogue" content="Beautiful wonderful lady." />
+        <link rel="stylesheet" href="../almstyle.css">
+    </head>
+    <body>
+        <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
+        <div class="flex" id="the_header"></div>
+
+        <!-- The navbar, where you can choose between a bunch of pages -->
+        <div class="flex" id="the_navbar"></div>
+        
+        <!-- A gallery-->
+        <div class="flex" id="body_extension_above">
+            <div class="blog_feed_entry" style="margin-top:15px;" id="goback">
+                <a href="../gallery.html" class="blog_feed_entry_link">
+                    < 
+                </a>
+                <div class="blog_feed_entry_content">
+                    Photos of Cat (Bertuch)
+                    <div class="blog_feed_entry_end_cont">
+                        Last Updated: 11/1/2024
+                    </div>
+                </div>
+            </div>
+            <div id="gallery_photo_container">
+                <center><img class="img_hover" onclick="createImagePopup('../images/Gallery/gallery004/demaaiohangout_day.png', 'The top of Dema\'s AIO hangout, featuring a conduit (so I could breathe air), a fishing hole that fulfills the requirements to enable the treasure loot table, a small garden, an enchanting area, and a mob farm. Dema\'s behind the beacon!')" src="../images/Gallery/gallery004/demaaiohangout_day.png" alt="The top of Dema's AIO hangout, featuring a conduit (so I could breathe air), a fishing hole that fulfills the requirements to enable the treasure loot table, a small garden, an enchanting area, and a mob farm. Dema's behind the beacon!" title="The top of Dema's AIO hangout, featuring a conduit (so I could breathe air), a fishing hole that fulfills the requirements to enable the treasure loot table, a small garden, an enchanting area, and a mob farm. Dema's behind the beacon!" id="gallery_photo"></center>
+            </div>
+            <center><p id="gallery_caption">The top of Dema's AIO hangout, featuring a conduit (so I could breathe air), a fishing hole that fulfills the requirements to enable the treasure loot table, a small garden, an enchanting area, and a mob farm. Dema's behind the beacon!</p></center>
+            <div class="flex" id="gallery_bar_container">
+                <img class="gallery_bar_photo" src="../images/Gallery/gallery004/liz_tit_sm.png" title="A photo of Liz's tit." onclick="galleryPhotoChange('../images/Gallery/gallery004/liz_tit.png', 'A photo of Liz\'s tit.')">
+                
+                <!-- <img class="gallery_bar_photo" src="../images/Gallery/gallery004" title="" onclick="galleryPhotoChange('', '')"> -->
+            </div>
+        </div>
+
+        <!-- The footer. Gotta have one!-->
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="../universal_cooooode.js" onload="createElements()"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div class="background_triangles" id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
+        </div>
+
+        <!-- Check for preferences-->
+        <script>prefChecks()</script>
+    </body>
+</html>

@@ -782,6 +782,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog100",
         var: "4",
     },
+    "101": {
+        displaynum: "#101",
+        title: "Fun with 3DS Camera",
+        date: "11/1/25 4:34:45 PM CST",
+        link: "https://zugerujk.net/blog/blog101",
+        var: "4",
+    },
 }
 
 var included_pages = [];
@@ -790,8 +797,10 @@ var num_pages = 0;
 
 // Populate all_pages variable
 for (page in page_listing) {
+    console.log(page)
     all_pages.push(page);
 };
+all_pages.sort()
 all_pages.reverse();
 
 
