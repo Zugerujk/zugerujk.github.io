@@ -294,7 +294,7 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2025. v1.2.35";
+    let generic_footer_text = "All rights reserved, Me, 2025. v1.2.36";
     let settings_text = "⚙️ Settings";
     
     // Find the navbar div
@@ -421,7 +421,7 @@ const fusterReset = function() {
     GALLERY STUFF
 */
 
-const galleryPhotoChange = function(new_photo="", alt_text="", img_render_mode="optimizequality") {
+const galleryPhotoChange = function(new_photo="", alt_text="", img_render_mode="") {
     let gallery_main_photo = document.getElementById("gallery_photo");
     console.log("Changing gallery photo");
 
