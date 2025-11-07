@@ -789,6 +789,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog101",
         var: "4",
     },
+    "102": {
+        displaynum: "#102",
+        title: "I had the Baja Blast Pie",
+        date: "11/7/25 12:21:24 AM CST",
+        link: "https://zugerujk.net/blog/blog102",
+        var: "1",
+    },
 }
 
 var included_pages = [];
