@@ -796,6 +796,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog102",
         var: "1",
     },
+    "103": {
+        displaynum: "#103",
+        title: "Doritos® Late Night Loaded Taco Review",
+        date: "11/17/25 6:50:19 AM CST",
+        link: "https://zugerujk.net/blog/blog103",
+        var: "1",
+    },
 }
 
 var included_pages = [];
