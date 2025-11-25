@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pikmin 4's Free Update is Quite Good 🧐</title>
+        <link rel="icon" type="image/png" href="../images/SiteAssets/Favicon/Almsmaller.png" />
+        <meta name ="description" content="TL;DW: eh" />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#313f82" />
+
+        <meta name="fuster-dialogue" content="Zug has never actually played Pikmin 1, they should get around to that." />
+        <link rel="stylesheet" href="../almstyle.css">
+    </head>
+    <body>
+        <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
+        <div class="flex" id="the_header"></div>
+
+        <!-- The navbar, where you can choose between a bunch of pages -->
+        <div class="flex" id="the_navbar"></div>
+
+        <div class="flex" id="body_extension_above">
+            <div id="gallery_photo_container">
+                <center><img class="img_hover" onclick="createImagePopup('../blog/blog-media/104/104_14.jpg', 'Lisa, Oatchi, and a gentlemanly Mamuta. It\'s a shame you gotta kill both these guys with treasures in them.')" src="../blog/blog-media/104/104_14.jpg" alt="Lisa, Oatchi, and a gentlemanly Mamuta. It's a shame you gotta kill both these guys with treasures in them." title="Lisa, Oatchi, and a gentlemanly Mamuta. It's a shame you gotta kill both these guys with treasures in them." id="gallery_photo"></center>
+            </div> 
+            <center><p id="gallery_caption">Lisa, Oatchi, and a gentlemanly Mamuta. It's a shame you gotta kill both these guys with treasures in them.</p></center>
+            <div class="flex" id="gallery_bar_container">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_7_sm.png" title="Th-th-the first decor pikmin you find in Pikmin 4 😱😱😱😱😱😱😱" onclick="galleryPhotoChange('../blog/blog-media/104/104_7.jpg', 'Th-th-the first decor pikmin you find in Pikmin 4 😱😱😱😱😱😱😱')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_2_sm.png" title="Donut yellow pikmin flying through the air." onclick="galleryPhotoChange('../blog/blog-media/104/104_2.jpg', 'Donut yellow pikmin flying through the air.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_1_sm.png" title="Yeah I fucked up my Groovy Long Legs fight it did not go great." onclick="galleryPhotoChange('../blog/blog-media/104/104_1.jpg', 'Yeah I fucked up my Groovy Long Legs fight it did not go great.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_3_sm.png" title="Farting by the Sun-Speckled Terrace Mamuta." onclick="galleryPhotoChange('../blog/blog-media/104/104_3.jpg', 'Farting by the Sun-Speckled Terrace Mamuta.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_4_sm.png" title="Relaxing by the Sun-Speckled Terrace Mamuta." onclick="galleryPhotoChange('../blog/blog-media/104/104_4.jpg', 'Relaxing by the Sun-Speckled Terrace Mamuta.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_5_sm.png" title="I'm fag?ing with the rock pikmin. This was the vibe with this guy instead of the blue pikmin." onclick="galleryPhotoChange('../blog/blog-media/104/104_5.jpg', 'I\'m fag?ing with the rock pikmin. This was the vibe with this guy instead of the blue pikmin.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_6_sm.png" title="Oatchi and a baller rock pikmin." onclick="galleryPhotoChange('../blog/blog-media/104/104_6.jpg', 'Oatchi and a baller rock pikmin.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_8_sm.png" title="Blue pikmin basking in the glow." onclick="galleryPhotoChange('../blog/blog-media/104/104_8.jpg', 'Blue pikmin basking in the glow.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_9_sm.png" title="A Gildemandwee licking Lisa." onclick="galleryPhotoChange('../blog/blog-media/104/104_9.jpg', 'A Gildemandwee licking Lisa.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_10_sm.png" title="A dead Fiery Bulblax. Get dunked on bro." onclick="galleryPhotoChange('../blog/blog-media/104/104_10.jpg', 'A dead Fiery Bulblax. Get dunked on bro.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_11_sm.png" title="Blowing up a bunch of purple pikmin." onclick="galleryPhotoChange('../blog/blog-media/104/104_11.jpg', 'Blowing up a bunch of purple pikmin.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_12_sm.png" title="Oatchi and a decor rock pikmin." onclick="galleryPhotoChange('../blog/blog-media/104/104_12.jpg', 'Oatchi and a decor rock pikmin.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_15_sm.png" title="The Man-at-Legs shooting at a Pikpik Carrot 😂 what an idiot!" onclick="galleryPhotoChange('../blog/blog-media/104/104_15.jpg', 'The Man-at-Legs shooting at a Pikpik Carrot 😂 what an idiot!')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_16_sm.png" title="A regular shot I took while fighting the Man-at-Legs that I thought looked cool." onclick="galleryPhotoChange('../blog/blog-media/104/104_16.jpg', 'A regular shot I took while fighting the Man-at-Legs that I thought looked cool.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_13_sm.png" title="That one Jumbo Bulborb that hides in the Hero's Hideaway." onclick="galleryPhotoChange('../blog/blog-media/104/104_13.jpg', 'That one Jumbo Bulborb that hides in the Hero\'s Hideaway.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_14_sm.png" title="Lisa, Oatchi, and a gentlemanly Mamuta. It's a shame you gotta kill both these guys with treasures in them." onclick="galleryPhotoChange('../blog/blog-media/104/104_14.jpg', 'Lisa, Oatchi, and a gentlemanly Mamuta. It\'s a shame you gotta kill both these guys with treasures in them.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_17_sm.png" title="My end-of-game results for my second playthrough in Fierce Activity Level. It says Normal but I WAS in Fierce, I switched to Normal for like 2 of the night missions that felt genuinely impossible because I learned I'm bad at Pikmin. But I did everything else Fierce, proven by my immense amount of deaths." onclick="galleryPhotoChange('../blog/blog-media/104/104_17.jpg', 'My end-of-game results for my second playthrough in Fierce Activity Level. It says Normal but I WAS in Fierce, I switched to Normal for like 2 of the night missions that felt genuinely impossible because I learned I\'m bad at Pikmin. But I did everything else Fierce, proven by my immense amount of deaths.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_18_sm.png" title="My immense amount of deaths." onclick="galleryPhotoChange('../blog/blog-media/104/104_18.jpg', 'My immense amount of deaths.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_bertuch1_sm.png" title="Bertuch occasionally loved watching da pikmin." onclick="galleryPhotoChange('../blog/blog-media/104/104_bertuch1.jpg', 'Bertuch occasionally loved watching da pikmin.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_bertuch2_sm.png" title="Bertuch occasionally loved watching da pikmin." onclick="galleryPhotoChange('../blog/blog-media/104/104_bertuch2.jpg', 'Bertuch occasionally loved watching da pikmin.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_bertuch3_sm.png" title="Bertuch occasionally loved watching da pikmin." onclick="galleryPhotoChange('../blog/blog-media/104/104_bertuch3.jpg', 'Bertuch occasionally loved watching da pikmin.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_bertuch4_sm.png" title="Bertuch loved being in my lap while I played. On my laptop I got some Terraria video playing — I'm hype as hell for 1.4.5!" onclick="galleryPhotoChange('../blog/blog-media/104/104_bertuch4.jpg', 'Bertuch loved being in my lap while I played. On my laptop I got some Terraria video playing — I\'m hype as hell for 1.4.5!')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/104/104_massdeath_sm.gif" title="I never rewound time so stuff like this happened so much and I had to just deal 😭" onclick="galleryPhotoChange('../blog/blog-media/104/104_massdeath.gif', 'I never rewound time so stuff like this happened so much and I had to just deal 😭')">
+            </div>
+        </div>
+
+        <!-- The body, where all the good stuff happens. -->
+        <div class="flex" id="the_body">
+            <div class="left" id="body_left">
+                <div class="blog_entry_var4">
+                    <h2><img src="blog-media/008/008logopikmin.png" alt="Pikmin" height="24px" width="auto"> <img src="blog-media/008/008logo4.png" alt="4" height="24px" width="auto">'s Free Update is Quite Good 🧐 <img src="blog-media/008/008pikminstanding.png" height="24px" width="auto"><img src="blog-media/008/008pikminstanding.png" height="24px" width="auto"><img src="blog-media/008/008pikminstanding.png" height="24px" width="auto"></h2>
+                    <div class="news_feed_entry_divider"></div>
+                    <p><img src="blog-media/008/008logopikmin.png" alt="Pikmin" height="12px" width="auto"> <img src="blog-media/008/008logo4.png" alt="4" height="12px" width="auto"> got a free update which added a hard mode, a photo mode, and decor <img src="blog-media/008/008logopikmin.png" alt="Pikmin" height="12px" width="auto"> (which wear little costumes). And like. Man I was surprised by how much I'm enjoying it. Also how ass I am at <img src="blog-media/008/008logopikmin.png" alt="Pikmin" height="12px" width="auto">, apparently.</p>
+                    <p>First off, I did a full playthrough with the Fierce Activity Level, and, uh, I'm like fucking terrible at <img src="blog-media/008/008logopikmin.png" alt="Pikmin" height="12px" width="auto">, guys, fr. It was so hard 😭 it was like base <img src="blog-media/008/008logopikmin.png" alt="Pikmin" height="12px" width="auto"> <img src="blog-media/008/008logo4.png" alt="4" height="12px" width="auto"> but if Oatchi cheese was absolutely required and also all your guys died way more. I never rewound time so a lot of extremely stupid mass casualty events happened very frequently. Overall it felt pretty the same except ice <img src="blog-media/008/008logopikmin.png" alt="Pikmin" height="12px" width="auto"> felt a lot worse and I ended up using purple <img src="blog-media/008/008logopikmin.png" alt="Pikmin" height="12px" width="auto"> a lot more.</p>
+                    <p>They added New Game Plus which lets you start a new playthrough with everything unlocked, plus all onions, plus skip the first day. Which is great. This all means you get access to the Lineup Trumpet from day 2, which, man the game controls so much better when you have that option the entire playthrough. They should probably give it to you from the beginning in the first place.</p>
+                    <p>No Auto Lock On is really great. The game feels wayyyyyyyyyyyyyy better to control, like soooo much better. There's weird, like, partial-lock-on, I really wish the system was just the exact same as <img src="blog-media/008/008logopikmin.png" alt="Pikmin" height="12px" width="auto"> 3 instead of the weird sloppy thing that it is now, but. It's so much better.</p>
+                    <p>Decor <img src="blog-media/008/008logopikmin.png" alt="Pikmin" height="12px" width="auto"> are a nice distraction and they're pretty cute to have in your party. I guess I'm a fan.</p>
+                    <p>As evidenced by the gallery above I'm a huge fan of the photo mode. I literally never use photo modes in any other video game I play, but man something about <img src="blog-media/008/008logopikmin.png" alt="Pikmin" height="12px" width="auto"> <img src="blog-media/008/008logo4.png" alt="4" height="12px" width="auto">'s, I just. It's so fun to take photos of this game. And the game is absolutely gorgeous. I still think I prefer 3's art style, but like. Goddamn.</p>
+                    <p>That's all I gotta say. I think next time I replay <img src="blog-media/008/008logopikmin.png" alt="Pikmin" height="12px" width="auto"> <img src="blog-media/008/008logo4.png" alt="4" height="12px" width="auto"> I'm gonna play it in Normal mode but with no Oatchi upgrades or Suit upgrades, see how that feels. I might still enable the lineup trumpet though.</p>
+                    <div class="news_feed_entry_end">11/25/25 7:05:14 AM CST</div>  
+                </div>
+            </div>
+        </div>
+
+        <!-- The footer. Gotta have one!-->
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="../universal_cooooode.js" onload="createElements()"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div class="background_triangles" id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
+        </div>
+
+        <!-- Check for preferences-->
+        <script>prefChecks()</script>
+    </body>
+</html>

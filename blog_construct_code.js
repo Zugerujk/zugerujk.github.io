@@ -801,10 +801,16 @@ var page_listing = {
         title: "Doritos® Late Night Loaded Taco Review",
         date: "11/17/25 6:50:19 AM CST",
         link: "https://zugerujk.net/blog/blog103",
-        var: "1",
+        var: "4",
+    },
+    "104": {
+        displaynum: "#104",
+        title: "[pikmin][4]'s Free Update is Quite Good 🧐[pikminstanding][pikminstanding][pikminstanding]",
+        date: "11/25/25 7:05:14 AM CST",
+        link: "https://zugerujk.net/blog/blog104",
+        var: "4",
     },
 }
-
 var included_pages = [];
 var page_sort = "0";
 var num_pages = 0;
