@@ -810,6 +810,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog104",
         var: "4",
     },
+    "105": {
+        displaynum: "#105",
+        title: "Friendsgiving was a #healing",
+        date: "11/29/25 7:26:04 AM CST",
+        link: "https://zugerujk.net/blog/blog105",
+        var: "4",
+    },
 }
 var included_pages = [];
 var page_sort = "0";
