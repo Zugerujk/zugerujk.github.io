@@ -817,6 +817,34 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog105",
         var: "4",
     },
+    "106": {
+        displaynum: "#106",
+        title: "12/13/2025 Blog Outline",
+        date: "12/14/25 12:17:?? AM CST",
+        link: "https://zugerujk.net/blog/blog106",
+        var: "4",
+    },
+    "107": {
+        displaynum: "#107",
+        title: "The Iliad",
+        date: "12/30/25 10:51:04 PM CST",
+        link: "https://zugerujk.net/blog/blog107",
+        var: "4",
+    },
+    "108": {
+        displaynum: "#108",
+        title: "The Odyssey",
+        date: "12/30/25 11:27:51 PM CST",
+        link: "https://zugerujk.net/blog/blog108",
+        var: "4",
+    },
+    "109": {
+        displaynum: "#109",
+        title: "2025 Year-end Wrap-up",
+        date: "12/30/25 11:36:40 PM CST",
+        link: "https://zugerujk.net/blog/blog109",
+        var: "4",
+    },
 }
 var included_pages = [];
 var page_sort = "0";
