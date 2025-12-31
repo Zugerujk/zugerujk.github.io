@@ -845,6 +845,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog109",
         var: "4",
     },
+    "110": {
+        displaynum: "#110",
+        title: "ARPG Homework Pt. i — FFXVI",
+        date: "12/31/25 4:07:54 AM CST",
+        link: "https://zugerujk.net/blog/blog110",
+        var: "4",
+    },
 }
 var included_pages = [];
 var page_sort = "0";
