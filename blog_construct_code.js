@@ -852,6 +852,27 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog110",
         var: "4",
     },
+    "111": {
+        displaynum: "#111",
+        title: "Coca-Cola Holiday Creamy Vanilla",
+        date: "1/1/26 9:42:44 PM MST",
+        link: "https://zugerujk.net/blog/blog111",
+        var: "4",
+    },
+    "112": {
+        displaynum: "#112",
+        title: "The Fortnite Battlepass furry rn is like sooooooo hot 😭",
+        date: "1/17/6 10:00:15 PM MST",
+        link: "https://zugerujk.net/blog/blog112",
+        var: "4",
+    },
+    "113": {
+        displaynum: "#113",
+        title: "I Have to Get 5 Keys to Unlock My Teleporter",
+        date: "1/18/26 3:43:24 PM CST",
+        link: "https://zugerujk.net/blog/blog113",
+        var: "4",
+    },
 }
 var included_pages = [];
 var page_sort = "0";
