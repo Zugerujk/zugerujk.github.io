@@ -873,6 +873,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog113",
         var: "4",
     },
+    "114": {
+        displaynum: "#114",
+        title: "ARPG Homework Pt. ii — Alan Wake",
+        date: "2/4/26 9:34:09 PM CST",
+        link: "https://zugerujk.net/blog/blog114",
+        var: "4",
+    },
 }
 var included_pages = [];
 var page_sort = "0";
