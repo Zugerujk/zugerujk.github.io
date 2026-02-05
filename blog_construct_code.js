@@ -880,6 +880,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog114",
         var: "4",
     },
+    "115": {
+        displaynum: "#115",
+        title: "ARPG Homework Pt. iii — Alan Wake's American Nightmare (is bad)",
+        date: "2/5/26 1:04:19 AM CST",
+        link: "https://zugerujk.net/blog/blog115",
+        var: "4",
+    },
 }
 var included_pages = [];
 var page_sort = "0";
