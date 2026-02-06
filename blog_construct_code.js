@@ -887,6 +887,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog115",
         var: "4",
     },
+    "116": {
+        displaynum: "#116",
+        title: "ARPG Homework Pt. iv — Control AWE",
+        date: "2/5/26 9:31:48 PM CST",
+        link: "https://zugerujk.net/blog/blog115",
+        var: "4",
+    },
 }
 var included_pages = [];
 var page_sort = "0";
