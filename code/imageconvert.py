@@ -1,11 +1,11 @@
 import glob
-from PIL import Image
+from PIL import Image, ImageOps
 import os
 
 # VARIABLES TO CHANGE
-folder_to_open = "C:/Users/Zug/Documents/GitHub/zugerujk.github.io/blog/blog-media/104/"
-disp_type = "blog"
-blog_num = "104"
+folder_to_open = "C:/Users/Zug/Documents/GitHub/zugerujk.github.io/images/Gallery/galleryholder/"
+disp_type = "gallery"
+blog_num = "117"
 gallery_num = "005"
 
 
@@ -19,6 +19,7 @@ gallery_txt = ""
 # Grabs every filename in the folder
 for filename in glob.iglob(folder_to_open + "*"):
     img = Image.open(filename) # Tries to open every file
+    img = ImageOps.exif_transpose(img)
     images.append(img) # Appends it to the images array
     image_names_extension.append(os.path.basename(filename))
     image_names.append(os.path.splitext(os.path.basename(filename))[0]) # Appends the name of it to the names array
@@ -48,3 +49,5 @@ for img in images:
     i += 1
 
 print(gallery_txt)
+
+input("Feeling soooooooo great right")

@@ -891,7 +891,14 @@ var page_listing = {
         displaynum: "#116",
         title: "ARPG Homework Pt. iv — Control AWE",
         date: "2/5/26 9:31:48 PM CST",
-        link: "https://zugerujk.net/blog/blog115",
+        link: "https://zugerujk.net/blog/blog116",
+        var: "4",
+    },
+    "117": {
+        displaynum: "#117",
+        title: "RG Wing Zero TV",
+        date: "2/15/26 6:48:49 AM CST",
+        link: "https://zugerujk.net/blog/blog117",
         var: "4",
     },
 }

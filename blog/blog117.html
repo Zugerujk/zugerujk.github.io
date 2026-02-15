@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RG Wing Zero TV</title>
+        <link rel="icon" type="image/png" href="../images/SiteAssets/Favicon/Almsmaller.png" />
+        <meta name ="description" content="Yeah I mean the thing sure is built. Don't think it's as good as the RG Hi-nu though." />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#313f82" />
+
+        <meta name="fuster-dialogue" content="Yeah I mean the thing sure is built. Don't think it's as good as the RG Hi-nu though." />
+        <link rel="stylesheet" href="../almstyle.css">
+    </head>
+    <body>
+        <!-- The header, where Zugerujk.net and a splash Zug will be shown -->
+        <div class="flex" id="the_header"></div>
+
+        <!-- The navbar, where you can choose between a bunch of pages -->
+        <div class="flex" id="the_navbar"></div>
+        
+        <div class="flex" id="body_extension_above">
+            <div id="gallery_photo_container">
+                <center><img class="img_hover" onclick="createImagePopup('../blog/blog-media/117/117aerialedit.JPG', 'The RG Wing Zero TV posed in my main room but the photo\'s, like, edited.')" src="../blog/blog-media/117/117aerialedit.JPG" alt="The RG Wing Zero TV posed in my main room but the photo's, like, edited." title="The RG Wing Zero TV posed in my main room but the photo's, like, edited." id="gallery_photo"></center>
+            </div> 
+            <center><p id="gallery_caption">The RG Wing Zero TV posed in my main room but the photo's, like, edited.</p></center>
+            <div class="flex" id="gallery_bar_container">
+                <img class="gallery_bar_photo" src="../blog/blog-media/117/117bertuch_sm.png" title="The RG Wing Zero TV on top of my CRT with Bertuch." onclick="galleryPhotoChange('../blog/blog-media/117/117bertuch.JPG', 'The RG Wing Zero TV on top of my CRT with Bertuch.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/117/117cannon_sm.png" title="The RG Wing Zero TV but its wing is like a cannon." onclick="galleryPhotoChange('../blog/blog-media/117/117cannon.JPG', 'The RG Wing Zero TV but its wing is like a cannon.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/117/117aerial_sm.png" title="The RG Wing Zero TV posed in my main room." onclick="galleryPhotoChange('../blog/blog-media/117/117aerial.JPG', 'The RG Wing Zero TV posed in my main room.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/117/117aerialedit_sm.png" title="The RG Wing Zero TV posed in my main room but the photo's, like, edited." onclick="galleryPhotoChange('../blog/blog-media/117/117aerialedit.JPG', 'The RG Wing Zero TV posed in my main room but the photo\'s, like, edited.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/117/117tf_sm.png" title="The RG Wing Zero TV posed in my main room, transformed." onclick="galleryPhotoChange('../blog/blog-media/117/117tf.JPG', 'The RG Wing Zero TV posed in my main room, transformed.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/117/117tfedit_sm.png" title="The RG Wing Zero TV posed in my main room, transformed, but the photo's, like, edited." onclick="galleryPhotoChange('../blog/blog-media/117/117tfedit.JPG', 'The RG Wing Zero TV posed in my main room, transformed, but the photo\'s, like, edited.')">
+                <img class="gallery_bar_photo" src="../blog/blog-media/117/117halfway_sm.png" title="The RG Wing Zero TV halfway between transformations. Never ended up making an edit for this one. It looks alright on my phone on its HDR display but on my computer it looks real bad." onclick="galleryPhotoChange('../blog/blog-media/117/117halfway.JPG', 'The RG Wing Zero TV halfway between transformations. Never ended up making an edit for this one. It looks alright on my phone on its HDR display but on my computer it looks real bad.')">
+            </div>
+        </div>
+
+        <!-- The body, where all the good stuff happens. -->
+        <div class="flex" id="the_body">
+            <div class="left" id="body_left">
+                <div class="blog_entry_var4">
+                    <h2>RG Wing Zero TV</h2>
+                    <div class="news_feed_entry_divider"></div>
+                    <p>I built the RG Wing Zero TV. I had the energy to pose it this time around and I’m not quite sure why. I’ve been building all this time. Well actually, no, I took a break between September, I think, and now. I just stopped having the will to build. I was revising Island Off Outer Darkness.</p>
+
+                    <p>I took place in a game jam between January 30th and February 8th. It was a friend’s idea, to gather me and another friend and an acquaintance of a friend. The acquaintance of a friend and I did the majority of the work, I stepped up in project management and direction after the friend who had the idea repeatedly failed to do any of the work needed to lead a project. It was exhausting. I am exhausted. And now I’m building model kits again.</p>
+                    <p><a href="https://www.youtube.com/watch?v=M16oMsbT5o0">Out To Pasture, by Good Morning.</a></p>
+                    <div class="news_feed_entry_end">2/15/26 6:48:49 AM CST</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The footer. Gotta have one!-->
+        <div id="the_footer"></div>
+        
+        <!-- Populate divs-->
+        <script type="text/javascript" src="../universal_cooooode.js" onload="createElements()"></script>
+
+        <!-- Create pretty triangles-->
+        <div id="background_triangles_container">
+            <div class="background_triangles" id="background_triangles"></div>
+            <div id="background_triangles_overlay"></div>
+        </div>
+
+        <!-- Check for preferences-->
+        <script>prefChecks()</script>
+    </body>
+</html>
