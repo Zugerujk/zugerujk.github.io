@@ -2,9 +2,35 @@
     VARS
 */
 
+
 var all_pages = [];
 
-var pageg1_games = [  // Last Updated: 049
+var pageg1_games = [  // Last Updated: 119
+    "119",
+    "116",
+    "115",
+    "114",
+    "113",
+    "112",
+    "110",
+    "104",
+    "101",
+    "097",
+    "091",
+    "088",
+    "085",
+    "084",
+    "083",
+    "080",
+    "079",
+    "077",
+    "075",
+    "073",
+    "072",
+    "065",
+    "061",
+    "052",
+    "050",
     "046",
     "045",
     "044",
@@ -25,7 +51,12 @@ var pageg1_games = [  // Last Updated: 049
     "006",
     "001",
 ];
-var pageg2_moviestv = [  // Last Updated: 049
+var pageg2_moviestv = [  // Last Updated: 119
+    "094",
+    "086",
+    "080",
+    "078",
+    "052",
     "047",
     "046",
     "044",
@@ -35,7 +66,37 @@ var pageg2_moviestv = [  // Last Updated: 049
     "003",
     "001",
 ];
-var pageg3_hq = [  // Last Updated: 041
+var pageg3_hq = [  // Last Updated: 119
+    "119",
+    "117",
+    "112",
+    "109",
+    "108",
+    "107",
+    "106",
+    "105",
+    "102",
+    "101",
+    "099",
+    "095",
+    "094",
+    "092",
+    "090",
+    "088",
+    "086",
+    "085",
+    "084",
+    "083",
+    "082",
+    "079",
+    "074",
+    "069",
+    "067",
+    "058",
+    "056",
+    "055",
+    "051",
+    "050",
     "048",
     "044",
     "041",
@@ -51,7 +112,19 @@ var pageg3_hq = [  // Last Updated: 041
     "003",
     "001",
 ];
-var pageg4_miscellany = [  // Last Updated: 049
+var pageg4_miscellany = [  // Last Updated: 119
+    "099",
+    "096",
+    "089",
+    "081",
+    "076",
+    "071",
+    "070",
+    "066",
+    "063",
+    "062",
+    "057",
+    "054",
     "043",
     "041",
     "029",
@@ -61,7 +134,8 @@ var pageg4_miscellany = [  // Last Updated: 049
     "019",
     "014",
 ];
-var pageg5_books = [  // Last Updated: 049
+var pageg5_books = [  // Last Updated: 119
+    "103",
     "047",
     "020",
     "016",
@@ -69,7 +143,14 @@ var pageg5_books = [  // Last Updated: 049
     "013",
     "012",
 ];
-var pageg6_food = [  // Last Updated: 042
+var pageg6_food = [  // Last Updated: 119
+    "118",
+    "111",
+    "108",
+    "107",
+    "103",
+    "102",
+    "087",
     "049",
     "042",
     "031",
@@ -901,10 +982,26 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog117",
         var: "4",
     },
+    "118": {
+        displaynum: "#118",
+        title: "OREO® Shamrock McFlurry® Review February 2026",
+        date: "2/18/26 1:27:?? PM CST",
+        link: "https://zugerujk.net/blog/blog118",
+        var: "4",
+    },
+    "119": {
+        displaynum: "#119",
+        title: "ARPG Homework Pt. v — Alan Wake 2",
+        date: "2/20/26 12:46:47 AM CST",
+        link: "https://zugerujk.net/blog/blog119",
+        var: "4",
+    },
 }
 var included_pages = [];
 var page_sort = "0";
-var num_pages = 0;
+var num_pages = 50;
+var curr_page_page = 1;
+var can_increment = true;
 
 // Populate all_pages variable
 for (page in page_listing) {
@@ -919,7 +1016,8 @@ all_pages.reverse();
     BUILDING
 */
 // Create the blog feed
-const createBlogConstruct = function(sortVar = "", numVar = 0) {
+const createBlogConstruct = function(sortVar = "", numVar = 0, pagePageNumIncr = "") {
+    var set_max_scroll = false
     let construct_element = document.getElementById("blog_construct_div");
 
     // Interpret any input from sortVar
@@ -970,18 +1068,57 @@ const createBlogConstruct = function(sortVar = "", numVar = 0) {
             break;
     }
 
-    // Create pages from the sent_pages array, up to the num_pages limit.
-    pages_made = 0;
+    // Set the current page page to 1 if changing other settings
+    if (pagePageNumIncr == "") {
+        curr_page_page = 1
+    }
+    // Otherwise, change page page number.
+    else {
+        if ((pagePageNumIncr == "&lt;") && (curr_page_page > 1)) {
+            set_max_scroll = true
+            curr_page_page -= 1
+        }
+        else if ((pagePageNumIncr == "&gt;") && (can_increment)) {
+            set_max_scroll = true
+            curr_page_page += 1
+        }
+    }
+
+
+    // Create pages from the sent_pages array, up to the amount of pages described by num_pages (after an amount of page pages have been passed).
+    var pages_made = 0;
+    var pages_to_skip = (num_pages * (curr_page_page - 1));
     for (i in sent_pages) {
         pages_made++;
-        if (pages_made > num_pages) {
+        if (pages_made > (num_pages + pages_to_skip)) {
+            pages_made--;
             break;
         }
+        if (pages_made <= pages_to_skip) {
+            continue;
+        }
+
         page_num = sent_pages[i]
         var page = page_listing[page_num]
 
         createBlogFeedEntry(page=page, page_num=page_num, construct_element=construct_element);
     }
+
+    // If there are still pages in the sent_pages array after all the pages have been populated, allow incrementing.
+    if (pages_made >= sent_pages.length) {
+        can_increment = false;
+    }
+    else {
+        can_increment = true;
+    }
+
+    // If the scroll height has been changed, set the vertical scrolling to the max possible.
+    if (set_max_scroll) {
+        window.scroll(0, 10000000)
+    }
+
+    // Set the page page num text.
+    document.getElementById("page_page_num").innerHTML = String(curr_page_page);
 }
 
 // Create a blog feed entry
@@ -1142,7 +1279,7 @@ const extractTitleTag = function(title = "") {
 }
 
 // Function to rebuild construct_element upon clicking a radio
-const inputEnter = function(radioVal = "", numInput = 0) {
+const inputEnter = function(radioVal = "", numInput = 0, pagePageNumIncr = "") {
     let construct_element = document.getElementById("blog_construct_div");
     if (radioVal != "") {
         console.log("Changing grouping to " + radioVal + "!");
@@ -1150,11 +1287,14 @@ const inputEnter = function(radioVal = "", numInput = 0) {
     if (numInput != 0) {
         console.log("Changing number of entries shown to " + numInput + "!");
     }
+    if (pagePageNumIncr != "") {
+        console.log("Changing page page number by " + pagePageNumIncr + "!");
+    }
 
     // Inelegant, but hey!
     construct_element.innerHTML = '';
 
-    createBlogConstruct(sortVar=radioVal, numVar=numInput);
+    createBlogConstruct(sortVar=radioVal, numVar=numInput, pagePageNum=pagePageNumIncr);
 }
 
 // Give first radio group (type) their function
@@ -1170,5 +1310,20 @@ var radios_group_sort = document.forms["radio_group_sort"].elements["construct_g
 for (var radio of radios_group_sort) {
     radio.onclick = function() {
         inputEnter(radioVal=this.value);
+    }
+}
+
+// Give the number spinbox its function
+document.getElementById("page_page_num_shown_spinbox").addEventListener("change", function() {
+        inputEnter(radioVal="", numInput=Number(this.value));
+    }
+);
+
+// Give navigation at the bottom of the page page their function
+var page_page_nav = document.getElementsByName("page_page_nav_group");
+console.log(page_page_nav)
+for (var page_page_nav_button of page_page_nav) {
+    page_page_nav_button.onclick = function() {
+        inputEnter(radioVal="", numInput=0, pagePageNumIncr=this.innerHTML);
     }
 }

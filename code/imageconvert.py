@@ -3,10 +3,10 @@ from PIL import Image, ImageOps
 import os
 
 # VARIABLES TO CHANGE
-folder_to_open = "C:/Users/Zug/Documents/GitHub/zugerujk.github.io/images/Gallery/galleryholder/"
+folder_to_open = "C:/Users/Zug/Documents/GitHub/zugerujk.github.io/images/Gallery/galleryOD01/"
 disp_type = "gallery"
 blog_num = "117"
-gallery_num = "005"
+gallery_num = "OD01"
 
 
 # Variables for work

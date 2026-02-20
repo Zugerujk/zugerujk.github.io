@@ -749,6 +749,50 @@ center {
     max-width: 70vw;
 }
 
+#page_page_nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#click_left, #page_page_num, #click_right {
+    justify-items: center;
+    justify-content: center;
+    border: 12px solid var(--border-color-def);
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* margin-top: 6px; */
+    margin-bottom: 14px;
+    background-color: var(--background-color-def);
+    --background-color-const: var(--background-color-def);
+    text-indent:10px;
+    font-size: 30px;
+    flex-direction: row;
+    text-align: center;
+    line-height: 40px;
+    text-indent: 0px;
+}
+#click_left:hover, #click_right:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+input[type='number'] {
+    margin-left: 5px;
+    width: 45px;
+    font-size: 16px
+
+}
+
+.indent {
+    text-indent: -10px;
+    padding-left: 30px;
+}
+
 /* Almost-empty classes */
 reinin {
     background-color: var(--txt-color-def); /* TODO - make work with some sort of color const */

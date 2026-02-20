@@ -26,6 +26,9 @@
                 <h5>Entries:</h5>
                 <div id="blog_construct_div">
                 </div>
+                <div id="page_page_nav">
+                    <div id="click_left" name="page_page_nav_group">&lt;</div><div id="page_page_num">1</div><div id="click_right" name="page_page_nav_group">&gt;</div>
+                </div>
             </div>
 
             <div class="right" id="body_right">
@@ -44,6 +47,7 @@
                     <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="newtoold" checked/> Newest First</label></div>
                     <div class="settingscheckbox"><label><input type="radio" name="construct_group" value="oldtonew"/> Oldest First</label></div>
                 </form>
+                <div class="settingsnumber"><label><input type="number" id="page_page_num_shown_spinbox" name="construct_group" value="50" min="1" max="999" required> Num/Page</label></div>
                 </div>
         </div>
 
@@ -52,7 +56,7 @@
         
         <!-- Populate divs-->
         <script type="text/javascript" src="universal_cooooode.js" onload="createElements('blog')"></script>
-        <script type="text/javascript" src="blog_construct_code.js" onload="createBlogConstruct(sortVar='all', numVar=100)"></script>
+        <script type="text/javascript" src="blog_construct_code.js" onload="createBlogConstruct(sortVar='all', numVar=0)"></script>
 
         <!-- Create pretty triangles-->
         <div id="background_triangles_container">
