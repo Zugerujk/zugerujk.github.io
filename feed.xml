@@ -1,10 +1,10 @@
-
-<!-- https://time.now/tool/rfc-2822-converter/ -->
-<!-- https://www.freeformatter.com/html-escape.html -->
-
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
+
+    <!-- https://time.now/tool/rfc-2822-converter/ -->
+    <!-- https://www.freeformatter.com/html-escape.html -->
+
     <title>Zugerujk.net</title>
     <description>The official RSS update feed for Zugerujk.net. If I forget to update this make sure to flog me.</description>
     <link>https://zugerujk.net/</link>
