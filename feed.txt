@@ -1,0 +1,39 @@
+
+<!-- https://time.now/tool/rfc-2822-converter/ -->
+<!-- https://www.freeformatter.com/html-escape.html -->
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>Zugerujk.net</title>
+    <description>The official RSS update feed for Zugerujk.net. If I forget to update this make sure to flog me.</description>
+    <link>https://zugerujk.net/</link>
+    <managingEditor>zugerujk@gmail.com (Zugerujk)</managingEditor>
+    <webMaster>zugerujk@gmail.com (Zugerujk)</webMaster>
+    <category>Kinology</category>
+    <image>
+        <url>https://zugerujk.net/images/SiteAssets/rsspreview.png</url>
+        <title>Zugerujk.net</title>
+        <link>https://zugerujk.net/</link>
+    </image>
+    <lastBuildDate>
+        Sat, 21 Feb 2026 00:12:00 -0600
+    </lastBuildDate>
+    <ttl>20000</ttl>
+
+    <item>
+        <title>Zugerujk.net v1.3.1</title>
+        <description>
+            No new things in this one, I'm just adding an RSS feed. So.
+        </description>
+        <link>https://zugerujk.net/</link>
+        <author>zugerujk@gmail.com (Zugerujk)</author>
+        <category>Site Update</category>
+        <source url="https://zugerujk.net/feed.txt">Zugerujk.net</source>
+        <pubDate>
+            Sat, 21 Feb 2026 00:12:00 -0600
+        </pubDate>
+    </item>
+
+</channel>
+</rss>
