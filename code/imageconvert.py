@@ -3,9 +3,9 @@ from PIL import Image, ImageOps
 import os
 
 # VARIABLES TO CHANGE
-folder_to_open = "C:/Users/Zug/Documents/GitHub/zugerujk.github.io/images/Gallery/galleryOD01/"
-disp_type = "gallery"
-blog_num = "117"
+folder_to_open = "C:/Users/Zug/Documents/GitHub/zugerujk.github.io/images/Gallery/galleryholder/"
+disp_type = "blog"
+blog_num = "120"
 gallery_num = "OD01"
 
 
@@ -36,18 +36,21 @@ for img in images:
     im1 = img.resize(newsize)
 
     # Saves the thing
-    print(image_names[i] + "_sm.png SAVED")
+    # print(image_names[i] + "_sm.png SAVED")
     im1.save(folder_to_open + image_names[i] + "_sm.png")
+
+    desc = input("Description for " + image_names[i] + "? - ")
+    desc_apostrophe_escape = desc.replace("'", "\\'")
 
     # Makes gallery text
     if disp_type == "blog":
-        gallery_txt += "                <img class=\"gallery_bar_photo\" src=\"../blog/blog-media/" + blog_num + "/" + image_names[i] + "_sm.png" + "\" title=\"\" onclick=\"galleryPhotoChange('../blog/blog-media/" + blog_num + "/" + image_names_extension[i] + "', '')\">\n"
+        gallery_txt += "                <img class=\"gallery_bar_photo\" src=\"../blog/blog-media/" + blog_num + "/" + image_names[i] + "_sm.png" + "\" title=\"" + desc + "\" onclick=\"galleryPhotoChange('../blog/blog-media/" + blog_num + "/" + image_names_extension[i] + "', '" + desc_apostrophe_escape + "')\">\n"
     elif disp_type == "gallery":
-        gallery_txt += "                <img class=\"gallery_bar_photo\" src=\"../images/Gallery/gallery" + gallery_num + "/" + image_names[i] + "_sm.png" + "\" title=\"\" onclick=\"galleryPhotoChange('../images/Gallery/gallery" + gallery_num + "/" + image_names_extension[i] + "', '')\">\n"
+        gallery_txt += "                <img class=\"gallery_bar_photo\" src=\"../images/Gallery/gallery" + gallery_num + "/" + image_names[i] + "_sm.png" + "\" title=\"" + desc + "\" onclick=\"galleryPhotoChange('../images/Gallery/gallery" + gallery_num + "/" + image_names_extension[i] + "', '" + desc_apostrophe_escape + "')\">\n"
     
     # Iterate lol
     i += 1
-
+print("\n")
 print(gallery_txt)
 
-input("Feeling soooooooo great right")
+input("All done 🤖👍")
