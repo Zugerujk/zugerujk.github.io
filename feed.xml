@@ -17,9 +17,23 @@
         <link>https://zugerujk.net/</link>
     </image>
     <lastBuildDate>
-        Sat, 21 Feb 2026 00:12:00 -0600
+        Thu, 12 Mar 2026 18:12:00 -0500
     </lastBuildDate>
     <ttl>20000</ttl>
+
+    <item>
+        <title>Zugerujk.net v1.3.2</title>
+        <description>
+            Added &lt;a href=&quot;https://zugerujk.net/blog/blog120&quot;&gt;blog120&lt;/a&gt;, &lt;a href=&quot;https://zugerujk.net/blog/blog121&quot;&gt;blog121&lt;/a&gt;, and &lt;a href=&quot;https://zugerujk.net/blog/blog122&quot;&gt;blog122&lt;/a&gt;, as well as updated &lt;a href=&quot;https://zugerujk.net/gallery/gallery002.html&quot;&gt;gallery002&lt;/a&gt; and &lt;a href=&quot;https://zugerujk.net/gallery/gallery005.html&quot;&gt;gallery005&lt;/a&gt; with the photos from blog120. Aaaand I updated my About page slightly. Booyah.
+        </description>
+        <link>https://zugerujk.net/</link>
+        <author>zugerujk@gmail.com (Zugerujk)</author>
+        <category>Site Update</category>
+        <source url="https://zugerujk.net/feed.xml">Zugerujk.net</source>
+        <pubDate>
+            Thu, 12 Mar 2026 18:12:00 -0500
+        </pubDate>
+    </item>
 
     <item>
         <title>Zugerujk.net v1.3.1</title>

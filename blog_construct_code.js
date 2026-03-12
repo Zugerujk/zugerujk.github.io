@@ -996,6 +996,27 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog119",
         var: "4",
     },
+    "120": {
+        displaynum: "#120",
+        title: "HG Gundam Zirius",
+        date: "2/23/26 5:48:37 AM CST",
+        link: "https://zugerujk.net/blog/blog120",
+        var: "4",
+    },
+    "121": {
+        displaynum: "#121",
+        title: "Blue Raspberry Trix The Super Mario Galaxy Movie Review March 2026",
+        date: "3/8/26 8:38:?? AM CST",
+        link: "https://zugerujk.net/blog/blog121",
+        var: "4",
+    },
+    "122": {
+        displaynum: "#122",
+        title: "Snapple Snapple Apple Review March 2026",
+        date: "3/12/26 3:59:?? PM CST",
+        link: "https://zugerujk.net/blog/blog122",
+        var: "4",
+    },
 }
 var included_pages = [];
 var page_sort = "0";
