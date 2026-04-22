@@ -1017,6 +1017,27 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog122",
         var: "4",
     },
+    "123": {
+        displaynum: "#123",
+        title: "Dr Pepper Creamy Coconut Zero Sugar Review April 2026",
+        date: "4/17/26 5:08:?? PM CST",
+        link: "https://zugerujk.net/blog/blog123",
+        var: "4",
+    },
+    "124": {
+        displaynum: "#124",
+        title: "Got Bigolas Dickolas'd and $900",
+        date: "4/21/26 12:36:?? PM CST",
+        link: "https://zugerujk.net/blog/blog124",
+        var: "4",
+    },
+    "125": {
+        displaynum: "#125",
+        title: "ARPGHwPt.VI-VIII — Persona Dancing Trilogy",
+        date: "4/22/26 11:29:14 AM CST",
+        link: "https://zugerujk.net/blog/blog125",
+        var: "4",
+    },
 }
 var included_pages = [];
 var page_sort = "0";

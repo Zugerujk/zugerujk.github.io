@@ -17,9 +17,23 @@
         <link>https://zugerujk.net/</link>
     </image>
     <lastBuildDate>
-        Thu, 12 Mar 2026 18:12:00 -0500
+        Wed, 22 Apr 2026 12:01:00 -0500
     </lastBuildDate>
     <ttl>20000</ttl>
+
+    <item>
+        <title>Zugerujk.net v1.3.3</title>
+        <description>
+            Sorry for not updating the site for a month, lol. Lot happened but I was busy! Added &lt;a href=&quot;https://zugerujk.net/blog/blog123&quot;&gt;blog123&lt;/a&gt;, &lt;a href=&quot;https://zugerujk.net/blog/blog124&quot;&gt;blog124&lt;/a&gt;, and &lt;a href=&quot;https://zugerujk.net/blog/blog125&quot;&gt;blog125&lt;/a&gt;. I'm probs gonna update the Outer Darkness landing page with info on Island Off Outer Dancing once that gets nearer to completion, but... development is going well! Summer! Free! Be ready!
+        </description>
+        <link>https://zugerujk.net/</link>
+        <author>zugerujk@gmail.com (Zugerujk)</author>
+        <category>Site Update</category>
+        <source url="https://zugerujk.net/feed.xml">Zugerujk.net</source>
+        <pubDate>
+            Wed, 22 Apr 2026 12:01:00 -0500
+        </pubDate>
+    </item>
 
     <item>
         <title>Zugerujk.net v1.3.2</title>
