@@ -294,8 +294,9 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2026. v1.3.3";
+    let generic_footer_text = "All rights reserved, Me, 2026. v1.3.4";
     let settings_text = "⚙️ Settings";
+    let rss_text = "🛜 RSS Available";
     
     // Find the navbar div
     let footer_element = document.getElementById("the_footer");
@@ -312,6 +313,15 @@ const createFooter = function() {
     settings_link.appendChild(settings_link_text);
     settings_link_box.appendChild(settings_link)
     footer_element.appendChild(settings_link_box);
+
+    // Add RSS link
+    let rss_link_box = document.createElement("div") // Used so that the <a> div doesn't extend across the entire width of the footer.
+    let rss_link = document.createElement("a");
+    rss_link.setAttribute("href", "https://zugerujk.net/feed.xml")
+    let rss_link_text = document.createTextNode(rss_text);
+    rss_link.appendChild(rss_link_text);
+    rss_link_box.appendChild(rss_link)
+    footer_element.appendChild(rss_link_box);
 
     // Create blank space after the footer.
     footer_element.after(createVerticalSpacer());

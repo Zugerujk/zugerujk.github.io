@@ -17,9 +17,23 @@
         <link>https://zugerujk.net/</link>
     </image>
     <lastBuildDate>
-        Wed, 22 Apr 2026 12:01:00 -0500
+        Sat, 13 Jun 2026 02:29:00 -0500
     </lastBuildDate>
     <ttl>20000</ttl>
+
+    <item>
+        <title>Zugerujk.net v1.3.4</title>
+        <description>
+            Sorry for not updating the site for almost two months :/. I got Bigolas Dickolas'd Legion of Dawn edition and have been sooooo busy. And I've been watching all of American Dad, which, you know, that takes a lot out of someone. Added &lt;a href=&quot;https://zugerujk.net/blog/blog126&quot;&gt;blog126&lt;/a&gt;, &lt;a href=&quot;https://zugerujk.net/blog/blog127&quot;&gt;blog127&lt;/a&gt;, &lt;a href=&quot;https://zugerujk.net/blog/blog128&quot;&gt;blog128&lt;/a&gt;, and &lt;a href=&quot;https://zugerujk.net/blog/blog129&quot;&gt;blog129&lt;/a&gt;. Next site update will be an update to this index page and also an update to the Outer Darkness landing page, once I'm back at my apartment.
+        </description>
+        <link>https://zugerujk.net/</link>
+        <author>zugerujk@gmail.com (Zugerujk)</author>
+        <category>Site Update</category>
+        <source url="https://zugerujk.net/feed.xml">Zugerujk.net</source>
+        <pubDate>
+            Sat, 13 Jun 2026 02:29:00 -0500
+        </pubDate>
+    </item>
 
     <item>
         <title>Zugerujk.net v1.3.3</title>

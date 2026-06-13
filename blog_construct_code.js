@@ -1038,6 +1038,34 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog125",
         var: "4",
     },
+    "126": {
+        displaynum: "#126",
+        title: "Sprite + Tea and Dirty Mountain Dew Double Review",
+        date: "6/5/26 4:59:?? AM CST",
+        link: "https://zugerujk.net/blog/blog126",
+        var: "4",
+    },
+    "127": {
+        displaynum: "#127",
+        title: "2 Bigolas 2 Dickolas: The Bone(r) Temple",
+        date: "6/12/26 7:18:?? PM CST",
+        link: "https://zugerujk.net/blog/blog127",
+        var: "4",
+    },
+    "128": {
+        displaynum: "#128",
+        title: "FINALLY playing Anthem 💞",
+        date: "6/12/26 7:36:?? PM CST",
+        link: "https://zugerujk.net/blog/blog128",
+        var: "4",
+    },
+    "129": {
+        displaynum: "#129",
+        title: "What the hell is up with the scary-ass mountain goat head in Twin Peaks",
+        date: "6/13/26 2:19:32 AM CST",
+        link: "https://zugerujk.net/blog/blog129",
+        var: "4",
+    },
 }
 var included_pages = [];
 var page_sort = "0";
