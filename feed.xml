@@ -17,9 +17,23 @@
         <link>https://zugerujk.net/</link>
     </image>
     <lastBuildDate>
-        Sat, 13 Jun 2026 02:29:00 -0500
+        Wed, 17 Jun 2026 11:26:00 -0500
     </lastBuildDate>
     <ttl>20000</ttl>
+
+    <item>
+        <title>Zugerujk.net v1.3.5</title>
+        <description>
+            Big news! There's now a page for &lt;a href=&quot;https://zugerujk.net/blog/islandoffouterdancing.html&quot;&gt;Island Off Outer Dancing&lt;/a&gt; as well as an &lt;a href=&quot;https://zugerujk.net/ioodpress.html&quot;&gt;&lt;/a&gt;IOOD Press Kit&lt;/a&gt;. To accommodate this, the Outer Darkness tab on the navbar now links to an &lt;a href=&quot;https://zugerujk.net/blog/islandoffouterdancing.html&quot;&gt;Island Off Outer Duology landing page&lt;/a&gt;, where you can get to sub-pages (and to be clear, I felt very clever when I realized I could call the two games that). No blog posts in this one, as I've been extremely busy working on IOODancing. &lt;a href=&quot;https://store.steampowered.com/app/4584700/Island_Off_Outer_Dancing/&quot;&gt;Go wishlist Island Off Outer Dancing!&lt;/a&gt; It'll be &lt;reinin&gt;free&lt;/reinin&gt; but the engagement still helps.
+        </description>
+        <link>https://zugerujk.net/</link>
+        <author>zugerujk@gmail.com (Zugerujk)</author>
+        <category>Site Update</category>
+        <source url="https://zugerujk.net/feed.xml">Zugerujk.net</source>
+        <pubDate>
+            Wed, 17 Jun 2026 11:26:00 -0500
+        </pubDate>
+    </item>
 
     <item>
         <title>Zugerujk.net v1.3.4</title>

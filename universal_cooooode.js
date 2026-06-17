@@ -212,7 +212,7 @@ const createNavbar = function(blocked_space_arg = "") {
     // Establish the hyperlinks
     let home_link = "https://zugerujk.net/index.html";
     let blog_link = "https://zugerujk.net/blog.html";
-    let iood_link = "https://zugerujk.net/islandoffouterdarkness.html"
+    let iood_link = "https://zugerujk.net/islandoffouterduology.html"
     let projects_link = "https://zugerujk.net/projects.html";
     let gallery_link = "https://zugerujk.net/gallery.html";
     let bio_link = "https://zugerujk.net/bio.html";
@@ -294,7 +294,7 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2026. v1.3.4";
+    let generic_footer_text = "All rights reserved, Me, 2026. v1.3.5";
     let settings_text = "⚙️ Settings";
     let rss_text = "🛜 RSS Available";
     
