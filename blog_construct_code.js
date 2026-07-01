@@ -733,7 +733,7 @@ var page_listing = {
     "082": {
         displaynum: "#082",
         title: "2025 Year-middle Wrap-up",
-        date: "12/30/24 8:33:30 PM CST",
+        date: "6/30/25 8:33:30 PM CST",
         link: "https://zugerujk.net/blog/blog082",
         var: "3",
     },
@@ -1064,6 +1064,20 @@ var page_listing = {
         title: "What the hell is up with the scary-ass mountain goat head in Twin Peaks",
         date: "6/13/26 2:19:32 AM CST",
         link: "https://zugerujk.net/blog/blog129",
+        var: "4",
+    },
+    "130": {
+        displaynum: "#130",
+        title: "2026 Year-middle Wrap-up",
+        date: "7/1/26 6:51:42 AM CST",
+        link: "https://zugerujk.net/blog/blog130",
+        var: "4",
+    },
+    "131": {
+        displaynum: "#131",
+        title: "Toast Sandwich Review",
+        date: "7/1/26 7:10:25 AM CST",
+        link: "https://zugerujk.net/blog/blog131",
         var: "4",
     },
 }

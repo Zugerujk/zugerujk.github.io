@@ -17,9 +17,23 @@
         <link>https://zugerujk.net/</link>
     </image>
     <lastBuildDate>
-        Wed, 17 Jun 2026 11:26:00 -0500
+        Wed, 01 Jul 2026 07:14:00 -0500
     </lastBuildDate>
     <ttl>20000</ttl>
+
+    <item>
+        <title>Zugerujk.net v1.3.6</title>
+        <description>
+            Just added &lt;a href=&quot;https://zugerujk.net/blog/blog130&quot;&gt;blog130&lt;/a&gt; and &lt;a href=&quot;https://zugerujk.net/blog/blog131&quot;&gt;blog131&lt;/a&gt;. Some work needs to be done fixing the RSS feed but I'm sooooo lazy.
+        </description>
+        <link>https://zugerujk.net/</link>
+        <author>zugerujk@gmail.com (Zugerujk)</author>
+        <category>Site Update</category>
+        <source url="https://zugerujk.net/feed.xml">Zugerujk.net</source>
+        <pubDate>
+            Wed, 01 Jul 2026 07:14:00 -0500
+        </pubDate>
+    </item>
 
     <item>
         <title>Zugerujk.net v1.3.5</title>
