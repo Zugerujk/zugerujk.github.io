@@ -5,7 +5,11 @@
 
 var all_pages = [];
 
-var pageg1_games = [  // Last Updated: 119
+var pageg1_games = [  // Last Updated: 133
+    "132",
+    "128",
+    "125",
+    "124",
     "119",
     "116",
     "115",
@@ -52,6 +56,7 @@ var pageg1_games = [  // Last Updated: 119
     "001",
 ];
 var pageg2_moviestv = [  // Last Updated: 119
+    "129",
     "094",
     "086",
     "080",
@@ -67,6 +72,10 @@ var pageg2_moviestv = [  // Last Updated: 119
     "001",
 ];
 var pageg3_hq = [  // Last Updated: 119
+    "132",
+    "130",
+    "128",
+    "124",
     "119",
     "117",
     "112",
@@ -113,6 +122,9 @@ var pageg3_hq = [  // Last Updated: 119
     "001",
 ];
 var pageg4_miscellany = [  // Last Updated: 119
+    "120",
+    "117",
+    "099",
     "099",
     "096",
     "089",
@@ -144,6 +156,12 @@ var pageg5_books = [  // Last Updated: 119
     "012",
 ];
 var pageg6_food = [  // Last Updated: 119
+    "133",
+    "131",
+    "126",
+    "123",
+    "122",
+    "121",
     "118",
     "111",
     "108",

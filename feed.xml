@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-
-        <!-- https://time.now/tool/rfc-2822-converter/ -->
-        <!-- https://www.freeformatter.com/html-escape.html -->
-        <!-- https://codebeautify.org/html-escape-unescape -->
-
         <title>Zugerujk.net Update Feed</title>
-        <link>https://zugerujk.net/</link>
+        <link>https://zugerujk.net/feed.xml</link>
         <description>The official RSS update feed for Zugerujk.net, mirroring the site's main feed. If I forget to update this make sure to flog me.</description>
         <managingEditor>zugerujk@gmail.com (Zugerujk)</managingEditor>
         <webMaster>zugerujk@gmail.com (Zugerujk)</webMaster>
         <category>Kinology</category>
         <image>
             <url>https://zugerujk.net/images/SiteAssets/rsspreview.png</url>
-            <title>Zugerujk.net</title>
-            <link>https://zugerujk.net/</link>
+            <title>Zugerujk.net Update Feed</title>
+            <link>https://zugerujk.net/feed.xml</link>
         </image>
-        <lastBuildDate>Wed, 01 Jul 2026 07:14:00 CST</lastBuildDate>
+        <atom:link href="https://zugerujk.net/feed.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Thu, 10 Sep 2026 15:07:19 CST</lastBuildDate>
         <item>
             <title>Zugerujk.net v1.3.7</title>
-            <guid>Zugerujk.net v1.3.7</guid>
-            <description>Sorry for not updating for, like, over two months? I had to work a lot on IOODancing, which led to a wrist injury, and also I just didn't have a very great summer emotionally, and also I moved two weeks ago, to a new apartment across town. But today I had the energy. <a href="https://zugerujk.net/blog/islandoffouterdancing.html">Island Off Outer Dancing</a> is now out — go play it! All I did here was add my SGDQ2026 recap and Gigantic Ultra Consumables Review to the blog feed, which both took forever to write. And I tried fixing the RSS feed, so, hopefully it's fixed!</description>
+            <guid isPermaLink="false">Zugerujk.net%20v1.3.7</guid>
+            <description>Sorry for not updating for, like, over two months? I had to work a lot on IOODancing, which led to a wrist injury, and also I just didn't have a very great summer emotionally, and also I moved two weeks ago, to a new apartment across town. But today I had the energy. Island Off Outer Dancing is now out — go play it! All I did here was add my SGDQ2026 recap and Gigantic Ultra Consumables Review to the blog feed, which both took forever to write. And I tried fixing the RSS feed, so, hopefully it's fixed!</description>
             <link>https://zugerujk.net/</link>
             <author>zugerujk@gmail.com (Zugerujk)</author>
             <category>Site Update</category>
@@ -30,7 +26,7 @@
         </item>
         <item>
             <title>Zugerujk.net v1.3.6</title>
-            <guid>Zugerujk.net v1.3.6</guid>
+            <guid isPermaLink="false">Zugerujk.net%20v1.3.6</guid>
             <description>Just added blog130 and blog131. Some work needs to be done fixing the RSS feed but I'm sooooo lazy.</description>
             <link>https://zugerujk.net/</link>
             <author>zugerujk@gmail.com (Zugerujk)</author>
@@ -40,7 +36,7 @@
         </item>
         <item>
             <title>Zugerujk.net v1.3.5</title>
-            <guid>Zugerujk.net v1.3.5</guid>
+            <guid isPermaLink="false">Zugerujk.net%20v1.3.5</guid>
             <description>Big news! There's now a page for Island Off Outer Dancing as well as an IOOD Press Kit. To accommodate this, the Outer Darkness tab on the navbar now links to an Island Off Outer Duology landing page, where you can get to sub-pages (and to be clear, I felt very clever when I realized I could call the two games that). No blog posts in this one, as I've been extremely busy working on IOODancing. Go wishlist Island Off Outer Dancing! It'll be free but the engagement still helps.</description>
             <link>https://zugerujk.net/</link>
             <author>zugerujk@gmail.com (Zugerujk)</author>
@@ -50,7 +46,7 @@
         </item>
         <item>
             <title>Zugerujk.net v1.3.4</title>
-            <guid>Zugerujk.net v1.3.4</guid>
+            <guid isPermaLink="false">Zugerujk.net%20v1.3.4</guid>
             <description>Sorry for not updating the site for almost two months :/. I got Bigolas Dickolas'd Legion of Dawn edition and have been sooooo busy. And I've been watching all of American Dad, which, you know, that takes a lot out of someone. Added blog126, blog127, blog128, and blog129. Next site update will be an update to this index page and also an update to the Outer Darkness landing page, once I'm back at my apartment.</description>
             <link>https://zugerujk.net/</link>
             <author>zugerujk@gmail.com (Zugerujk)</author>
@@ -60,7 +56,7 @@
         </item>
         <item>
             <title>Zugerujk.net v1.3.3</title>
-            <guid>Zugerujk.net v1.3.3</guid>
+            <guid isPermaLink="false">Zugerujk.net%20v1.3.3</guid>
             <description>Sorry for not updating the site for a month, lol. Lot happened but I was busy! Added blog123, blog124, and blog125. I'm probs gonna update the Outer Darkness landing page with info on Island Off Outer Dancing once that gets nearer to completion, but... development is going well! Summer! Free! Be ready!</description>
             <link>https://zugerujk.net/</link>
             <author>zugerujk@gmail.com (Zugerujk)</author>
@@ -70,7 +66,7 @@
         </item>
         <item>
             <title>Zugerujk.net v1.3.2</title>
-            <guid>Zugerujk.net v1.3.2</guid>
+            <guid isPermaLink="false">Zugerujk.net%20v1.3.2</guid>
             <description>Added blog120, blog121, and blog122, as well as updated gallery002 and gallery005 with the photos from blog120. Aaaand I updated my About page slightly. Booyah.</description>
             <link>https://zugerujk.net/</link>
             <author>zugerujk@gmail.com (Zugerujk)</author>
@@ -80,7 +76,7 @@
         </item>
         <item>
             <title>Zugerujk.net v1.3.1</title>
-            <guid>Zugerujk.net v1.3.1</guid>
+            <guid isPermaLink="false">Zugerujk.net%20v1.3.1</guid>
             <description>No new things in this one, I'm just adding an RSS feed. So.</description>
             <link>https://zugerujk.net/</link>
             <author>zugerujk@gmail.com (Zugerujk)</author>
