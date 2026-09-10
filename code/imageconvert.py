@@ -1,11 +1,14 @@
 import glob
-from PIL import Image, ImageOps
 import os
+import sys
+print(sys.executable)
+from PIL import Image
+from PIL import ImageOps
 
 # VARIABLES TO CHANGE
-folder_to_open = "C:/Users/Zug/Documents/GitHub/zugerujk.github.io/images/Gallery/galleryholder/"
+folder_to_open = "C:/Users/Zug/Documents/GitHub/zugerujk.github.io/blog/blog-media/132/" # NEED TO HAVE A FUCKING / AFTER THE BLOG NUMBER!!!!!!!!
 disp_type = "blog"
-blog_num = "120"
+blog_num = "132"
 gallery_num = "OD01"
 
 

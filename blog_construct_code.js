@@ -1080,6 +1080,20 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog131",
         var: "4",
     },
+    "132": {
+        displaynum: "#132",
+        title: "SGDQ 2026 Photos + Recap",
+        date: "9/8/26 11:11:43 PM CST",
+        link: "https://zugerujk.net/blog/blog132",
+        var: "5",
+    },
+    "133": {
+        displaynum: "#133",
+        title: "Consumables Super-Duper-Duper Review",
+        date: "9/9/26 3:00:00 AM CST",
+        link: "https://zugerujk.net/blog/blog133",
+        var: "5",
+    },
 }
 var included_pages = [];
 var page_sort = "0";
@@ -1220,6 +1234,9 @@ const createBlogFeedEntry = function(page = Object, page_num = "", construct_ele
     }
     else if (page.var == "4") {
         entry_div.setAttribute("class", "blog_feed_entry_var4")
+    }
+    else if (page.var == "5") {
+        entry_div.setAttribute("class", "blog_feed_entry_var5")
     }
     else if (page.var == "D") {
         entry_div.setAttribute("class", "blog_feed_entry_varD")

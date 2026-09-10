@@ -294,7 +294,7 @@ const createNavbar = function(blocked_space_arg = "") {
     FOOTER STUFF
 */
 const createFooter = function() {
-    let generic_footer_text = "All rights reserved, Me, 2026. v1.3.6";
+    let generic_footer_text = "All rights reserved, Me, 2026. v1.3.7";
     let settings_text = "⚙️ Settings";
     let rss_text = "🛜 RSS Available";
     

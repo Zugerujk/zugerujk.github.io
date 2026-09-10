@@ -20,6 +20,9 @@
     /* Var 4 colors */
     --border-color-var4: #313f82;
     --background-color-var4: #121249;
+    /* Var 5 colors */
+    --border-color-var5: #1e113f;
+    --background-color-var5: #2a2257;
     /* Darknessian colors */
     --border-color-varD: #2c2b5b;
     --background-color-varD: #0e0e0e;
@@ -175,7 +178,7 @@ center {
     line-height: 12px;
 }
 
-.blog_feed_entry, .blog_feed_entry_var1, .blog_feed_entry_var2, .blog_feed_entry_var3, .blog_feed_entry_var4, .blog_feed_entry_varD {
+.blog_feed_entry, .blog_feed_entry_var1, .blog_feed_entry_var2, .blog_feed_entry_var3, .blog_feed_entry_var4, .blog_feed_entry_var5, .blog_feed_entry_varD {
     border: 12px solid var(--border-color-def);
     display:flex;
     margin-left: 20px;
@@ -209,6 +212,11 @@ center {
     border-color: var(--border-color-var4);
     background-color: var(--background-color-var4);
     --background-color-const: var(--background-color-var4);
+}
+.blog_feed_entry_var5{
+    border-color: var(--border-color-var5);
+    background-color: var(--background-color-var5);
+    --background-color-const: var(--background-color-var5);
 }
 .blog_feed_entry_varD{
     border-color: var(--border-color-varD);
@@ -273,7 +281,7 @@ center {
     margin-block-end: 0em;
 }
 
-.blog_entry, .blog_entry_var1, .blog_entry_var2, .blog_entry_var3, .blog_entry_var4, .blog_entry_varD {
+.blog_entry, .blog_entry_var1, .blog_entry_var2, .blog_entry_var3, .blog_entry_var4, .blog_entry_var5, .blog_entry_varD {
     border: 12px solid var(--border-color-def);
     /* border-radius: 10px; */
     margin-left: 20px;
@@ -305,6 +313,11 @@ center {
     border-color: var(--border-color-var4);
     background-color: var(--background-color-var4);
     --background-color-const: var(--background-color-var4);
+}
+.blog_entry_var5 {
+    border-color: var(--border-color-var5);
+    background-color: var(--background-color-var5);
+    --background-color-const: var(--background-color-var5);
 }
 .blog_entry_varD {
     border-color: var(--border-color-varD);
@@ -388,6 +401,13 @@ center {
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.repeated_lines {
+    margin-bottom: 4px;
+    margin-top: 4px;
+    padding-left: 35px;
+    text-indent: -18px;
 }
 
 /* Unique IDs for the main sections */
