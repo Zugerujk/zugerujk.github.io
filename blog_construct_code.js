@@ -1112,6 +1112,27 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog133",
         var: "5",
     },
+    "134": {
+        displaynum: "#134",
+        title: "I Read MrBeast's New Book ):",
+        date: "9/10/26 7:32:?? PM CST",
+        link: "https://zugerujk.net/blog/blog134",
+        var: "5",
+    },
+    "135": {
+        displaynum: "#135",
+        title: "Metaphor: ReFantazio — Good!",
+        date: "9/21/26 8:59:?? AM CST",
+        link: "https://zugerujk.net/blog/blog135",
+        var: "5",
+    },
+    "136": {
+        displaynum: "#136",
+        title: "I went to IKEA",
+        date: "9/25/26 3:52:42 PM CST",
+        link: "https://zugerujk.net/blog/blog136",
+        var: "5",
+    },
 }
 var included_pages = [];
 var page_sort = "0";

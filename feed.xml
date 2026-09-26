@@ -13,7 +13,17 @@
             <link>https://zugerujk.net/feed.xml</link>
         </image>
         <atom:link href="https://zugerujk.net/feed.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Thu, 10 Sep 2026 15:07:19 CST</lastBuildDate>
+        <lastBuildDate>Fri, 25 Sep 2026 21:59:13 CST</lastBuildDate>
+        <item>
+            <title>Zugerujk.net v1.3.8</title>
+            <guid isPermaLink="false">Zugerujk.net%20v1.3.8</guid>
+            <description>Yeah guys, I'm back to a regular-ish update schedule. Now that IOODancing's out. This update's just 3 blog posts: blog134, blog135, and blog136. So enjoy them!</description>
+            <link>https://zugerujk.net/</link>
+            <author>zugerujk@gmail.com (Zugerujk)</author>
+            <category>Site Update</category>
+            <source url="https://zugerujk.net/feed.xml">Zugerujk.net</source>
+            <pubDate>Fri, 25 Sep 2026 21:59:13 CST</pubDate>
+        </item>
         <item>
             <title>Zugerujk.net v1.3.7</title>
             <guid isPermaLink="false">Zugerujk.net%20v1.3.7</guid>
