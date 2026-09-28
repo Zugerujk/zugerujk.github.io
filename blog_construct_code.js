@@ -1133,6 +1133,20 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog136",
         var: "5",
     },
+    "137": {
+        displaynum: "#137",
+        title: "A Heavy One",
+        date: "9/28/26 4:13:?? AM CST",
+        link: "https://zugerujk.net/blog/blog137",
+        var: "5",
+    },
+    "138": {
+        displaynum: "#138",
+        title: "Afterword (or \"They don't have the Olivia Rodrigo Baja Blast at my local Taco Bell\", or, something about religion, I guess?)",
+        date: "9/28/26 5:00:?? AM CST",
+        link: "https://zugerujk.net/blog/blog138",
+        var: "5",
+    },
 }
 var included_pages = [];
 var page_sort = "0";

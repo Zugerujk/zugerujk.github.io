@@ -13,7 +13,17 @@
             <link>https://zugerujk.net/feed.xml</link>
         </image>
         <atom:link href="https://zugerujk.net/feed.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Fri, 25 Sep 2026 21:59:13 CST</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 7:20:49 CST</lastBuildDate>
+        <item>
+            <title>Zugerujk.net v1.3.9</title>
+            <guid isPermaLink="false">Zugerujk.net%20v1.3.9</guid>
+            <description>Made a larger one about my feelings about a book and my nightmares and classes and IOODancing and other things. And an Afterword.</description>
+            <link>https://zugerujk.net/</link>
+            <author>zugerujk@gmail.com (Zugerujk)</author>
+            <category>Site Update</category>
+            <source url="https://zugerujk.net/feed.xml">Zugerujk.net</source>
+            <pubDate>Mon, 28 Sep 2026 7:20:49 CST</pubDate>
+        </item>
         <item>
             <title>Zugerujk.net v1.3.8</title>
             <guid isPermaLink="false">Zugerujk.net%20v1.3.8</guid>
