@@ -1147,6 +1147,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog138",
         var: "5",
     },
+    "139": {
+        displaynum: "#139",
+        title: "Going fucking insane",
+        date: "9/30/26 2:13:?? AM CST",
+        link: "https://zugerujk.net/blog/blog139",
+        var: "5",
+    },
 }
 var included_pages = [];
 var page_sort = "0";

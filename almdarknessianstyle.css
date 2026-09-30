@@ -633,7 +633,8 @@ center {
     height: min-content;
 }
 
-#gallery_bar_container {
+.gallery_bar_container {
+    display:flex;
     width: 850px;
     min-height: 70px;
     justify-content: center;

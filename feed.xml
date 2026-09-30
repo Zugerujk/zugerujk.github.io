@@ -13,7 +13,17 @@
             <link>https://zugerujk.net/feed.xml</link>
         </image>
         <atom:link href="https://zugerujk.net/feed.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Mon, 28 Sep 2026 7:20:49 CST</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 8:07:07 CST</lastBuildDate>
+        <item>
+            <title>Zugerujk.net v1.3.10</title>
+            <guid isPermaLink="false">Zugerujk.net%20v1.3.10</guid>
+            <description>A shitty blog post and some clerical work; updating the IOOD resources to be the IOODuology resources, adding IOODancing resources to it.</description>
+            <link>https://zugerujk.net/</link>
+            <author>zugerujk@gmail.com (Zugerujk)</author>
+            <category>Site Update</category>
+            <source url="https://zugerujk.net/feed.xml">Zugerujk.net</source>
+            <pubDate>Wed, 30 Sep 2026 8:07:07 CST</pubDate>
+        </item>
         <item>
             <title>Zugerujk.net v1.3.9</title>
             <guid isPermaLink="false">Zugerujk.net%20v1.3.9</guid>
