@@ -1154,6 +1154,13 @@ var page_listing = {
         link: "https://zugerujk.net/blog/blog139",
         var: "5",
     },
+    "140": {
+        displaynum: "#140",
+        title: "Stranding",
+        date: "10/7/26 5:34:47 AM CST",
+        link: "https://zugerujk.net/blog/blog140",
+        var: "5",
+    },
 }
 var included_pages = [];
 var page_sort = "0";
